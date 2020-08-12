@@ -1,1 +1,1 @@
-# IM3080_DIP_GROUP3
+# IM3080 Design & Innovation Project - Group 3
