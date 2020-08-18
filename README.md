@@ -5,7 +5,7 @@ Problem Statement: [TBC]
 
 Team Name: IM3080 DIP Group 3
 
-Team Members: Lee Jia Wei, Lim Wee Jen Aaron, Loke Seng Theodore...
+Team Members: Lim Wee Jen Aaron, Lee Jia Wei, Loke Seng Theodore...
 
 ## Contents
 
