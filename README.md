@@ -67,7 +67,9 @@ CLone the repository and build and run the app.
 
 * [Android Studio](https://developer.android.com/studio)
 
-### UI/UX Wireframing
+### Design & UI/UX Wireframing
+* [Blender](https://www.blender.org/)
+* [Pencil2D Animation](https://www.pencil2d.org/)
 * [Figma](http://www.figma.com/)
 
 ### Database Management
