@@ -12,7 +12,6 @@ Team Members: LIM WEE JEN AARON, LEW SUE XIN, LEE SEOW WEI, WU YIXUAN, LEE JIA W
 1. [Short description](#short-description)
 1. [Demo video](#demo-video)
 1. [The architecture](#the-architecture)
-1. [Long description](#long-description)
 1. [Getting started](#getting-started)
 1. [Built with](#built-with)
 
@@ -34,7 +33,7 @@ Designed with pastel colours, our app will also encourage simple enagagement in 
 
 ## Demo video
 
-[![Watch the video](https://github.com/wlim087/IM3080_DIP_GROUP3/blob/master/Images/VideoImage.PNG)](https://youtu.be/B4dnPVZ2MV0)
+[![Watch the video](https://github.com/wlim087/IM3080_DIP_GROUP3/blob/master/Images/VideoImage.jpg)](https://youtu.be/B4dnPVZ2MV0)
 
 ## The architecture
 
@@ -47,10 +46,6 @@ Designed with pastel colours, our app will also encourage simple enagagement in 
 5. It will then suggest to the user recipes, especially once all requisite ingredients have been scanned.
 6. The user can then proceed to go through a step-by-step process of cooking the meal, following through with videos and a progress bar.
 7. Upon completion, the user can then take a picture of the end result and upload it for other peers in the community to comment on.
-
-## Long description
-
-[More details are available here](https://github.com/wlim087/IM3080_DIP_GROUP3/blob/master/DESCRIPTION.md)
 
 ## Getting started
 
