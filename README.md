@@ -24,7 +24,7 @@ With the COVID-19 pandemic upon the world, more people are living, working and s
 
 ### How can technology help?
 
-.
+The use of cutting-edge cloud technologies from Google can greatly assist in the creation of a mobile platform that is both easy to use and yet engaging. Built using Java in Android Studio, an app utilising Google Cloud Vision API can be built to recognise foodstuff easily and with great accuracy, while the storage of data on Firebase, a realtime cloud-hosted database, will allow for 24/7 availability.
 
 ### The idea
 
@@ -38,12 +38,15 @@ Designed with pastel colours, our app will also encourage simple enagagement in 
 
 ## The architecture
 
-![Database Architecture](https://github.com/wlim087/IM3080_DIP_GROUP3/blob/master/Images/DatabaseArchitecture.png)
+![Database Architecture](https://github.com/wlim087/IM3080_DIP_GROUP3/blob/master/Images/DatabaseArchitecture_ERDiagram.png)
 
-1. xxx.
-2. xxx.
-3. xxx.
-4. xxx.
+1. A user will first have to sign up for an account, and thereafter login.
+2. Upon logging in, the user will be brought to the home page, where he/she can then opt to take a photo of a food item or scroll through various pre-suggested recipes.
+3. Upon taking a picture of the foodstuff, the user can then proceed to have the image analysed.
+4. Once the image is analysed, it will then check of recipes that require that particular food item.
+5. It will then suggest to the user recipes, especially once all requisite ingredients have been scanned.
+6. The user can then proceed to go through a step-by-step process of cooking the meal, following through with videos and a progress bar.
+7. Upon completion, the user can then take a picture of the end result and upload it for other peers in the community to comment on.
 
 ## Long description
 
@@ -57,11 +60,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 What do you need to build and run our prototype?
 
-xxx.
+Android Studio, Android Virtual Device/Android Phone/Tablet
 
 ### Action
 
-xxx.
+CLone the repository and build and run the app.
 
 ## Built with
 
