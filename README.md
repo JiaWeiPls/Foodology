@@ -34,7 +34,7 @@ Designed with pastel colours, our app will also encourage simple enagagement in 
 
 ## Demo video
 
-[![Watch the video](https://github.com/wlim087/IM3080_DIP_GROUP3/blob/master/Images/Video%20Image.png)](https://youtu.be/B4dnPVZ2MV0)
+[![Watch the video](https://github.com/wlim087/IM3080_DIP_GROUP3/blob/master/Images/VideoImage.png)](https://youtu.be/B4dnPVZ2MV0)
 
 ## The architecture
 
