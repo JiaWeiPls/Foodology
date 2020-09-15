@@ -1,9 +1,9 @@
-# IM3080 Design & Innovation Project - Group 3
+# IM3080 Design & Innovation Project - Group 3 (Foodology)
 We are a team of passionate information engineers innovating to craft collaborative solutions.
 
 Problem Statement: In an era where we are required to live, work and play from home, how do we ensure that anyone and everyone can cook and live sustainably?
 
-Team Name: IM3080 DIP Group 3
+App Name: Foodology - Cooking At Home, Accessible For All
 
 Team Members: LIM WEE JEN AARON, LEW SUE XIN, LEE SEOW WEI, WU YIXUAN, LEE JIA WEI, LOKE SENG, THEODORE, CHENG CHU LING, MADELINE, WEE RONGXUAN, JOEY CHENG XUAN YUN, KERLYN ONG SHI YI, ZHU HAN ZHUO
 
