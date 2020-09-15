@@ -34,11 +34,11 @@ Designed with pastel colours, our app will also encourage simple enagagement in 
 
 ## Demo video
 
-[![Watch the video](https://github.com/wlim087/IM3080_DIP_GROUP3/blob/master/Images/VideoImage.png)](https://youtu.be/B4dnPVZ2MV0)
+[![Watch the video](https://github.com/wlim087/IM3080_DIP_GROUP3/blob/master/Images/VideoImage.PNG)](https://youtu.be/B4dnPVZ2MV0)
 
 ## The architecture
 
-![Database Architecture](https://github.com/wlim087/IM3080_DIP_GROUP3/blob/master/Images/DatabaseArchitecture_ERDiagram.png)
+![Database Architecture](https://github.com/wlim087/IM3080_DIP_GROUP3/blob/master/Images/DatabaseArchitecture_ERDiagram.PNG)
 
 1. A user will first have to sign up for an account, and thereafter login.
 2. Upon logging in, the user will be brought to the home page, where he/she can then opt to take a photo of a food item or scroll through various pre-suggested recipes.
