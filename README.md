@@ -59,7 +59,7 @@ Android Studio, Android Virtual Device/Android Phone/Tablet
 
 ### Action
 
-CLone the repository and build and run the app.
+Clone the repository and build and run the app, either by running it in the virtual device or through downloading and running the APK file on a local device.
 
 ## Built with
 
