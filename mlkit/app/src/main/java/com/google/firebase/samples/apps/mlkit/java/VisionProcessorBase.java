@@ -98,7 +98,7 @@ public abstract class VisionProcessorBase<T> implements VisionImageProcessor {
                         .setHeight(frameMetadata.getHeight())
                         .setRotation(frameMetadata.getRotation())
                         .build();
-
+        //As mentioned, remove link to BitmapUtils for now
         /*Bitmap bitmap = BitmapUtils.getBitmap(data, frameMetadata);
         detectInVisionImage(
                 bitmap, FirebaseVisionImage.fromByteBuffer(data, metadata), frameMetadata,
