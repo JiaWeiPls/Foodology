@@ -99,10 +99,10 @@ public abstract class VisionProcessorBase<T> implements VisionImageProcessor {
                         .setRotation(frameMetadata.getRotation())
                         .build();
 
-        Bitmap bitmap = BitmapUtils.getBitmap(data, frameMetadata);
+        /*Bitmap bitmap = BitmapUtils.getBitmap(data, frameMetadata);
         detectInVisionImage(
                 bitmap, FirebaseVisionImage.fromByteBuffer(data, metadata), frameMetadata,
-                graphicOverlay);
+                graphicOverlay);*/
     }
 
     private void detectInVisionImage(
