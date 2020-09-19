@@ -56,7 +56,7 @@ public class CloudImageLabelingProcessor
 
         detector = FirebaseVision.getInstance().getCloudImageLabeler(optionsBuilder.build());
     }
-
+    //detection process, the detected value will be stored in FirebaseVisionImageLabel.
     @Override
     protected Task<List<FirebaseVisionImageLabel>> detectInImage(FirebaseVisionImage image) {
         return detector.processImage(image);
@@ -69,13 +69,14 @@ public class CloudImageLabelingProcessor
             @NonNull FrameMetadata frameMetadata,
             @NonNull GraphicOverlay graphicOverlay) {
         DatabaseReference rootRef, demoRef;
-
+        //FirebaseVisionImageLabel then be processed into label.
         graphicOverlay.clear();
         Log.d(TAG, "cloud label size: " + labels.size());
         List<String> labelsStr = new ArrayList<>();
         FirebaseVisionImageLabel label = labels.get(0);
         labelsStr.add(label.getText());
         rootRef = FirebaseDatabase.getInstance().getReference();
+        //refer here for extracting ingredient if needed for menu.
         demoRef = rootRef.child("ingredient");
         demoRef.setValue(labelsStr);
 
