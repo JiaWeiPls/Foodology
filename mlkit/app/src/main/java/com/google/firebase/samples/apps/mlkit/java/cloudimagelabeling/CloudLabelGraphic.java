@@ -39,6 +39,8 @@ public class CloudLabelGraphic extends Graphic {
 
   }
 
+  //draw label at certain position
+  //edit according to future needs.
   @Override
   public synchronized void draw(Canvas canvas) {
     float x = overlay.getWidth() / 4.0f;

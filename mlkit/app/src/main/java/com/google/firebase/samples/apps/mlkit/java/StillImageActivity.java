@@ -59,7 +59,7 @@ import com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+//dealing with the camera interface, e.g. situation of rotating phone
 /** Activity demonstrating different image detector features with a still image from camera. */
 @KeepName
 public final class StillImageActivity extends AppCompatActivity {
