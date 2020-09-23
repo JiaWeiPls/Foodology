@@ -25,19 +25,24 @@ import java.util.List;
 /** Graphic instance for rendering detected label. */
 public class CloudLabelGraphic extends Graphic {
   private final Paint textPaint;
+
   private final GraphicOverlay overlay;
 
   private List<String> labels;
+  private List<String> seconds;
 
-  CloudLabelGraphic(GraphicOverlay overlay, List<String> labels) {
+  CloudLabelGraphic(GraphicOverlay overlay, List<String> labels, List<String> seconds) {
     super(overlay);
     this.overlay = overlay;
     this.labels = labels;
+    this.seconds = seconds;
     textPaint = new Paint();
     textPaint.setColor(Color.RED);
     textPaint.setTextSize(60.0f);
 
+
   }
+
 
   //draw label at certain position
   //edit according to future needs.
@@ -49,6 +54,10 @@ public class CloudLabelGraphic extends Graphic {
     for (String label : labels) {
       canvas.drawText(label, x, y, textPaint);
       y = y - 62.0f;
+    }
+    for (String Second : seconds) {
+      canvas.drawText(Second, 500, 400, textPaint);
+
     }
   }
 }

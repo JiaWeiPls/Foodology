@@ -68,19 +68,32 @@ public class CloudImageLabelingProcessor
             @NonNull List<FirebaseVisionImageLabel> labels,
             @NonNull FrameMetadata frameMetadata,
             @NonNull GraphicOverlay graphicOverlay) {
-        DatabaseReference rootRef, demoRef;
+        DatabaseReference rootRef, demoRef, demoRef_Second;
         //FirebaseVisionImageLabel then be processed into label.
         graphicOverlay.clear();
         Log.d(TAG, "cloud label size: " + labels.size());
         List<String> labelsStr = new ArrayList<>();
+
+        List<String> SecondStr = new ArrayList<>();
+
         FirebaseVisionImageLabel label = labels.get(0);
         labelsStr.add(label.getText());
+
+        // change the number to get confidence.
+        // not sure on 23/sep as real data in firebase is not working
+        FirebaseVisionImageLabel Second = labels.get(1);
+        SecondStr.add(Second.getText());
+
         rootRef = FirebaseDatabase.getInstance().getReference();
         //refer here for extracting ingredient if needed for menu.
         demoRef = rootRef.child("ingredient");
         demoRef.setValue(labelsStr);
+        demoRef_Second = rootRef.child("second ingredient");
+        demoRef_Second.setValue(SecondStr);
 
-        CloudLabelGraphic cloudLabelGraphic = new CloudLabelGraphic(graphicOverlay, labelsStr);
+
+
+        CloudLabelGraphic cloudLabelGraphic = new CloudLabelGraphic(graphicOverlay, labelsStr, SecondStr);
         graphicOverlay.add(cloudLabelGraphic);
         graphicOverlay.postInvalidate();
 
