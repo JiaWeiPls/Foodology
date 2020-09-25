@@ -59,6 +59,7 @@ public class CloudLabelGraphic extends Graphic {
       canvas.drawText(label, x, y, textPaint);
       y = y - 62.0f;
     }
+    //label is defined as String
     for (String Second : seconds) {
       canvas.drawText(Second, 500, 200, textPaint2);
 
