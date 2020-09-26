@@ -95,7 +95,6 @@
         android:layout_marginLeft="-865dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="1153dp"
-        android:background="@drawable/login_elipse"
-        />
+        android:background="@drawable/login_elipse" />
 
 </RelativeLayout>
