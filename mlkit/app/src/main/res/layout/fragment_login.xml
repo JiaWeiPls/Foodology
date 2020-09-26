@@ -6,16 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.google.firebase.samples.apps.mlkit.LoginFragment">
 
-    <TextView
-        android:id="@+id/tv_subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tag"
-        android:textSize="17sp"
-        android:fontFamily="@font/roboto_regular"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="50dp"
-        android:layout_above="@id/et_email"/>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="396dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/elipse" />
 
     <EditText
         android:id="@+id/et_email"
@@ -27,8 +23,9 @@
         android:padding="15dp"
         android:inputType="textEmailAddress"
         android:fontFamily="@font/roboto_regular"
-        android:layout_above="@id/et_password"
+        android:layout_below="@id/tv_subtitle"
         android:background="@drawable/et_custom"
+        android:layout_marginTop="50dp"
         android:textSize="15sp" />
 
     <EditText
@@ -38,12 +35,12 @@
         android:hint="@string/password"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
         android:padding="15dp"
         android:fontFamily="@font/roboto_regular"
         android:inputType="textPassword"
-        android:layout_centerInParent="true"
+        android:layout_below="@id/et_email"
         android:background="@drawable/et_custom"
+        android:layout_marginTop="15dp"
         android:textSize="15sp" />
 
     <Button
@@ -88,12 +85,14 @@
         android:layout_marginTop="70dp"
         android:src="@drawable/foodology_removebg_preview__1_" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_height="396dp"
-        android:src="@drawable/elipse" />
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/welcome"
+        android:textSize="17sp" />
 
 
 </RelativeLayout>
