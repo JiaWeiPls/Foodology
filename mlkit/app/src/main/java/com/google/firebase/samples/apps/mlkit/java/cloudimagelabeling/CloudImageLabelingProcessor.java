@@ -35,6 +35,7 @@ import com.google.firebase.ml.vision.label.FirebaseVisionImageLabel;
 import com.google.firebase.ml.vision.label.FirebaseVisionImageLabeler;
 import com.google.firebase.samples.apps.mlkit.common.FrameMetadata;
 import com.google.firebase.samples.apps.mlkit.common.GraphicOverlay;
+import com.google.firebase.samples.apps.mlkit.common.Testprint;
 import com.google.firebase.samples.apps.mlkit.java.StillImageActivity;
 import com.google.firebase.samples.apps.mlkit.java.VisionProcessorBase;
 
@@ -96,6 +97,13 @@ public class CloudImageLabelingProcessor
         CloudLabelGraphic cloudLabelGraphic = new CloudLabelGraphic(graphicOverlay, labelsStr, SecondStr);
         graphicOverlay.add(cloudLabelGraphic);
         graphicOverlay.postInvalidate();
+
+// Step for passing out the detected label to Testprint
+        String text = label.getText();
+        //String entityId = label.getEntityId();
+        //float confidence = label.getConfidence();
+        Testprint.add(text);
+
 
         //DatabaseReference rootRef, demoRef;
         //rootRef = FirebaseDatabase.getInstance().getReference();

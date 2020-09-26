@@ -26,7 +26,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -40,17 +39,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.PopupMenu;
 import android.widget.PopupMenu.OnMenuItemClickListener;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.annotation.KeepName;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.samples.apps.mlkit.R;
 import com.google.firebase.samples.apps.mlkit.common.VisionImageProcessor;
+import com.google.firebase.samples.apps.mlkit.common.Testprint;
 import com.google.firebase.samples.apps.mlkit.databinding.ActivityStillImageBinding;
 import com.google.firebase.samples.apps.mlkit.java.cloudimagelabeling.CloudImageLabelingProcessor;
 import com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity;
@@ -62,7 +56,7 @@ import java.util.List;
 //dealing with the camera interface, e.g. situation of rotating phone
 /** Activity demonstrating different image detector features with a still image from camera. */
 @KeepName
-public final class StillImageActivity extends AppCompatActivity {
+public class StillImageActivity extends AppCompatActivity {
 
   private final String TAG = "StillImageActivity";
   private final int PERMISSION_REQUESTS = 1;
@@ -112,6 +106,11 @@ public final class StillImageActivity extends AppCompatActivity {
                   @Override
                   public boolean onMenuItemClick(MenuItem menuItem) {
                     switch (menuItem.getItemId()) {
+                      case R.id.display_string_test:
+
+                        testprint();
+                        return true;
+
                       case R.id.select_images_from_local:
                         startChooseImageIntentForResult();
                         return true;
@@ -263,6 +262,20 @@ public final class StillImageActivity extends AppCompatActivity {
     }
   }
 
+// Text carried from CloudImageLabelingProcessor. Showing the Label detected by a toast.
+// CloudImageLabelingProcessor > Testprint > StillimageActivity.
+
+  private void testprint(){
+
+
+    String text = Testprint.Testprintout();
+    Context context = getApplicationContext();
+    CharSequence out = text;
+    int duration = Toast.LENGTH_LONG;
+
+    Toast toast = Toast.makeText(context, out, duration);
+    toast.show();
+  }
   private void startChooseImageIntentForResult() {
     Intent intent = new Intent();
     intent.setType("image/*");
