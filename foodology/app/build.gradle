@@ -50,6 +50,7 @@ dependencies {
     // ML Kit dependencies
     implementation 'com.google.firebase:firebase-ml-vision:24.1.0'
     implementation 'com.google.firebase:firebase-database:19.4.0'
+    implementation 'com.google.mlkit:image-labeling:17.0.0'
 
     // Needed to fix a temporary issue with duplicate class com.google.android.gms.internal.vision.* errors
     // See: https://firebase.google.com/support/release-notes/android#bom_v25-8-0
