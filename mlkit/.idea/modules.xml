@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="mlkit/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1780134244/chooserx.iml" filepath="$PROJECT_DIR$/.idea/modules/1780134244/chooserx.iml" group="mlkit/internal/chooserx" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/internal/internal.iml" filepath="$PROJECT_DIR$/.idea/modules/internal/internal.iml" group="mlkit/internal" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/46498378/lint.iml" filepath="$PROJECT_DIR$/.idea/modules/46498378/lint.iml" group="mlkit/internal/lint" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-25043147/lintchecks.iml" filepath="$PROJECT_DIR$/.idea/modules/-25043147/lintchecks.iml" group="mlkit/internal/lintchecks" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mlkit.iml" filepath="$PROJECT_DIR$/.idea/mlkit.iml" group="mlkit" />
+    </modules>
+  </component>
+</project>
