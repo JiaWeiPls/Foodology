@@ -8,7 +8,7 @@
   <string name="login">Login</string>
   <string name="password">Password</string>
   <string name="e_mail"><font color="@color/dark_blue">Email</font></string>
-  <string name="welcome"><font color="@color/light_blue">Welcome</string>
+  <string name="welcome"><font color="@color/light_blue">Welcome</font></string>
   <string name="swipe_right_for_login">Swipe Right for Login</string>
   <string name="register">Register</string>
   <string name="re_type_password">Re-type Password</string>
