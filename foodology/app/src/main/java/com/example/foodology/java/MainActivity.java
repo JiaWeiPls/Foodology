@@ -1,4 +1,4 @@
-package com.google.firebase.samples.apps.mlkit;
+package com.example.foodology.java;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -6,17 +6,9 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
-
-import com.google.firebase.samples.apps.mlkit.LoginFragment;
-import com.google.firebase.samples.apps.mlkit.R;
-import com.google.firebase.samples.apps.mlkit.RegisterFragment;
-import com.google.firebase.samples.apps.mlkit.java.StillImageActivity;
+import com.example.foodology.R;
 
 import java.util.ArrayList;
 

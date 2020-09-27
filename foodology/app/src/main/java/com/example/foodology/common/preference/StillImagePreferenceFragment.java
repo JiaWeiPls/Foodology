@@ -1,9 +1,9 @@
-package com.google.firebase.samples.apps.mlkit.common.preference;
+package com.example.foodology.common.preference;
 
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 
-import com.google.firebase.samples.apps.mlkit.R;
+import com.example.foodology.R;
 
 /** Configures still image demo settings. */
 public class StillImagePreferenceFragment extends PreferenceFragment {

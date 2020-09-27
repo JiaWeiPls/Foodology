@@ -11,7 +11,7 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-package com.google.firebase.samples.apps.mlkit.java;
+package com.example.foodology.java;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -42,13 +42,13 @@ import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.Toast;
 
 import com.google.android.gms.common.annotation.KeepName;
-import com.google.firebase.samples.apps.mlkit.R;
-import com.google.firebase.samples.apps.mlkit.common.VisionImageProcessor;
-import com.google.firebase.samples.apps.mlkit.common.Testprint;
-import com.google.firebase.samples.apps.mlkit.databinding.ActivityStillImageBinding;
-import com.google.firebase.samples.apps.mlkit.java.cloudimagelabeling.CloudImageLabelingProcessor;
-import com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity;
-import com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity.LaunchSource;
+import com.example.foodology.R;
+import com.example.foodology.common.VisionImageProcessor;
+import com.example.foodology.common.Testprint;
+import com.example.foodology.databinding.ActivityStillImageBinding;
+import com.example.foodology.java.cloudimagelabeling.CloudImageLabelingProcessor;
+import com.example.foodology.common.preference.SettingsActivity;
+import com.example.foodology.common.preference.SettingsActivity.LaunchSource;
 
 import java.io.IOException;
 import java.util.ArrayList;

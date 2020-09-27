@@ -11,33 +11,26 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-package com.google.firebase.samples.apps.mlkit.java.cloudimagelabeling;
+package com.example.foodology.java.cloudimagelabeling;
 
 import android.graphics.Bitmap;
 import android.util.Log;
-import android.widget.TextView;
-import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.ml.vision.FirebaseVision;
 import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import com.google.firebase.ml.vision.label.FirebaseVisionCloudImageLabelerOptions;
 import com.google.firebase.ml.vision.label.FirebaseVisionImageLabel;
 import com.google.firebase.ml.vision.label.FirebaseVisionImageLabeler;
-import com.google.firebase.samples.apps.mlkit.common.FrameMetadata;
-import com.google.firebase.samples.apps.mlkit.common.GraphicOverlay;
-import com.google.firebase.samples.apps.mlkit.common.Testprint;
-import com.google.firebase.samples.apps.mlkit.java.StillImageActivity;
-import com.google.firebase.samples.apps.mlkit.java.VisionProcessorBase;
+import com.example.foodology.common.FrameMetadata;
+import com.example.foodology.common.GraphicOverlay;
+import com.example.foodology.common.Testprint;
+import com.example.foodology.java.VisionProcessorBase;
 
 import java.util.ArrayList;
 import java.util.List;

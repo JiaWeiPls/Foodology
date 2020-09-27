@@ -11,13 +11,10 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-package com.google.firebase.samples.apps.mlkit.common;
+package com.example.foodology.common;
 
 import android.graphics.Bitmap;
-import android.media.Image;
 
-import com.google.firebase.ml.common.FirebaseMLException;
-import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 
 import java.nio.ByteBuffer;
 
@@ -25,8 +22,7 @@ import java.nio.ByteBuffer;
 public interface VisionImageProcessor {
 
   /** Processes the images with the underlying machine learning models. */
-  void process(ByteBuffer data, FrameMetadata frameMetadata, GraphicOverlay graphicOverlay)
-      throws FirebaseMLException;
+  void process(ByteBuffer data, FrameMetadata frameMetadata, GraphicOverlay graphicOverlay);
 
   /** Processes the bitmap images. */
   void process(Bitmap bitmap, GraphicOverlay graphicOverlay);

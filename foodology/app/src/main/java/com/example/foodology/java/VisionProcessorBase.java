@@ -11,7 +11,7 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-package com.google.firebase.samples.apps.mlkit.java;
+package com.example.foodology.java;
 
 import android.graphics.Bitmap;
 
@@ -24,10 +24,9 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import com.google.firebase.ml.vision.common.FirebaseVisionImageMetadata;
-import com.google.firebase.samples.apps.mlkit.common.BitmapUtils;
-import com.google.firebase.samples.apps.mlkit.common.FrameMetadata;
-import com.google.firebase.samples.apps.mlkit.common.GraphicOverlay;
-import com.google.firebase.samples.apps.mlkit.common.VisionImageProcessor;
+import com.example.foodology.common.FrameMetadata;
+import com.example.foodology.common.GraphicOverlay;
+import com.example.foodology.common.VisionImageProcessor;
 
 import java.nio.ByteBuffer;
 
@@ -88,22 +87,6 @@ public abstract class VisionProcessorBase<T> implements VisionImageProcessor {
         }
     }
 
-    private void processImage(
-            ByteBuffer data, final FrameMetadata frameMetadata,
-            final GraphicOverlay graphicOverlay) {
-        FirebaseVisionImageMetadata metadata =
-                new FirebaseVisionImageMetadata.Builder()
-                        .setFormat(FirebaseVisionImageMetadata.IMAGE_FORMAT_NV21)
-                        .setWidth(frameMetadata.getWidth())
-                        .setHeight(frameMetadata.getHeight())
-                        .setRotation(frameMetadata.getRotation())
-                        .build();
-        //As mentioned, remove link to BitmapUtils for now
-        /*Bitmap bitmap = BitmapUtils.getBitmap(data, frameMetadata);
-        detectInVisionImage(
-                bitmap, FirebaseVisionImage.fromByteBuffer(data, metadata), frameMetadata,
-                graphicOverlay);*/
-    }
 
     private void detectInVisionImage(
             final Bitmap originalCameraImage,
