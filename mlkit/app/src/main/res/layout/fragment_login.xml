@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="396dp"
         android:layout_alignParentBottom="true"
-        android:src="@drawable/elipse" />
+        android:src="@drawable/ic_elipse" />
 
     <EditText
         android:id="@+id/et_email"
@@ -116,6 +116,7 @@
         android:fontFamily="@font/roboto_regular"
         android:text="@string/welcome"
         android:textSize="17sp" />
+
 
 
 </RelativeLayout>
