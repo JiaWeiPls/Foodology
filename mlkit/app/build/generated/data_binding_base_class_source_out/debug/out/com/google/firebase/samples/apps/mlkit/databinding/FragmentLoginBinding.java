@@ -34,13 +34,16 @@ public final class FragmentLoginBinding implements ViewBinding {
   public final EditText etPassword;
 
   @NonNull
-  public final ImageView imageView;
-
-  @NonNull
   public final View lineEmail;
 
   @NonNull
   public final View linePassword;
+
+  @NonNull
+  public final Button loginResetPW;
+
+  @NonNull
+  public final ImageView logo;
 
   @NonNull
   public final TextView swipeRight;
@@ -50,16 +53,17 @@ public final class FragmentLoginBinding implements ViewBinding {
 
   private FragmentLoginBinding(@NonNull RelativeLayout rootView, @NonNull Button btnLogin,
       @NonNull ImageView elipse, @NonNull EditText etEmail, @NonNull EditText etPassword,
-      @NonNull ImageView imageView, @NonNull View lineEmail, @NonNull View linePassword,
-      @NonNull TextView swipeRight, @NonNull TextView tvSubtitle) {
+      @NonNull View lineEmail, @NonNull View linePassword, @NonNull Button loginResetPW,
+      @NonNull ImageView logo, @NonNull TextView swipeRight, @NonNull TextView tvSubtitle) {
     this.rootView = rootView;
     this.btnLogin = btnLogin;
     this.elipse = elipse;
     this.etEmail = etEmail;
     this.etPassword = etPassword;
-    this.imageView = imageView;
     this.lineEmail = lineEmail;
     this.linePassword = linePassword;
+    this.loginResetPW = loginResetPW;
+    this.logo = logo;
     this.swipeRight = swipeRight;
     this.tvSubtitle = tvSubtitle;
   }
@@ -115,12 +119,6 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView;
-      ImageView imageView = rootView.findViewById(id);
-      if (imageView == null) {
-        break missingId;
-      }
-
       id = R.id.line_email;
       View lineEmail = rootView.findViewById(id);
       if (lineEmail == null) {
@@ -130,6 +128,18 @@ public final class FragmentLoginBinding implements ViewBinding {
       id = R.id.line_password;
       View linePassword = rootView.findViewById(id);
       if (linePassword == null) {
+        break missingId;
+      }
+
+      id = R.id.login_resetPW;
+      Button loginResetPW = rootView.findViewById(id);
+      if (loginResetPW == null) {
+        break missingId;
+      }
+
+      id = R.id.logo;
+      ImageView logo = rootView.findViewById(id);
+      if (logo == null) {
         break missingId;
       }
 
@@ -146,7 +156,7 @@ public final class FragmentLoginBinding implements ViewBinding {
       }
 
       return new FragmentLoginBinding((RelativeLayout) rootView, btnLogin, elipse, etEmail,
-          etPassword, imageView, lineEmail, linePassword, swipeRight, tvSubtitle);
+          etPassword, lineEmail, linePassword, loginResetPW, logo, swipeRight, tvSubtitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

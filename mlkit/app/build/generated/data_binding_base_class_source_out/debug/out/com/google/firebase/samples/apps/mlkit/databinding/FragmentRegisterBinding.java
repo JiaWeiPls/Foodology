@@ -6,7 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,10 +19,13 @@ import java.lang.String;
 
 public final class FragmentRegisterBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
   public final Button btnRegister;
+
+  @NonNull
+  public final ImageView elipse;
 
   @NonNull
   public final EditText etEmail;
@@ -36,32 +40,50 @@ public final class FragmentRegisterBinding implements ViewBinding {
   public final EditText etRepassword;
 
   @NonNull
-  public final TextView swipeLeft;
+  public final View lineEmail;
 
   @NonNull
-  public final TextView tvLogo;
+  public final View lineName;
+
+  @NonNull
+  public final View linePassword;
+
+  @NonNull
+  public final View lineRepassword;
+
+  @NonNull
+  public final ImageView logo;
+
+  @NonNull
+  public final TextView swipeLeft;
 
   @NonNull
   public final TextView tvSubtitle;
 
-  private FragmentRegisterBinding(@NonNull LinearLayout rootView, @NonNull Button btnRegister,
-      @NonNull EditText etEmail, @NonNull EditText etName, @NonNull EditText etPassword,
-      @NonNull EditText etRepassword, @NonNull TextView swipeLeft, @NonNull TextView tvLogo,
-      @NonNull TextView tvSubtitle) {
+  private FragmentRegisterBinding(@NonNull RelativeLayout rootView, @NonNull Button btnRegister,
+      @NonNull ImageView elipse, @NonNull EditText etEmail, @NonNull EditText etName,
+      @NonNull EditText etPassword, @NonNull EditText etRepassword, @NonNull View lineEmail,
+      @NonNull View lineName, @NonNull View linePassword, @NonNull View lineRepassword,
+      @NonNull ImageView logo, @NonNull TextView swipeLeft, @NonNull TextView tvSubtitle) {
     this.rootView = rootView;
     this.btnRegister = btnRegister;
+    this.elipse = elipse;
     this.etEmail = etEmail;
     this.etName = etName;
     this.etPassword = etPassword;
     this.etRepassword = etRepassword;
+    this.lineEmail = lineEmail;
+    this.lineName = lineName;
+    this.linePassword = linePassword;
+    this.lineRepassword = lineRepassword;
+    this.logo = logo;
     this.swipeLeft = swipeLeft;
-    this.tvLogo = tvLogo;
     this.tvSubtitle = tvSubtitle;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -92,6 +114,12 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.elipse;
+      ImageView elipse = rootView.findViewById(id);
+      if (elipse == null) {
+        break missingId;
+      }
+
       id = R.id.et_email;
       EditText etEmail = rootView.findViewById(id);
       if (etEmail == null) {
@@ -116,15 +144,39 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.swipeLeft;
-      TextView swipeLeft = rootView.findViewById(id);
-      if (swipeLeft == null) {
+      id = R.id.line_email;
+      View lineEmail = rootView.findViewById(id);
+      if (lineEmail == null) {
         break missingId;
       }
 
-      id = R.id.tv_logo;
-      TextView tvLogo = rootView.findViewById(id);
-      if (tvLogo == null) {
+      id = R.id.line_name;
+      View lineName = rootView.findViewById(id);
+      if (lineName == null) {
+        break missingId;
+      }
+
+      id = R.id.line_password;
+      View linePassword = rootView.findViewById(id);
+      if (linePassword == null) {
+        break missingId;
+      }
+
+      id = R.id.line_repassword;
+      View lineRepassword = rootView.findViewById(id);
+      if (lineRepassword == null) {
+        break missingId;
+      }
+
+      id = R.id.logo;
+      ImageView logo = rootView.findViewById(id);
+      if (logo == null) {
+        break missingId;
+      }
+
+      id = R.id.swipeLeft;
+      TextView swipeLeft = rootView.findViewById(id);
+      if (swipeLeft == null) {
         break missingId;
       }
 
@@ -134,8 +186,9 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentRegisterBinding((LinearLayout) rootView, btnRegister, etEmail, etName,
-          etPassword, etRepassword, swipeLeft, tvLogo, tvSubtitle);
+      return new FragmentRegisterBinding((RelativeLayout) rootView, btnRegister, elipse, etEmail,
+          etName, etPassword, etRepassword, lineEmail, lineName, linePassword, lineRepassword, logo,
+          swipeLeft, tvSubtitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

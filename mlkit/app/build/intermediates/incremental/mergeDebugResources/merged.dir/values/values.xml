@@ -1214,7 +1214,7 @@
     <string name="start_over">Start over</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="summary_collapsed_preference_list"><ns1:g id="current_items">%1$s</ns1:g>, <ns1:g id="added_items">%2$s</ns1:g></string>
-    <string name="swipe_left_for_register">Swipe Left for Register</string>
+    <string name="swipe_left_for_register">Swipe Left to Register</string>
     <string name="swipe_right_for_login">Swipe Right for Login</string>
     <string name="toggle_turn_off">Back</string>
     <string name="toggle_turn_on">Front</string>

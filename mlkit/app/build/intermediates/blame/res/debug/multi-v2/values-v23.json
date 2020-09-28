@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\7393ddfd3b6d03eb96eaac45a90b000e\\material-1.2.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\01caf3b45b6497c9a91fb65fdbc46fb4\\material-1.2.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,6",
                         "startColumns": "4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\fec80e28b3c01e93c427f3e022950b75\\appcompat-1.2.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\04c75cbb6f47de267432616384384547\\appcompat-1.2.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -34,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\da142cbeb4fb70c9387b40ae16217daf\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\7ecc4bf44df34d572984a6a7c10412f2\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

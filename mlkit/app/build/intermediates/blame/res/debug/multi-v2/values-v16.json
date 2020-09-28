@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\fec80e28b3c01e93c427f3e022950b75\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\04c75cbb6f47de267432616384384547\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\ad923e9bf0e75132fcd54283022a14a1\\core-1.3.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\7a745bd19c984ee7eebeabe133ca38c9\\core-1.3.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
