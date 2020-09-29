@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.firebase.samples.apps.mlkit.LoginFragment">
+
+    <View
+        android:id="@+id/ellipseDarkBlue"
+        android:layout_width="3169dp"
+        android:layout_height="1399dp"
+        android:layout_marginLeft="-865dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-1200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_ellipse_darkblue" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Mark Tan"
+        android:textSize="30sp"
+        android:textColor="@color/dark_blue"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profileBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Culinary Prodigy"
+        android:textSize="15sp"
+        android:textColor="@color/light_orange"
+        android:textStyle="bold" />
+
+</RelativeLayout>
