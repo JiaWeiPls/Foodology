@@ -77,11 +77,19 @@
         android:background="@drawable/btn_custom"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="45dp"
         android:fontFamily="@font/roboto_regular"
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:text="@string/login"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="615dp"
+        android:src="@drawable/ic_google_logo"
+        android:layout_centerHorizontal="true"/>
+
 
     <ImageView
         android:layout_width="30dp"
