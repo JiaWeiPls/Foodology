@@ -48,9 +48,10 @@
   <FrameLayout
       android:id="@+id/controlPanel"
       android:layout_width="match_parent"
-      android:layout_height="100dp"
-      android:layout_alignParentBottom="true"
+      android:layout_height="118dp"
       android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginStart="0dp"
       android:background="#000">
 
     <TextView
@@ -60,20 +61,33 @@
 
     <Button
         android:id="@+id/getImageButton"
-        android:text="Take photo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="25dp"
+        android:text="Take photo" />
 
     <ImageButton
         android:id="@+id/buttonSettlement"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/scan_1"
         android:layout_gravity="center"
+        android:layout_marginTop="-10dp"
+        android:background="@android:color/transparent"
         android:scaleType="center"
-        android:background="@android:color/transparent" />
+        android:src="@drawable/scan_1" />
+
+    <TextView
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSettlement"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Scan Now"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
 
   </FrameLayout>
 
