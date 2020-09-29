@@ -83,6 +83,7 @@
         android:textSize="15sp"
         android:text="@string/login"/>
 
+    <!--
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -100,6 +101,34 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"/>
+    -->
+
+    <!-- Don’t have an account? Sign up with -->
+
+
+    <TextView
+        android:id="@+id/don_t_have_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Don't have an account?"
+        android:textSize="15sp"
+        android:textColor="@color/dark_blue" />
+
+    <TextView
+        android:id="@+id/register_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Register here"
+        android:textSize="15sp"
+        android:textColor="@color/dark_blue" />
 
 
     <ImageView
