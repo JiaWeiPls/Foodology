@@ -1,9 +1,12 @@
 package com.google.firebase.samples.apps.mlkit;
 
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.text.TextUtils;
@@ -21,6 +24,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.samples.apps.mlkit.java.StillImageActivity;
 
 import java.util.concurrent.Executor;
 
@@ -32,96 +36,96 @@ import static android.content.ContentValues.TAG;
  */
 public class RegisterFragment extends Fragment {
 
-    View v;
-    Button btnLogin;
-    TextView btnLostPw,btnRegister;
-    EditText txMail,txPass;
 
+    /** UI Components **/
+    private EditText mUsername;
+    private EditText mPassword;
+    private EditText mEmail;
+    //private View mProgressView;
+    //private View mCreateForm;
+
+    /** Activity callback **/
+    private ActivityCallback mCallback;
+
+    /** Firebase objects **/
     private FirebaseAuth mAuth;
-    private FirebaseUser mUser;
+//    private FirebaseAuth.AuthStateListener mAuthListener;
 
-    public RegisterFragment() {
-        // Required empty public constructor
+    /**
+     * Create a instance of this fragment
+     *
+     * @return fragment instance
+     */
+    public static RegisterFragment newInstance() {
+        return new RegisterFragment();
     }
 
+    /// Lifecycle methods
 
+    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this
-        v = inflater.inflate(R.layout.fragment_login, container, false);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_register, container, false);
 
-        btnLogin = (Button) v.findViewById(R.id.btn_login);
-        btnLostPw =(TextView) v.findViewById(R.id.login_resetPW);
-        btnRegister=(TextView) v.findViewById(R.id.btn_register);
-        txMail=(EditText)v.findViewById(R.id.et_email);
-        txPass=(EditText)v.findViewById(R.id.et_password);
+        mUsername = (EditText) root.findViewById(R.id.et_name);
+        mPassword = (EditText) root.findViewById(R.id.et_password);
+        mEmail = (EditText) root.findViewById(R.id.et_email);
 
+
+        Button createButton = (Button) root.findViewById(R.id.btn_register);
+        createButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                createAccount();
+            }
+        });
 
         mAuth = FirebaseAuth.getInstance();
-        mUser = FirebaseAuth.getInstance().getCurrentUser();
 
-        return v;
+        return root;
     }
 
-    private void createAccount(String email, String password) {
-        Log.d(TAG, "createAccount:" + email);
-        if (!validateForm()) {
-            return;
-        }
-        // [START create_user_with_email]
-        mAuth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener((Executor) this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            Log.d(TAG, "createUserWithEmail:success");
-                            FirebaseUser user = mAuth.getCurrentUser();
+    //@Override
+    //public void onAttach(Context context) {
+    //    super.onAttach(context);
+    //    mCallback = (ActivityCallback) context;
+    //}
 
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(getActivity(), "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
+    //@Override
+    //public void onDetach() {
+    //    super.onDetach();
+    //    mCallback = null;
+    //}
 
-                        }
+    /// Private methods
 
-                        // [START_EXCLUDE]
+    private void createAccount() {
 
-                        // [END_EXCLUDE]
-                    }
-                });
-        // [END create_user_with_email]
+
+        String email = mEmail.getText().toString();
+        String password = mPassword.getText().toString();
+
+        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+
+                if(!task.isSuccessful()) {
+                    //Toast.makeText(getContext(), R.string.error_create_account, Toast.LENGTH_SHORT).show();
+                } else {
+                    Utils.saveLocalUser(getContext(),
+                            mUsername.getText().toString(),
+                            mEmail.getText().toString(),
+                            task.getResult().getUser().getUid());
+
+                    //mCallback.openChat();
+                    Intent intent = new Intent(getActivity(), StillImageActivity.class);
+                    startActivity(intent);
+                }
+
+
+                Utils.closeKeyboard(getContext(), mEmail);
+            }
+        });
     }
 
-    private boolean validateForm() {
-        boolean valid = true;
-
-        String email = txMail.getText().toString();
-        if (TextUtils.isEmpty(email)) {
-            txMail.setError("Required.");
-            valid = false;
-        } else {
-            txMail.setError(null);
-        }
-
-        String password = txPass.getText().toString();
-        if (TextUtils.isEmpty(password)) {
-            txPass.setError("Required.");
-            valid = false;
-        } else {
-            txPass.setError(null);
-        }
-
-        return valid;
-    }
-
-
-    public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.btn_register) {
-            createAccount(txMail.getText().toString(), txPass.getText().toString());
-        }
-    }
 }

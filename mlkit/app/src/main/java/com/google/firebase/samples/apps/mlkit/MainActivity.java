@@ -3,6 +3,7 @@ package com.google.firebase.samples.apps.mlkit;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,9 +21,10 @@ import com.google.firebase.samples.apps.mlkit.java.StillImageActivity;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
 
+    /// Lifecycle methods
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +37,26 @@ public class MainActivity extends AppCompatActivity {
         pagerAdapter.addFragment(new LoginFragment());
         pagerAdapter.addFragment(new RegisterFragment());
         viewPager.setAdapter(pagerAdapter);
-
-
     }
+
+    /// Callback methods
+
+    //@Override
+    //public void openChat() {
+    //    replaceFragment(ChatFragment.newInstance());
+    //}
+
+    //@Override
+    //public void registerAccount() {
+    //    replaceFragment(RegisterFragment.newInstance());
+    //}
+
+    //@Override
+    //public void loginAccount() {
+    //    replaceFragment(LoginFragment.newInstance());
+    //}
+
+    /// Private methods
 
     class AuthenticationPagerAdapter extends FragmentPagerAdapter {
         private ArrayList<Fragment> fragmentList = new ArrayList<>();

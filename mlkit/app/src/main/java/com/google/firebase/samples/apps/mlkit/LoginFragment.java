@@ -1,5 +1,6 @@
 package com.google.firebase.samples.apps.mlkit;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -7,16 +8,20 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
@@ -34,148 +39,135 @@ import static android.content.ContentValues.TAG;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class LoginFragment extends Fragment implements View.OnClickListener {
+public class LoginFragment extends Fragment {
 
-    View v;
-    Button btnLogin;
-    TextView btnLostPw,btnRegister;
-    EditText txMail,txPass;
 
+    /** UI Components **/
+    private EditText mEmail;
+    private EditText mPassword;
+
+
+    /** Activity callback **/
+    private ActivityCallback mCallback;
+
+    /** Firebase objects **/
     private FirebaseAuth mAuth;
-    private FirebaseUser mUser;
 
-    public LoginFragment() {
-        // Required empty public constructor
+    /**
+     * Create a instance of this fragment
+     *
+     * @return fragment instance
+     */
+    public static LoginFragment newInstance() {
+        return new LoginFragment();
     }
 
+    /// Lifecycle methods
+
+    @Nullable
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_login, container, false);
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this
-        v = inflater.inflate(R.layout.fragment_login, container, false);
+        mEmail = (EditText) root.findViewById(R.id.et_email);
+        mPassword = (EditText) root.findViewById(R.id.et_password);
 
-        btnLogin = (Button) v.findViewById(R.id.btn_login);
-        btnLostPw =(TextView) v.findViewById(R.id.login_resetPW);
-        btnRegister=(TextView) v.findViewById(R.id.btn_register);
-        txMail=(EditText)v.findViewById(R.id.et_email);
-        txPass=(EditText)v.findViewById(R.id.et_password);
+        final Button signInButton = (Button) root.findViewById(R.id.btn_login);
+        signInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Utils.closeKeyboard(getContext(), signInButton);
+                attemptLogin();
+            }
+        });
 
-        //btnRegister.setOnClickListener(this);
-        //btnLostPw.setOnClickListener(this);
-        //btnLogin.setOnClickListener(this);
+        //final Button createAccount = (Button) root.findViewById(R.id.btn_register);
+        //createAccount.setOnClickListener(new View.OnClickListener() {
+        //    @Override
+        //    public void onClick(View view) {
+        //        Utils.closeKeyboard(getContext(), createAccount);
+        //        //mCallback.registerAccount();
+        //    }
+        //});
+
+
 
         mAuth = FirebaseAuth.getInstance();
-        mUser = FirebaseAuth.getInstance().getCurrentUser();
+        Utils.closeKeyboard(getContext(), mEmail);
 
-        return v;
+        return root;
     }
 
-    // [START on_start_check_user]
-    @Override
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
+    //@Override
+    //public void onAttach(Context context) {
+    //    super.onAttach(context);
+    //    //mCallback = (ActivityCallback) context;
+    //}
 
-    }
-    // [END on_start_check_user]
+    //@Override
+    //public void onDetach() {
+    //    super.onDetach();
+    //    mCallback = null;
+    //}
 
-    private void signIn(String email, String password) {
-        Log.d(TAG, "signIn:" + email);
-        if (!validateForm()) {
+    /// Private methods
+
+    private void attemptLogin() {
+
+        // Reset errors.
+        mEmail.setError(null);
+        mPassword.setError(null);
+
+        // Store values at the time of the login attempt.
+        String username = mEmail.getText().toString();
+        String password = mPassword.getText().toString();
+
+        // Check for a valid email address.
+        if (TextUtils.isEmpty(username)) {
+            //mEmail.setError(getString(R.string.error_empty));
+            mEmail.requestFocus();
             return;
         }
 
+        if (TextUtils.isEmpty(password)) {
+            //mPassword.setError(getString(R.string.error_password));
+            mPassword.requestFocus();
+            return;
+        }
 
-
-        // [START sign_in_with_email]
-        mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener((Executor) this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            Log.d(TAG, "signInWithEmail:success");
-                            FirebaseUser user = mAuth.getCurrentUser();
-
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w(TAG, "signInWithEmail:failure", task.getException());
-                            Toast.makeText(getActivity(), "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-
-                            // [START_EXCLUDE]
-
-                            // [END_EXCLUDE]
-                        }
-
-
-
-                        // [END_EXCLUDE]
-                    }
-                });
-        // [END sign_in_with_email]
+        login();
     }
 
-    private void signOut() {
-        mAuth.signOut();
-
-    }
+    private void login() {
 
 
-    private void reload() {
-        mAuth.getCurrentUser().reload().addOnCompleteListener(new OnCompleteListener<Void>() {
+        String email = mEmail.getText().toString();
+        String password = mPassword.getText().toString();
+
+        mAuth.signInWithEmailAndPassword(email, password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if (task.isSuccessful()) {
-                    Toast.makeText(getActivity(),
-                            "Reload successful!",
-                            Toast.LENGTH_SHORT).show();
-                } else {
-                    Log.e(TAG, "reload", task.getException());
-                    Toast.makeText(getActivity(),
-                            "Failed to reload user.",
-                            Toast.LENGTH_SHORT).show();
+            public void onSuccess(AuthResult authResult) {
+                if (mCallback != null) {
+                    Utils.saveLocalUser(getContext(), Constants.DEFAULT_USER,
+                            mEmail.getText().toString(),
+                            authResult.getUser().getUid());
+
+
+                    //mCallback.openChat();
+                    Intent intent = new Intent(getActivity(), StillImageActivity.class);
+                    startActivity(intent);
                 }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+                Toast.makeText(getContext(), e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
             }
         });
     }
 
-    private boolean validateForm() {
-        boolean valid = true;
 
-        String email = txMail.getText().toString();
-        if (TextUtils.isEmpty(email)) {
-            txMail.setError("Required.");
-            valid = false;
-        } else {
-            txMail.setError(null);
-        }
-
-        String password = txPass.getText().toString();
-        if (TextUtils.isEmpty(password)) {
-            txPass.setError("Required.");
-            valid = false;
-        } else {
-            txPass.setError(null);
-        }
-
-        return valid;
-    }
-
-
-    @Override
-    public void onClick(View v) {
-        int i = v.getId();
-        if (i == R.id.btn_login) {
-            signIn(txMail.getText().toString(),txPass.getText().toString());
-        }
-    }
 }
 
 
