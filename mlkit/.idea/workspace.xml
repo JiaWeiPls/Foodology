@@ -6,10 +6,10 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb5e405c-18cf-4c7a-a617-087b938e5b22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_ellipse_darkblue.xml" afterDir="false" />
+    <list default="true" id="bb5e405c-18cf-4c7a-a617-087b938e5b22" name="Default Changelist" comment="Dark Blue Ellipse XML">
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,12 +137,20 @@
       <option name="project" value="LOCAL" />
       <updated>1601390023034</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Dark Blue Ellipse XML">
+      <created>1601395774619</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601395774620</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Redirect to Register Page message" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redirect to Register Page message" />
+    <MESSAGE value="Dark Blue Ellipse XML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dark Blue Ellipse XML" />
   </component>
   <component name="WindowStateProjectService">
     <state x="777" y="58" key="#app" timestamp="1601274605801">
@@ -158,10 +166,10 @@
     </state>
     <state x="301" y="215" key="AndroidCreateResourceFileDialog/0.0.1440.920@0.0.1440.920" timestamp="1601385417405" />
     <state x="325" y="220" key="AndroidCreateResourceFileDialog/0.23.1440.823@0.23.1440.823" timestamp="1601395276483" />
-    <state x="329" y="23" key="CommitChangelistDialog2" timestamp="1601395748579">
+    <state x="329" y="23" key="CommitChangelistDialog2" timestamp="1601396287722">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="329" y="23" key="CommitChangelistDialog2/0.23.1440.823@0.23.1440.823" timestamp="1601395748579" />
+    <state x="329" y="23" key="CommitChangelistDialog2/0.23.1440.823@0.23.1440.823" timestamp="1601396287722" />
     <state x="501" y="215" key="FileChooserDialogImpl" timestamp="1601381762174">
       <screen x="0" y="0" width="1440" height="920" />
     </state>

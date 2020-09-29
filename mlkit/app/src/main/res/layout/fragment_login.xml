@@ -107,7 +107,7 @@
 
 
     <TextView
-        android:id="@+id/don_t_have_"
+        android:id="@+id/dontHave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -119,7 +119,7 @@
         android:textColor="@color/dark_blue" />
 
     <TextView
-        android:id="@+id/register_here"
+        android:id="@+id/registerHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
