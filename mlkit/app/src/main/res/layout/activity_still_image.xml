@@ -49,12 +49,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="25dp" />
 
-    <Button
-        android:id="@+id/snapButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="ic_scan_1"/>
+
 
   </FrameLayout>
 

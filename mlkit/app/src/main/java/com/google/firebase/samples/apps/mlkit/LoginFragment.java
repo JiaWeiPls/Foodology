@@ -65,9 +65,9 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         txMail=(EditText)v.findViewById(R.id.et_email);
         txPass=(EditText)v.findViewById(R.id.et_password);
 
-        btnRegister.setOnClickListener(this);
-        btnLostPw.setOnClickListener(this);
-        btnLogin.setOnClickListener(this);
+        //btnRegister.setOnClickListener(this);
+        //btnLostPw.setOnClickListener(this);
+        //btnLogin.setOnClickListener(this);
 
         mAuth = FirebaseAuth.getInstance();
         mUser = FirebaseAuth.getInstance().getCurrentUser();

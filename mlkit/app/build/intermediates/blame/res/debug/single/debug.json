@@ -108,6 +108,10 @@
         "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
+        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_scan_1.xml.flat",
+        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_scan_1.xml"
+    },
+    {
         "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },

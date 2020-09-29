@@ -1688,6 +1688,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_scan_1
 drawable ic_settings_white_24dp
 drawable login_line
 drawable material_ic_calendar_black_24dp
