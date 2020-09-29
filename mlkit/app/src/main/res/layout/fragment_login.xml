@@ -86,14 +86,6 @@
     <ImageView
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginTop="615dp"
-        android:src="@drawable/ic_google_logo"
-        android:layout_centerHorizontal="true"/>
-
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
         android:src="@drawable/ic_arrow_right"
         android:layout_above="@id/swipeRight"
         android:layout_centerHorizontal="true"/>
