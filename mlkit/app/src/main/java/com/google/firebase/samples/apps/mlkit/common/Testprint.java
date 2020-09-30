@@ -17,9 +17,7 @@ public class Testprint {
     public static String Second_result(){
         return Second_result;
     }
-    public static String Confidence_result1(){
-        return Confidence_result1;
-    }
+    public static String Confidence_result1(){ return Confidence_result1; }
     public static String Confidence_result2(){
         return Confidence_result2;
     }
@@ -31,9 +29,9 @@ public class Testprint {
         Second_result = string;
     }
     public static void add_Confidence_result1(Float C1){
-        float Confidence_result1 = C1;
+        Confidence_result1 = String.valueOf(C1);
     }
     public static void add_Confidence_result2(Float C2){
-        float Confidence_result2 = C2;
+        Confidence_result2 = String.valueOf(C2);
     }
 }
