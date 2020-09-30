@@ -266,11 +266,11 @@ public class StillImageActivity extends AppCompatActivity {
 // CloudImageLabelingProcessor > Testprint > StillimageActivity.
 
   private void testprint(){
+    String first_result = Testprint.First_result();
+    String second_result = Testprint.Second_result();
 
-
-    String text = Testprint.Testprintout();
     Context context = getApplicationContext();
-    CharSequence out = text;
+    CharSequence out = first_result + "and" + second_result;
     int duration = Toast.LENGTH_LONG;
 
     Toast toast = Toast.makeText(context, out, duration);
