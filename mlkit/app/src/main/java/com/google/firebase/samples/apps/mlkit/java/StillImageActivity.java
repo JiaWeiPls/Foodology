@@ -270,7 +270,7 @@ public class StillImageActivity extends AppCompatActivity {
     String second_result = Testprint.Second_result();
 
     Context context = getApplicationContext();
-    CharSequence out = first_result + "and" + second_result;
+    CharSequence out = first_result + " and " + second_result;
     int duration = Toast.LENGTH_LONG;
 
     Toast toast = Toast.makeText(context, out, duration);

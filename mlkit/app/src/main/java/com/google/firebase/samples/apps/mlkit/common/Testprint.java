@@ -24,16 +24,16 @@ public class Testprint {
         return Confidence_result2;
     }
 
-    public static void add_First_result(String First_result){
-        First_result = First_result;
+    public static void add_First_result(String string){
+        First_result = string;
     }
-    public static void add_Second_result(String Second_result){
-        Second_result = Second_result;
+    public static void add_Second_result(String string){
+        Second_result = string;
     }
-    public static void add_Confidence_result1(Float Confidence_result1){
-        Confidence_result1 = Confidence_result1;
+    public static void add_Confidence_result1(Float C1){
+        float Confidence_result1 = C1;
     }
-    public static void add_Confidence_result2(Float Confidence_result2){
-        Confidence_result2 = Confidence_result2;
+    public static void add_Confidence_result2(Float C2){
+        float Confidence_result2 = C2;
     }
 }
