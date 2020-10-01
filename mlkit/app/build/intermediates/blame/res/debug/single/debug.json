@@ -1,246 +1,246 @@
 [
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\font_indigo_daisy.ttf.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\font\\indigo_daisy.ttf"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_walpaper.jpg.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\walpaper.jpg"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_elipse_white.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_elipse_white.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_scan_1.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\scan_1.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\menu_still_image_menu.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\menu\\still_image_menu.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_elipse_white.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_elipse_white.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_profile.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_elipse_white.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_elipse_white.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_elipse.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_elipse.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_settings_white_24dp.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-hdpi\\ic_settings_white_24dp.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_settings_white_24dp.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-hdpi\\ic_settings_white_24dp.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_profile.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_foodology_removebg_preview__1_.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\foodology_removebg_preview__1_.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_elipse_white.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_elipse_white.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_elipse.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_elipse.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_elipse.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_elipse.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_elipse_white.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_elipse_white.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login_line.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\login_line.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_elipse.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_elipse.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_scan_1.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_scan_1.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_settings_white_24dp.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-xxhdpi\\ic_settings_white_24dp.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_et_custom.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\et_custom.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_elipse_white.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_elipse_white.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_elipse.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_elipse.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_elipse.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_elipse.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_foodology_removebg_preview__1_.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\foodology_removebg_preview__1_.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_elipse.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_elipse.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login_line.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\login_line.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\fragment_register.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_elipse.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_elipse.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_left.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_arrow_left.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_settings_white_24dp.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-mdpi\\ic_settings_white_24dp.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_settings_white_24dp.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_settings_white_24dp.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_settings_white_24dp.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_settings_white_24dp.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_person_black_24dp.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_person_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_person_black_24dp.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_person_black_24dp.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_still_image.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\activity_still_image.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_right.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_arrow_right.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_elipse_white.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_elipse_white.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_elipse_white.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_elipse_white.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_et_custom.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\et_custom.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\menu_camera_button_menu.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\menu\\camera_button_menu.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\xml_preference_still_image.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\xml\\preference_still_image.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_elipse_white.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_elipse_white.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_elipse_white.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_elipse_white.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_selector_svgbutton.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\selector_svgbutton.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_scan_1.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\scan_1.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email_black_24dp.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_email_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_elipse_white.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_elipse_white.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_settings_white_24dp.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-xxhdpi\\ic_settings_white_24dp.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\menu_camera_button_menu.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\menu\\camera_button_menu.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_local_phone_black_24dp.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_local_phone_black_24dp.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_left.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_arrow_left.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_custom.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\btn_custom.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\font_roboto_regular.ttf.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\font\\roboto_regular.ttf"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_elipse_white.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_elipse_white.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_still_image.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\activity_still_image.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_settings_white_24dp.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-xhdpi\\ic_settings_white_24dp.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_elipse_white.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_elipse_white.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_register.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\fragment_register.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\font_roboto_regular.ttf.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\font\\roboto_regular.ttf"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_right.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_arrow_right.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_walpaper.jpg.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\walpaper.jpg"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_local_phone_black_24dp.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_local_phone_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\activity_settings.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\xml_preference_still_image.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\xml\\preference_still_image.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_scan_1.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_scan_1.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_settings_white_24dp.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-mdpi\\ic_settings_white_24dp.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\font_indigo_daisy.ttf.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\font\\indigo_daisy.ttf"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\menu_still_image_menu.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\menu\\still_image_menu.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_elipse.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_elipse.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_elipse.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_elipse.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_elipse.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_elipse.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_elipse.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_elipse.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_custom.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\btn_custom.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_elipse.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_elipse.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_selector_svgbutton.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\selector_svgbutton.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email_black_24dp.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable\\ic_email_black_24dp.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_settings_white_24dp.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\drawable-xhdpi\\ic_settings_white_24dp.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_elipse_white.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_elipse_white.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\fragment_login.xml"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_elipse.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_elipse.png"
     },
     {
-        "merged": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_login.xml.flat",
-        "source": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\layout\\fragment_login.xml"
+        "merged": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     }
 ]

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+            "outputFile": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw360dp-v13\\values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\777f93d4c2c601fcddf7c759cfea797b\\preference-1.1.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+                    "source": "C:\\Users\\zhuha\\.gradle\\caches\\transforms-2\\files-2.1\\777f93d4c2c601fcddf7c759cfea797b\\preference-1.1.1\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

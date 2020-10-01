@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "C:\\Users\\zhuha\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\04c75cbb6f47de267432616384384547\\appcompat-1.2.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\zhuha\\.gradle\\caches\\transforms-2\\files-2.1\\04c75cbb6f47de267432616384384547\\appcompat-1.2.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
