@@ -15,6 +15,7 @@
       android:layout_height="78dp"
       android:layout_alignParentTop="true"
       android:scaleY="-1"
+      android:layout_marginTop="-2dp"
       android:src="@drawable/ic_elipse_white" />
 
   <ImageView
