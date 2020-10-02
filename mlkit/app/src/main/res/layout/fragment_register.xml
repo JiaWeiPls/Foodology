@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.google.firebase.samples.apps.mlkit.RegisterFragment">
+    tools:context="com.google.firebase.samples.apps.mlkit.Register">
 
     <ImageView
         android:id="@+id/logo"
@@ -119,16 +119,16 @@
         android:background="@drawable/login_line" />
 
     <EditText
-        android:id="@+id/et_repassword"
+        android:id="@+id/et_phone"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="@string/re_type_password"
+        android:hint="Phone Number"
         android:textColorHint="@color/dark_blue"
         android:layout_marginLeft="60dp"
         android:layout_marginRight="60dp"
         android:padding="15dp"
         android:fontFamily="@font/roboto_regular"
-        android:inputType="textPassword"
+        android:inputType="textPhonetic"
         android:layout_below="@id/et_password"
         android:background="@drawable/et_custom"
         android:layout_marginTop="5dp"
@@ -136,13 +136,13 @@
         android:textSize="15sp" />
 
     <View
-        android:id="@+id/line_repassword"
+        android:id="@+id/line_phone"
         android:layout_width="918dp"
         android:layout_height="1dp"
         android:layout_marginLeft="75dp"
         android:layout_marginRight="75dp"
         android:layout_centerInParent="true"
-        android:layout_below="@id/et_repassword"
+        android:layout_below="@id/et_phone"
         android:layout_marginTop="-5dp"
         android:background="@drawable/login_line" />
 
@@ -157,26 +157,34 @@
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:background="@drawable/btn_custom"
-        android:layout_below="@id/et_repassword"
+        android:layout_below="@id/et_phone"
         android:layout_marginTop="20dp"
         android:text="@string/register"/>
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_above="@id/swipeLeft"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_arrow_left" />
 
-    <TextView
+    <Button
         android:id="@+id/swipeLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_custom"
+        android:text="Back To Login"
+        android:textSize="10sp"
+        android:textColor="@android:color/white"
         android:fontFamily="@font/roboto_regular"
-        android:text="@string/swipe_right_for_login"
-        android:textSize="15sp" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/swipeLeft"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/btn_custom"
+        android:visibility="invisible" />
 
 </RelativeLayout>
