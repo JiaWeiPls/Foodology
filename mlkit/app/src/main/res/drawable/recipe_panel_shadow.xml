@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- drawable/panel.xml -->
+<vector
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aapt="http://schemas.android.com/aapt"
+android:width="640dp"
+android:height="140dp"
+android:viewportWidth="640"
+android:viewportHeight="140"
+    >
+
+<group>
+
+    <clip-path
+        android:pathData="M50 0H590C617.614 0 640 22.3858 640 50V90C640 117.614 617.614 140 590 140H50C22.3858 140 0 117.614 0 90V50C0 22.3858 22.3858 0 50 0Z"
+        />
+
+    <path
+        android:pathData="M0 0V140H640V0"
+        android:fillColor="#5e5e5e"
+        />
+
+</group>
+
+</vector>

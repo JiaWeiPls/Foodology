@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.google.firebase.samples.apps.mlkit.LoginFragment">
+    tools:context="com.google.firebase.samples.apps.mlkit.Login">
 
     <ImageView
         android:id="@+id/elipse"
@@ -74,32 +74,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_password"
-        android:background="@drawable/btn_custom"
+        android:background="@drawable/btn_custom_login"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginTop="45dp"
         android:fontFamily="@font/roboto_regular"
-        android:textColor="@android:color/white"
+        android:textColor="@color/dark_blue"
         android:textSize="15sp"
         android:text="@string/login"/>
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_arrow_right"
-        android:layout_above="@id/swipeRight"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView
+    <Button
         android:id="@+id/swipeRight"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/swipe_left_for_register"
+        android:layout_below="@id/btn_login"
+        android:background="@drawable/btn_custom"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Register"
         android:textSize="15sp"
+        android:textColor="@android:color/white"
         android:fontFamily="@font/roboto_regular"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"/>
+/>
 
 
     <ImageView
@@ -138,6 +135,17 @@
         android:textColor="#8024415E"
         android:textSize="12sp" />
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/btn_custom"
+        android:visibility="invisible" />
 
 
 </RelativeLayout>

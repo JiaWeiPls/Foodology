@@ -99,11 +99,15 @@ public class CloudImageLabelingProcessor
         graphicOverlay.postInvalidate();
 
 // Step for passing out the detected label to Testprint
-        String text = label.getText();
+        String First_result = label.getText();
+        String Second_result = Second.getText();
         //String entityId = label.getEntityId();
-        //float confidence = label.getConfidence();
-        Testprint.add(text);
-
+        float confidence1 = label.getConfidence();
+        float confidence2 = Second.getConfidence();
+        Testprint.add_First_result(First_result);
+        Testprint.add_Second_result(Second_result);
+        Testprint.add_Confidence_result1(confidence1);
+        Testprint.add_Confidence_result2(confidence2);
 
         //DatabaseReference rootRef, demoRef;
         //rootRef = FirebaseDatabase.getInstance().getReference();

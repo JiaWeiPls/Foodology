@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -46,7 +47,10 @@ public final class FragmentLoginBinding implements ViewBinding {
   public final ImageView logo;
 
   @NonNull
-  public final TextView swipeRight;
+  public final ProgressBar progressBar;
+
+  @NonNull
+  public final Button swipeRight;
 
   @NonNull
   public final TextView tvSubtitle;
@@ -54,7 +58,8 @@ public final class FragmentLoginBinding implements ViewBinding {
   private FragmentLoginBinding(@NonNull RelativeLayout rootView, @NonNull Button btnLogin,
       @NonNull ImageView elipse, @NonNull EditText etEmail, @NonNull EditText etPassword,
       @NonNull View lineEmail, @NonNull View linePassword, @NonNull Button loginResetPW,
-      @NonNull ImageView logo, @NonNull TextView swipeRight, @NonNull TextView tvSubtitle) {
+      @NonNull ImageView logo, @NonNull ProgressBar progressBar, @NonNull Button swipeRight,
+      @NonNull TextView tvSubtitle) {
     this.rootView = rootView;
     this.btnLogin = btnLogin;
     this.elipse = elipse;
@@ -64,6 +69,7 @@ public final class FragmentLoginBinding implements ViewBinding {
     this.linePassword = linePassword;
     this.loginResetPW = loginResetPW;
     this.logo = logo;
+    this.progressBar = progressBar;
     this.swipeRight = swipeRight;
     this.tvSubtitle = tvSubtitle;
   }
@@ -143,8 +149,14 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progressBar;
+      ProgressBar progressBar = rootView.findViewById(id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
       id = R.id.swipeRight;
-      TextView swipeRight = rootView.findViewById(id);
+      Button swipeRight = rootView.findViewById(id);
       if (swipeRight == null) {
         break missingId;
       }
@@ -156,7 +168,8 @@ public final class FragmentLoginBinding implements ViewBinding {
       }
 
       return new FragmentLoginBinding((RelativeLayout) rootView, btnLogin, elipse, etEmail,
-          etPassword, lineEmail, linePassword, loginResetPW, logo, swipeRight, tvSubtitle);
+          etPassword, lineEmail, linePassword, loginResetPW, logo, progressBar, swipeRight,
+          tvSubtitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
