@@ -115,4 +115,13 @@
   <string name="pref_entries_automl_models_remote">Remote</string>
   <string name="pref_entries_automl_models_local">Local</string>
   <string name="pref_key_live_preview_automl_remote_model_choices" translatable="false">lparmc</string>
+    <string name="hi_mark">Hi Mark!</string>
+    <string name="let_s_discover_recipes">Let\'s discover recipes</string>
+    <string name="what_s_in_your_fridge">What\'s in your fridge?</string>
+  <string name="what_s_for_lunch">What\'s for lunch?</string>
+  <string name="Search">Search</string>
+    <string name="see_all">See All</string>
+    <string name="See_All">See All</string>
+  <string name="see_all">See All</string>
+    <string name="search_recipes">Search Recipes</string>
 </resources>
