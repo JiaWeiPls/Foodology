@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -23,7 +24,13 @@ public final class ActivityStillImageBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final ImageButton buttonSettlement;
+
+  @NonNull
   public final FrameLayout controlPanel;
+
+  @NonNull
+  public final ImageView elipse;
 
   @NonNull
   public final RelativeLayout fireTopLayout;
@@ -32,24 +39,36 @@ public final class ActivityStillImageBinding implements ViewBinding {
   public final Button getImageButton;
 
   @NonNull
+  public final ImageView logo;
+
+  @NonNull
   public final GraphicOverlay previewOverlay;
 
   @NonNull
   public final ImageView previewPane;
 
   @NonNull
+  public final TextView scan;
+
+  @NonNull
   public final TextView txtDisplayID;
 
   private ActivityStillImageBinding(@NonNull RelativeLayout rootView,
-      @NonNull FrameLayout controlPanel, @NonNull RelativeLayout fireTopLayout,
-      @NonNull Button getImageButton, @NonNull GraphicOverlay previewOverlay,
-      @NonNull ImageView previewPane, @NonNull TextView txtDisplayID) {
+      @NonNull ImageButton buttonSettlement, @NonNull FrameLayout controlPanel,
+      @NonNull ImageView elipse, @NonNull RelativeLayout fireTopLayout,
+      @NonNull Button getImageButton, @NonNull ImageView logo,
+      @NonNull GraphicOverlay previewOverlay, @NonNull ImageView previewPane,
+      @NonNull TextView scan, @NonNull TextView txtDisplayID) {
     this.rootView = rootView;
+    this.buttonSettlement = buttonSettlement;
     this.controlPanel = controlPanel;
+    this.elipse = elipse;
     this.fireTopLayout = fireTopLayout;
     this.getImageButton = getImageButton;
+    this.logo = logo;
     this.previewOverlay = previewOverlay;
     this.previewPane = previewPane;
+    this.scan = scan;
     this.txtDisplayID = txtDisplayID;
   }
 
@@ -80,9 +99,21 @@ public final class ActivityStillImageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.buttonSettlement;
+      ImageButton buttonSettlement = rootView.findViewById(id);
+      if (buttonSettlement == null) {
+        break missingId;
+      }
+
       id = R.id.controlPanel;
       FrameLayout controlPanel = rootView.findViewById(id);
       if (controlPanel == null) {
+        break missingId;
+      }
+
+      id = R.id.elipse;
+      ImageView elipse = rootView.findViewById(id);
+      if (elipse == null) {
         break missingId;
       }
 
@@ -91,6 +122,12 @@ public final class ActivityStillImageBinding implements ViewBinding {
       id = R.id.getImageButton;
       Button getImageButton = rootView.findViewById(id);
       if (getImageButton == null) {
+        break missingId;
+      }
+
+      id = R.id.logo;
+      ImageView logo = rootView.findViewById(id);
+      if (logo == null) {
         break missingId;
       }
 
@@ -106,14 +143,21 @@ public final class ActivityStillImageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.scan;
+      TextView scan = rootView.findViewById(id);
+      if (scan == null) {
+        break missingId;
+      }
+
       id = R.id.txtDisplayID;
       TextView txtDisplayID = rootView.findViewById(id);
       if (txtDisplayID == null) {
         break missingId;
       }
 
-      return new ActivityStillImageBinding((RelativeLayout) rootView, controlPanel, fireTopLayout,
-          getImageButton, previewOverlay, previewPane, txtDisplayID);
+      return new ActivityStillImageBinding((RelativeLayout) rootView, buttonSettlement,
+          controlPanel, elipse, fireTopLayout, getImageButton, logo, previewOverlay, previewPane,
+          scan, txtDisplayID);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

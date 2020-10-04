@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    tools:context="com.google.firebase.samples.apps.mlkit.MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--orange, blue top background-->
+    <ImageView
+        android:id="@+id/ic_top"
+        android:layout_width="450dp"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_top"/>
+
+    <!--icon base shape 1-->
+    <View
+        android:id="@+id/ic_icon_base"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="310dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/ic_icon_base" />
+
+    <!--icon base shape 2-->
+    <View
+        android:id="@+id/ic_icon_base"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="310dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/ic_icon_base" />
+
+    <!--icon base shape 3-->
+    <View
+        android:id="@+id/ic_icon_base"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="310dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/ic_icon_base" />
+
+    <!--icon base shape 4-->
+    <View
+        android:id="@+id/ic_icon_base"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="350dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginBottom="310dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/ic_icon_base" />
+
+    <!--recipe box 1-->
+    <View
+        android:id="@+id/ic_recipe_box"
+        android:layout_width="345dp"
+        android:layout_height="464dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="230dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="470dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/ic_recipe_box" />
+
+    <!--recipe box 2-->
+    <View
+        android:id="@+id/ic_recipe_box"
+        android:layout_width="345dp"
+        android:layout_height="464dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="86dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="470dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/ic_recipe_box" />
+
+    <!--recipe box 3-->
+    <View
+        android:id="@+id/ic_recipe_box"
+        android:layout_width="345dp"
+        android:layout_height="464dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="325dp"
+        android:layout_marginEnd="-65dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="470dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/ic_recipe_box" />
+
+    <!--bottom dock base-->
+    <ImageView
+        android:id="@+id/ic_dock_base"
+        android:layout_width="800dp"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-15dp"
+        android:layout_marginEnd="-15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="650dp"
+        android:src="@drawable/ic_dock_base"/>
+
+    <!--dock scan-->
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="190dp"
+        android:background="@drawable/ic_scan_icon"
+        android:layout_marginTop="685dp" />
+
+    <!--dock home-->
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/ic_dock_home"
+        android:layout_marginTop="685dp" />
+
+    <!--dock profile-->
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/ic_dock_profile"
+        android:layout_marginTop="690dp" />
+
+    <!--dock forum-->
+    <Button
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="280dp"
+        android:background="@drawable/ic_dock_forum"
+        android:layout_marginTop="690dp" />
+
+    <!--dock recipe-->
+    <Button
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="360dp"
+        android:background="@drawable/ic_dock_add_recipe"
+        android:layout_marginTop="692dp" />
+
+    <!--logo top left-->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-145dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/foodology_removebg_preview__1_" />
+
+    <!-- Hi User-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@android:color/white"
+        android:text="@string/hi_mark"
+        android:textSize="20sp" />
+
+    <!--BOLD Lets discover recipes-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@android:color/white"
+        android:text="@string/let_s_discover_recipes"
+        android:textSize="25sp" />
+
+    <!--BOLD What'sin your fridge?-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@android:color/black"
+        android:text="@string/what_s_in_your_fridge"
+        android:textSize="18sp" />
+
+    <!--BOLD What's for lunch?-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="435dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@android:color/black"
+        android:text="@string/what_s_for_lunch"
+        android:textSize="18sp" />
+
+    <!--See all Button 1-->
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="310dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="15sp"
+        android:background="@drawable/btn_see_all"
+        android:layout_marginTop="312dp"
+        android:text="@string/See_All"/>
+
+    <!--See all Button 2-->
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="310dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="15sp"
+        android:background="@drawable/btn_see_all"
+        android:layout_marginTop="436dp"
+        android:text="@string/See_All"/>
+
+    <!--fried rice + calorie + photo 1-->
+    <Button
+        android:layout_width="95dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="65dp"
+        android:background="@drawable/ic_friedrice"
+        android:layout_marginTop="500dp" />
+
+    <ImageButton
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-90dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/btn_see_all"
+        android:src="@drawable/friedrice" />
+
+    <!--fried rice + calorie + photo2-->
+    <Button
+        android:layout_width="95dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="205dp"
+        android:background="@drawable/ic_friedrice"
+        android:layout_marginTop="500dp" />
+
+    <ImageButton
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/btn_see_all"
+        android:src="@drawable/friedrice" />
+
+    <!--fried rice + calorie + photo3-->
+    <Button
+        android:layout_width="95dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="355dp"
+        android:layout_marginRight="-70dp"
+        android:background="@drawable/ic_friedrice"
+        android:layout_marginTop="500dp" />
+
+    <ImageButton
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="365dp"
+        android:layout_marginEnd="-30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/btn_see_all"
+        android:src="@drawable/friedrice" />
+
+    <!-- search text to type-->
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="68dp"
+        android:hint="@string/search_recipes"
+        android:gravity="center"
+        android:textColorHint="@color/blue_grey_400"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:clipToPadding="false"
+        android:elevation="100dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/ic_search_rectangle"
+        android:layout_marginTop="225dp"
+        android:textColor="@color/blue_grey_400"
+        android:textSize="18sp" />
+
+    <!--egg-->
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-115dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="360dp"
+        android:src="@drawable/egg" />
+
+    <!--chicken-->
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="360dp"
+        android:src="@drawable/chicken" />
+
+    <!--watermelon-->
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="360dp"
+        android:src="@drawable/watermelon" />
+
+    <!--springonion-->
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="360dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="360dp"
+        android:src="@drawable/springonion" />
+
+    <!--profile-->
+    <ImageButton
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/btn_see_all"
+        android:src="@drawable/profile_pic" />
+
+</RelativeLayout>
+
+
+

@@ -5,13 +5,33 @@ package com.google.firebase.samples.apps.mlkit.common;
 public class Testprint {
 
 
-    private static String Text_import;
+    private static String First_result;
+    private static String Second_result;
+    private static String Confidence_result1;
+    private static String Confidence_result2;
     public Testprint(){
     }
-    public static String Testprintout(){
-        return Text_import;
+    public static String First_result(){
+        return First_result;
     }
-    public static void add(String string){
-        Text_import = string;
+    public static String Second_result(){
+        return Second_result;
+    }
+    public static String Confidence_result1(){ return Confidence_result1; }
+    public static String Confidence_result2(){
+        return Confidence_result2;
+    }
+
+    public static void add_First_result(String string){
+        First_result = string;
+    }
+    public static void add_Second_result(String string){
+        Second_result = string;
+    }
+    public static void add_Confidence_result1(Float C1){
+        Confidence_result1 = String.valueOf(C1);
+    }
+    public static void add_Confidence_result2(Float C2){
+        Confidence_result2 = String.valueOf(C2);
     }
 }
