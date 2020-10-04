@@ -24,7 +24,10 @@ public final class ActivityStillImageBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final ImageButton buttonSettlement;
+  public final ImageButton buttonImport;
+
+  @NonNull
+  public final ImageButton buttonScan;
 
   @NonNull
   public final FrameLayout controlPanel;
@@ -37,6 +40,9 @@ public final class ActivityStillImageBinding implements ViewBinding {
 
   @NonNull
   public final Button getImageButton;
+
+  @NonNull
+  public final TextView importText;
 
   @NonNull
   public final ImageView logo;
@@ -54,17 +60,19 @@ public final class ActivityStillImageBinding implements ViewBinding {
   public final TextView txtDisplayID;
 
   private ActivityStillImageBinding(@NonNull RelativeLayout rootView,
-      @NonNull ImageButton buttonSettlement, @NonNull FrameLayout controlPanel,
-      @NonNull ImageView elipse, @NonNull RelativeLayout fireTopLayout,
-      @NonNull Button getImageButton, @NonNull ImageView logo,
-      @NonNull GraphicOverlay previewOverlay, @NonNull ImageView previewPane,
-      @NonNull TextView scan, @NonNull TextView txtDisplayID) {
+      @NonNull ImageButton buttonImport, @NonNull ImageButton buttonScan,
+      @NonNull FrameLayout controlPanel, @NonNull ImageView elipse,
+      @NonNull RelativeLayout fireTopLayout, @NonNull Button getImageButton,
+      @NonNull TextView importText, @NonNull ImageView logo, @NonNull GraphicOverlay previewOverlay,
+      @NonNull ImageView previewPane, @NonNull TextView scan, @NonNull TextView txtDisplayID) {
     this.rootView = rootView;
-    this.buttonSettlement = buttonSettlement;
+    this.buttonImport = buttonImport;
+    this.buttonScan = buttonScan;
     this.controlPanel = controlPanel;
     this.elipse = elipse;
     this.fireTopLayout = fireTopLayout;
     this.getImageButton = getImageButton;
+    this.importText = importText;
     this.logo = logo;
     this.previewOverlay = previewOverlay;
     this.previewPane = previewPane;
@@ -99,9 +107,15 @@ public final class ActivityStillImageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.buttonSettlement;
-      ImageButton buttonSettlement = rootView.findViewById(id);
-      if (buttonSettlement == null) {
+      id = R.id.buttonImport;
+      ImageButton buttonImport = rootView.findViewById(id);
+      if (buttonImport == null) {
+        break missingId;
+      }
+
+      id = R.id.buttonScan;
+      ImageButton buttonScan = rootView.findViewById(id);
+      if (buttonScan == null) {
         break missingId;
       }
 
@@ -122,6 +136,12 @@ public final class ActivityStillImageBinding implements ViewBinding {
       id = R.id.getImageButton;
       Button getImageButton = rootView.findViewById(id);
       if (getImageButton == null) {
+        break missingId;
+      }
+
+      id = R.id.importText;
+      TextView importText = rootView.findViewById(id);
+      if (importText == null) {
         break missingId;
       }
 
@@ -155,9 +175,9 @@ public final class ActivityStillImageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityStillImageBinding((RelativeLayout) rootView, buttonSettlement,
-          controlPanel, elipse, fireTopLayout, getImageButton, logo, previewOverlay, previewPane,
-          scan, txtDisplayID);
+      return new ActivityStillImageBinding((RelativeLayout) rootView, buttonImport, buttonScan,
+          controlPanel, elipse, fireTopLayout, getImageButton, importText, logo, previewOverlay,
+          previewPane, scan, txtDisplayID);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

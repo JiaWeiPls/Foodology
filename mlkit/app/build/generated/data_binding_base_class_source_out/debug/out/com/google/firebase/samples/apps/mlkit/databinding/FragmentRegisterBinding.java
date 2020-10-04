@@ -41,6 +41,9 @@ public final class FragmentRegisterBinding implements ViewBinding {
   public final EditText etPhone;
 
   @NonNull
+  public final ImageView imageView;
+
+  @NonNull
   public final View lineEmail;
 
   @NonNull
@@ -66,10 +69,10 @@ public final class FragmentRegisterBinding implements ViewBinding {
 
   private FragmentRegisterBinding(@NonNull RelativeLayout rootView, @NonNull Button btnRegister,
       @NonNull ImageView elipse, @NonNull EditText etEmail, @NonNull EditText etName,
-      @NonNull EditText etPassword, @NonNull EditText etPhone, @NonNull View lineEmail,
-      @NonNull View lineName, @NonNull View linePassword, @NonNull View linePhone,
-      @NonNull ImageView logo, @NonNull ProgressBar progressBar, @NonNull Button swipeLeft,
-      @NonNull TextView tvSubtitle) {
+      @NonNull EditText etPassword, @NonNull EditText etPhone, @NonNull ImageView imageView,
+      @NonNull View lineEmail, @NonNull View lineName, @NonNull View linePassword,
+      @NonNull View linePhone, @NonNull ImageView logo, @NonNull ProgressBar progressBar,
+      @NonNull Button swipeLeft, @NonNull TextView tvSubtitle) {
     this.rootView = rootView;
     this.btnRegister = btnRegister;
     this.elipse = elipse;
@@ -77,6 +80,7 @@ public final class FragmentRegisterBinding implements ViewBinding {
     this.etName = etName;
     this.etPassword = etPassword;
     this.etPhone = etPhone;
+    this.imageView = imageView;
     this.lineEmail = lineEmail;
     this.lineName = lineName;
     this.linePassword = linePassword;
@@ -150,6 +154,12 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView;
+      ImageView imageView = rootView.findViewById(id);
+      if (imageView == null) {
+        break missingId;
+      }
+
       id = R.id.line_email;
       View lineEmail = rootView.findViewById(id);
       if (lineEmail == null) {
@@ -199,8 +209,8 @@ public final class FragmentRegisterBinding implements ViewBinding {
       }
 
       return new FragmentRegisterBinding((RelativeLayout) rootView, btnRegister, elipse, etEmail,
-          etName, etPassword, etPhone, lineEmail, lineName, linePassword, linePhone, logo,
-          progressBar, swipeLeft, tvSubtitle);
+          etName, etPassword, etPhone, imageView, lineEmail, lineName, linePassword, linePhone,
+          logo, progressBar, swipeLeft, tvSubtitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
