@@ -12,17 +12,53 @@
         android:layout_height="1399dp"
         android:layout_marginLeft="-865dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="-1200dp"
+        android:layout_marginTop="-1230dp"
         android:layout_centerInParent="true"
         android:background="@drawable/ic_ellipse_darkblue" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_arrow_left" />
+
+    <ImageView
+        android:id="@+id/settingsButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="17dp"
+        android:src="@drawable/mdi_settings" />
+
+    <View
+        android:id="@+id/ellipseWhitePicFrame"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_ellipse_whitepicframe" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/profile_pic" />
 
     <TextView
         android:id="@+id/profileName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="260dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Mark Tan"
         android:textSize="30sp"
@@ -33,13 +69,131 @@
         android:id="@+id/profileBio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="340dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Culinary Prodigy"
         android:textSize="15sp"
         android:textColor="@color/light_orange"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/recipesTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="360dp"
+        android:gravity="center_horizontal|top"
+        android:text="Recipes"
+        android:textColor="@color/dark_blue"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/recipesBadge"
+        android:layout_width="20dp"
+        android:layout_height="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="353dp"
+        android:background="@drawable/ic_recipes_badge" />
+
+    <TextView
+        android:id="@+id/recipesBadgesNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="352dp"
+        android:gravity="center_horizontal|top"
+        android:text="3"
+        android:textColor="#FFFFFF"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/reviewsTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="360dp"
+        android:gravity="center_horizontal|top"
+        android:text="Reviews"
+        android:textColor="#C4C4C4"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/profileDividerLine"
+        android:layout_width="350dp"
+        android:layout_height="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="390dp"
+        android:background="@drawable/profile_divider_line" />
+
+    <View
+        android:id="@+id/profileRecipesLine"
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="389dp"
+        android:background="@drawable/profile_recipes_line" />
+
+    <ImageButton
+        android:id="@+id/recipeImageButton"
+        android:layout_width="330dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="420dp"
+        android:src="@drawable/egg_fried_rice_ff4_720x540" />
+
+    <ImageView
+        android:id="@+id/chefHat"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="625dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/spoon_and_fork_crossed_1" />
+
+    <TextView
+        android:id="@+id/numberHat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="632dp"
+        android:gravity="center_horizontal|top"
+        android:text="21"
+        android:textColor="@color/light_orange"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/eggFriedRice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="628dp"
+        android:gravity="center_horizontal|top"
+        android:text="Egg Fried Rice"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 </RelativeLayout>

@@ -6,9 +6,16 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb5e405c-18cf-4c7a-a617-087b938e5b22" name="Default Changelist" comment="Dark Blue Ellipse XML">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
+    <list default="true" id="bb5e405c-18cf-4c7a-a617-087b938e5b22" name="Default Changelist" comment="Profile XML">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_back_arrow.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_recipes_badge.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mdi_settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/profile_pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spoon_and_fork_crossed_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/Egg-Fried-Rice-FF4-720x540.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/egg_fried_rice_ff4_720x540.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,14 +157,53 @@
       <option name="project" value="LOCAL" />
       <updated>1601396358901</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Profile XML">
+      <created>1601397089559</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601397089559</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Profile XML">
+      <created>1601805478031</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601805478032</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Profile Divider Line XML">
+      <created>1601805737768</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601805737768</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Profile Recipes Line XML">
+      <created>1601805759743</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601805759743</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Egg Fried Rice JPEG">
+      <created>1601806127287</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601806127287</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Redirect to Register Page message" />
     <MESSAGE value="Dark Blue Ellipse XML" />
     <MESSAGE value="Update fragment_login.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update fragment_login.xml" />
+    <MESSAGE value="Profile XML" />
+    <MESSAGE value="Profile Divider Line XML" />
+    <MESSAGE value="Profile Recipes Line XML" />
+    <MESSAGE value="Egg Fried Rice JPEG" />
+    <option name="LAST_COMMIT_MESSAGE" value="Egg Fried Rice JPEG" />
   </component>
   <component name="WindowStateProjectService">
     <state x="777" y="58" key="#app" timestamp="1601274605801">
@@ -168,15 +214,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1601290143943" />
-    <state x="325" y="220" key="AndroidCreateResourceFileDialog" timestamp="1601395276483">
+    <state x="423" y="81" key="AndroidCreateResourceFileDialog" timestamp="1601811786095">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="301" y="215" key="AndroidCreateResourceFileDialog/0.0.1440.920@0.0.1440.920" timestamp="1601385417405" />
-    <state x="325" y="220" key="AndroidCreateResourceFileDialog/0.23.1440.823@0.23.1440.823" timestamp="1601395276483" />
-    <state x="329" y="23" key="CommitChangelistDialog2" timestamp="1601396358421">
+    <state x="423" y="81" key="AndroidCreateResourceFileDialog/0.23.1440.823@0.23.1440.823" timestamp="1601811786091" />
+    <state x="329" y="23" key="CommitChangelistDialog2" timestamp="1601806127013">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="329" y="23" key="CommitChangelistDialog2/0.23.1440.823@0.23.1440.823" timestamp="1601396358421" />
+    <state x="329" y="23" key="CommitChangelistDialog2/0.23.1440.823@0.23.1440.823" timestamp="1601806127013" />
     <state x="501" y="215" key="FileChooserDialogImpl" timestamp="1601381762174">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
@@ -185,11 +231,12 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state width="498" height="408" key="SwitcherDM/0.0.1440.920@0.0.1440.920" timestamp="1601381126223" />
-    <state x="795" y="263" key="com.intellij.ide.util.TipDialog" timestamp="1601380475907">
-      <screen x="0" y="0" width="1440" height="920" />
+    <state x="756" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1601801027052">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="795" y="263" key="com.intellij.ide.util.TipDialog/0.0.1440.920@0.0.1440.920" timestamp="1601380475907" />
     <state x="848" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1601369869947" />
+    <state x="756" y="258" key="com.intellij.ide.util.TipDialog/0.23.1440.823@0.23.1440.823" timestamp="1601801027052" />
     <state x="530" y="377" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601385852350">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
