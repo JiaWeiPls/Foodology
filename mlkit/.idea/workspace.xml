@@ -6,16 +6,8 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb5e405c-18cf-4c7a-a617-087b938e5b22" name="Default Changelist" comment="Profile XML">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_back_arrow.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_recipes_badge.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mdi_settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/profile_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/spoon_and_fork_crossed_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+    <list default="true" id="bb5e405c-18cf-4c7a-a617-087b938e5b22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/Egg-Fried-Rice-FF4-720x540.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/egg_fried_rice_ff4_720x540.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601806127287</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated Profile XML">
+      <created>1601812897983</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601812897983</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,7 +202,8 @@
     <MESSAGE value="Profile Divider Line XML" />
     <MESSAGE value="Profile Recipes Line XML" />
     <MESSAGE value="Egg Fried Rice JPEG" />
-    <option name="LAST_COMMIT_MESSAGE" value="Egg Fried Rice JPEG" />
+    <MESSAGE value="Updated Profile XML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Profile XML" />
   </component>
   <component name="WindowStateProjectService">
     <state x="777" y="58" key="#app" timestamp="1601274605801">
@@ -219,10 +219,10 @@
     </state>
     <state x="301" y="215" key="AndroidCreateResourceFileDialog/0.0.1440.920@0.0.1440.920" timestamp="1601385417405" />
     <state x="423" y="81" key="AndroidCreateResourceFileDialog/0.23.1440.823@0.23.1440.823" timestamp="1601811786091" />
-    <state x="329" y="23" key="CommitChangelistDialog2" timestamp="1601806127013">
+    <state x="329" y="23" key="CommitChangelistDialog2" timestamp="1601812896738">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="329" y="23" key="CommitChangelistDialog2/0.23.1440.823@0.23.1440.823" timestamp="1601806127013" />
+    <state x="329" y="23" key="CommitChangelistDialog2/0.23.1440.823@0.23.1440.823" timestamp="1601812896738" />
     <state x="501" y="215" key="FileChooserDialogImpl" timestamp="1601381762174">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
