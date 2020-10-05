@@ -35,7 +35,7 @@ import com.google.firebase.ml.vision.label.FirebaseVisionImageLabel;
 import com.google.firebase.ml.vision.label.FirebaseVisionImageLabeler;
 import com.google.firebase.samples.apps.mlkit.common.FrameMetadata;
 import com.google.firebase.samples.apps.mlkit.common.GraphicOverlay;
-import com.google.firebase.samples.apps.mlkit.common.Testprint;
+import com.google.firebase.samples.apps.mlkit.common.LabelReader;
 import com.google.firebase.samples.apps.mlkit.java.StillImageActivity;
 import com.google.firebase.samples.apps.mlkit.java.VisionProcessorBase;
 
@@ -104,10 +104,10 @@ public class CloudImageLabelingProcessor
         //String entityId = label.getEntityId();
         float confidence1 = label.getConfidence();
         float confidence2 = Second.getConfidence();
-        Testprint.add_First_result(First_result);
-        Testprint.add_Second_result(Second_result);
-        Testprint.add_Confidence_result1(confidence1);
-        Testprint.add_Confidence_result2(confidence2);
+        LabelReader.add_First_result(First_result);
+        LabelReader.add_Second_result(Second_result);
+        LabelReader.add_Confidence_result1(confidence1);
+        LabelReader.add_Confidence_result2(confidence2);
 
         //DatabaseReference rootRef, demoRef;
         //rootRef = FirebaseDatabase.getInstance().getReference();

@@ -30,13 +30,13 @@ public class CloudLabelGraphic extends Graphic {
   private final GraphicOverlay overlay;
 
   private List<String> labels;
-  private List<String> seconds;
+  private List<String> second_lable;
 
   CloudLabelGraphic(GraphicOverlay overlay, List<String> labels, List<String> seconds) {
     super(overlay);
     this.overlay = overlay;
     this.labels = labels;
-    this.seconds = seconds;
+    this.second_lable = seconds;
     textPaint = new Paint();
     textPaint2 = new Paint();
     textPaint.setColor(Color.RED);
@@ -60,7 +60,7 @@ public class CloudLabelGraphic extends Graphic {
       y = y - 62.0f;
     }
     //label is defined as String
-    for (String Second : seconds) {
+    for (String Second : second_lable) {
       canvas.drawText(Second, 500, 200, textPaint2);
 
     }

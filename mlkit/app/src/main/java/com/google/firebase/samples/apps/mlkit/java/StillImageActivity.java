@@ -44,7 +44,7 @@ import android.widget.Toast;
 import com.google.android.gms.common.annotation.KeepName;
 import com.google.firebase.samples.apps.mlkit.R;
 import com.google.firebase.samples.apps.mlkit.common.VisionImageProcessor;
-import com.google.firebase.samples.apps.mlkit.common.Testprint;
+import com.google.firebase.samples.apps.mlkit.common.LabelReader;
 import com.google.firebase.samples.apps.mlkit.databinding.ActivityStillImageBinding;
 import com.google.firebase.samples.apps.mlkit.java.cloudimagelabeling.CloudImageLabelingProcessor;
 import com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity;
@@ -263,13 +263,13 @@ public class StillImageActivity extends AppCompatActivity {
   }
 
 // Text carried from CloudImageLabelingProcessor. Showing the Label detected by a toast.
-// CloudImageLabelingProcessor > Testprint > StillimageActivity.
+// CloudImageLabelingProcessor > LabelReader > StillimageActivity.
 
   private void testprint(){
-    String first_result = Testprint.First_result();
-    String second_result = Testprint.Second_result();
-    String confidence1 = Testprint.Confidence_result1();
-    String confidence2 = Testprint.Confidence_result2();
+    String first_result = LabelReader.First_result();
+    String second_result = LabelReader.Second_result();
+    String confidence1 = LabelReader.Confidence_result1();
+    String confidence2 = LabelReader.Confidence_result2();
     Context context = getApplicationContext();
     CharSequence out = first_result + " with confidence: "+confidence1 + " \n\n " + second_result + " with confidence: "+confidence2;
     int duration = Toast.LENGTH_LONG;

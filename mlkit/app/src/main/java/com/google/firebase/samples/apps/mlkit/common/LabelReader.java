@@ -2,14 +2,14 @@ package com.google.firebase.samples.apps.mlkit.common;
 // A simple way to pass out the info from CloudImage Labelling Processor
 // Will direct the label from CloudImageLabellingProcessor to StillImageActivity's toast
 // Can be improved to fill in more functions
-public class Testprint {
+public class LabelReader {
 
 
     private static String First_result;
     private static String Second_result;
     private static String Confidence_result1;
     private static String Confidence_result2;
-    public Testprint(){
+    public LabelReader(){
     }
     public static String First_result(){
         return First_result;
