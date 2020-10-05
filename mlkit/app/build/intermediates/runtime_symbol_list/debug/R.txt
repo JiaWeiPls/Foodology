@@ -2141,7 +2141,7 @@ int id select_dialog_listview 0x7f0a016d
 int id select_images_from_local 0x7f0a016e
 int id selected 0x7f0a016f
 int id settings 0x7f0a0170
-int id settingsButton 0x7f0a0171
+int id settings_button 0x7f0a0171
 int id settings_container 0x7f0a0172
 int id shortcut 0x7f0a0173
 int id showCustom 0x7f0a0174

@@ -2142,7 +2142,7 @@ id select_dialog_listview
 id select_images_from_local
 id selected
 id settings
-id settingsButton
+id settings_button
 id settings_container
 id shortcut
 id showCustom

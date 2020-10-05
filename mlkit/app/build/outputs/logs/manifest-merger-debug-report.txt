@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-62:12
 MERGED from [androidx.databinding:databinding-adapters:4.0.1] C:\Users\1920S2\.gradle\caches\transforms-2\files-2.1\b75bf57e1fa650fc0e2f9bf511e4a775\databinding-adapters-4.0.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:4.0.1] C:\Users\1920S2\.gradle\caches\transforms-2\files-2.1\6eea1860715c9153b1f739fe76d9f736\databinding-runtime-4.0.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:viewbinding:4.0.1] C:\Users\1920S2\.gradle\caches\transforms-2\files-2.1\dda46b84a67d814a1e27ee61d6e5ae8b\jetified-viewbinding-4.0.1\AndroidManifest.xml:17:1-22:12
@@ -75,20 +75,20 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\1920S2\.gradle\caches\transfor
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\1920S2\.gradle\caches\transforms-2\files-2.1\d04e7f2c0b3d173b7ea8a9bc56a5070b\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\1920S2\.gradle\caches\transforms-2\files-2.1\82fe3072329a4218ac52858fb2297e01\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] C:\Users\1920S2\.gradle\caches\transforms-2\files-2.1\6e15164e66aa5fd8fe61bea707518c01\jetified-protolite-well-known-types-17.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-62:12
 	package
 		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:3:5-53
 		INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-62:12
 		INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:1-62:12
 		INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:2:11-69
@@ -121,7 +121,7 @@ ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main
 	android:name
 		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:10:19-67
 application
-ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:12:5-48:19
+ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:12:5-60:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\1920S2\.gradle\caches\transforms-2\files-2.1\f94f935f0c9a6a8ad8d7a3d8ab348c4c\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\1920S2\.gradle\caches\transforms-2\files-2.1\f94f935f0c9a6a8ad8d7a3d8ab348c4c\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\1920S2\.gradle\caches\transforms-2\files-2.1\01caf3b45b6497c9a91fb65fdbc46fb4\material-1.2.1\AndroidManifest.xml:22:5-20
@@ -208,24 +208,40 @@ activity#com.google.firebase.samples.apps.mlkit.MainActivity
 ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:33:9-34:81
 	android:name
 		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:34:13-79
+activity#com.google.firebase.samples.apps.mlkit.ProfileActivity
+ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:36:9-37:84
+	android:name
+		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:37:13-82
+activity#com.google.firebase.samples.apps.mlkit.ForumActivity
+ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:39:9-40:82
+	android:name
+		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:40:13-80
+activity#com.google.firebase.samples.apps.mlkit.RecipeActivity
+ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:42:9-43:83
+	android:name
+		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:43:13-81
+activity#com.google.firebase.samples.apps.mlkit.ProfileSettingsActivity
+ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:45:9-46:92
+	android:name
+		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:46:13-90
 activity#com.google.firebase.samples.apps.mlkit.EditProfile
-ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:36:9-37:80
+ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:48:9-49:80
 	android:name
-		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:37:13-78
+		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:49:13-78
 activity#com.google.firebase.samples.apps.mlkit.Register
-ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:39:9-40:77
+ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:51:9-52:77
 	android:name
-		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:40:13-75
+		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:52:13-75
 activity#com.google.firebase.samples.apps.mlkit.java.StillImageActivity
-ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:42:3-43:92
+ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:54:3-55:92
 	android:name
-		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:43:13-90
+		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:55:13-90
 activity#com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity
-ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:45:9-47:39
+ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:57:9-59:39
 	android:exported
-		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:47:13-37
+		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:59:13-37
 	android:name
-		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:46:13-63
+		ADDED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml:58:13-63
 uses-sdk
 INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\1920S2\Documents\GitHub\IM3080_DIP_GROUP3\mlkit\app\src\main\AndroidManifest.xml
