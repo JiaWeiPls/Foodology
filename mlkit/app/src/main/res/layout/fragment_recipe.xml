@@ -174,10 +174,20 @@
         android:layout_marginTop="20dp"
         android:text="@string/register"/>
 
+    <ImageButton
+        android:id="@+id/buttonChef"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/transparent"
+        android:scaleType="center"
+        android:src="@drawable/ic_chef" />
 
     <Button
         android:id="@+id/swipeLeft"
-        android:layout_width="wrap_content"
+        android:layout_width="85dp"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:text="21"
@@ -185,7 +195,7 @@
         android:textColor="@color/white"
         android:fontFamily="@font/roboto_regular"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="27dp"/>
 
 
