@@ -14,5 +14,6 @@
     <color name="dark_blue">#24415E</color>
     <color name="light_blue">#CCE6EF</color>
     <color name="light_orange">#E48E71</color>
+    <color name="lighter_orange">#FAE8E3</color>
 
 </resources>
