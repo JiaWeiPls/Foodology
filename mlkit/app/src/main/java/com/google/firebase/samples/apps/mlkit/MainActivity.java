@@ -33,17 +33,19 @@ import com.squareup.picasso.Picasso;
 import javax.annotation.Nullable;
 
 public class MainActivity extends AppCompatActivity {
-
+    DatabaseHelper myDb;
     Button homeButton, profileButton, scanButton, forumButton, recipeButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_page);
+        setContentView(R.layout.home_page);\
+        myDb = new DatabaseHelper(this);
         homeButton = findViewById(R.id.home_button);
         profileButton = findViewById(R.id.profile_button);
         scanButton = findViewById(R.id.scan_button);
         forumButton = findViewById(R.id.forum_button);
         recipeButton = findViewById(R.id.recipe_button);
+        AddData();
 
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,5 +86,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void AddData() {
+        register.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        boolean isInserted = myDb.insertData(loginid.getText().toString(),
+                                password.getText().toString());
+                        if (isInserted = true)
+                            Toast.makeText(MainActivity.this, "Data Inserted", Toast.LENGTH_LONG).show();
+                        else
+                            Toast.makeText(MainActivity.this, "Data not Inserted", Toast.LENGTH_LONG).show();
+
+                    }
+                }
+        );
     }
 }
