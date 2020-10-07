@@ -34,7 +34,7 @@ import javax.annotation.Nullable;
 
 public class MainActivity extends AppCompatActivity {
     DatabaseHelper myDb;
-    Button homeButton, profileButton, scanButton, forumButton, recipeButton;
+    Button homeButton, profileButton, scanButton, forumButton, recipeButton, eggfriedriceButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         scanButton = findViewById(R.id.scan_button);
         forumButton = findViewById(R.id.forum_button);
         recipeButton = findViewById(R.id.recipe_button);
+        eggfriedriceButton = findViewById(R.id.eggfriedrice_button);
         // AddData();
 
         homeButton.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +73,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         recipeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), RecipeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        eggfriedriceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), RecipeActivity.class);

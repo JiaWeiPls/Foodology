@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,7 +35,7 @@ import javax.annotation.Nullable;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    Button homeButton, profileButton, scanButton, forumButton, recipeButton, settingsButton;
+    Button homeButton, profileButton, scanButton, forumButton, recipeButton, settingsButton, recipeprofileButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +46,7 @@ public class ProfileActivity extends AppCompatActivity {
         forumButton = findViewById(R.id.forum_button);
         recipeButton = findViewById(R.id.recipe_button);
         settingsButton = findViewById(R.id.settings_button);
+        ImageButton recipeprofileButton = findViewById(R.id.recipeImageButton);
 
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +76,14 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), ProfileSettingsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        recipeprofileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), RecipeActivity.class);
                 startActivity(intent);
             }
         });

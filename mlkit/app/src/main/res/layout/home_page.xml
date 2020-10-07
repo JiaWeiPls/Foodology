@@ -273,6 +273,7 @@
 
     <!--fried rice + calorie + photo 1-->
     <Button
+        android:id="@+id/eggfriedrice_button"
         android:layout_width="95dp"
         android:layout_height="130dp"
         android:layout_marginLeft="65dp"
