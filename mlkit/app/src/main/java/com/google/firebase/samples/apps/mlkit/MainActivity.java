@@ -38,14 +38,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_page);\
+        setContentView(R.layout.home_page);
         myDb = new DatabaseHelper(this);
         homeButton = findViewById(R.id.home_button);
         profileButton = findViewById(R.id.profile_button);
         scanButton = findViewById(R.id.scan_button);
         forumButton = findViewById(R.id.forum_button);
         recipeButton = findViewById(R.id.recipe_button);
-        AddData();
+        // AddData();
 
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void AddData() {
+    /* public void AddData() {
         register.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -103,5 +103,5 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
-    }
+    } */
 }

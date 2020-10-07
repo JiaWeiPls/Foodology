@@ -2,8 +2,11 @@ package com.google.firebase.samples.apps.mlkit;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.ArrayList;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "DIP_database.db";
@@ -109,17 +112,31 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
-    public boolean insertData(String loginid, String password) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        ContentValues loginValues = new ContentValues();
-        loginValues.put(COL_LoginID,loginid);
-        loginValues.put(COL_LoginPassword,password);
-        long result = db.insert(TABLE_LoginUser,null, loginValues);
-        if (result == -1)
-            return false;
-        else
-            return true;
-    }
+    /**
+     * search the users using FTS3
+     */
+    /* public ArrayList<Recipe> searchFTS3(String s) {
+        ArrayList<Recipe> users = new ArrayList<>();
+
+        SQLiteDatabase database = getReadableDatabase();
+        Cursor cursor = database.query(TABLE_Recipe, new String[]{"rowid", COL_RecipeName, COL_RecipeSteps, COL_RecipeIngredient}, TABLE_Recipe + " MATCH ?", new String[]{s + "*"}, null, null, null, null);
+        if (cursor != null && cursor.getCount() > 0) {
+            cursor.moveToFirst();
+            for (int i = 0; i < cursor.getCount(); i++) {
+                User user = new User();
+                user.setId(cursor.getString(cursor.getColumnIndex("rowid")));
+                user.setName(cursor.getString(cursor.getColumnIndex(COL_RecipeName)));
+                user.setEmail(cursor.getString(cursor.getColumnIndex(COL_RecipeSteps)));
+                user.setDesc(cursor.getString(cursor.getColumnIndex(COL_RecipeIngredient)));
+                users.add(user);
+                cursor.moveToNext();
+            }
+        }
+        if (cursor != null) {
+            cursor.close();
+        }
+        return users;
+    } */
 
 }
 
