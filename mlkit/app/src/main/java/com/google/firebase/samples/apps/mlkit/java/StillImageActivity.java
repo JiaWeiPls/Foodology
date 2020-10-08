@@ -37,6 +37,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.Toast;
@@ -94,6 +95,28 @@ public class StillImageActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     binding = ActivityStillImageBinding.inflate(getLayoutInflater());
     setContentView(binding.getRoot());
+
+    ImageButton scan_btn = (ImageButton) findViewById(R.id.buttonScan);
+    scan_btn.setOnClickListener(new View.OnClickListener(){
+
+      @Override
+      public void onClick(View view) {
+        ScanNow(view);
+      }
+
+      private void ScanNow(View view) {
+        String first_result = LabelReader.First_result();
+        String second_result = LabelReader.Second_result();
+        String confidence1 = LabelReader.Confidence_result1();
+        String confidence2 = LabelReader.Confidence_result2();
+        Context context = getApplicationContext();
+        CharSequence out = first_result + " with confidence: "+confidence1 + " \n\n " + second_result + " with confidence: "+confidence2;
+        int duration = Toast.LENGTH_LONG;
+
+        Toast toast = Toast.makeText(context, out, duration);
+        toast.show();
+      }
+    });
 
     binding.getImageButton.setOnClickListener(
         new OnClickListener() {
