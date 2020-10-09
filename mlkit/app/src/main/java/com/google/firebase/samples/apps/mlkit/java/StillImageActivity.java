@@ -105,16 +105,35 @@ public class StillImageActivity extends AppCompatActivity {
       }
 
       private void ScanNow(View view) {
-        String first_result = LabelReader.First_result();
-        String second_result = LabelReader.Second_result();
-        String confidence1 = LabelReader.Confidence_result1();
-        String confidence2 = LabelReader.Confidence_result2();
-        Context context = getApplicationContext();
-        CharSequence out = first_result + " with confidence: "+confidence1 + " \n\n " + second_result + " with confidence: "+confidence2;
-        int duration = Toast.LENGTH_LONG;
+        // Clean up last time's image
+        imageUri = null;
+        binding.previewPane.setImageBitmap(null);
 
-        Toast toast = Toast.makeText(context, out, duration);
-        toast.show();
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+          ContentValues values = new ContentValues();
+          values.put(MediaStore.Images.Media.TITLE, "New Picture");
+          values.put(MediaStore.Images.Media.DESCRIPTION, "From Camera");
+          imageUri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+          takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+          startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+        }
+      }
+    });
+
+    ImageButton import_btn = (ImageButton) findViewById(R.id.buttonImport);
+    import_btn.setOnClickListener(new View.OnClickListener(){
+
+      @Override
+      public void onClick(View view) {
+        Import(view);
+      }
+
+      private void Import(View view) {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent, "Select Picture"), REQUEST_CHOOSE_IMAGE);
       }
     });
 
