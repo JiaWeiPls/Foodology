@@ -50,14 +50,21 @@
         android:layout_marginRight="120dp"
         app:srcCompat="@drawable/kindpng_1214636" />
 
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/profile_pic" />
+
     <Button
         android:id="@+id/btn_recipe"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:background="@drawable/btn_custom_recipe"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="220dp"
-        android:layout_marginTop="596dp"
+        android:layout_marginTop="593dp"
         android:fontFamily="@font/roboto_regular"
         android:textColor="@color/light_orange"
         android:textSize="15sp"
@@ -66,11 +73,11 @@
     <Button
         android:id="@+id/btn_cook"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:background="@drawable/btn_custom_login"
         android:layout_marginLeft="220dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="596dp"
+        android:layout_marginTop="593dp"
         android:text="Start Cooking"
         android:textSize="15sp"
         android:textColor="@android:color/white"
