@@ -40,6 +40,14 @@
         android:rotation="15"
         android:src="@drawable/foodology_removebg_preview__1_" />
 
+    <ImageView
+        android:id="@+id/elipse"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:scaleY="-1"
+        android:layout_marginTop="580dp"
+        android:src="@drawable/ic_elipse_white" />
 
     <ImageView
         android:id="@+id/charPNG"
