@@ -37,6 +37,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.Toast;
@@ -44,7 +45,7 @@ import android.widget.Toast;
 import com.google.android.gms.common.annotation.KeepName;
 import com.google.firebase.samples.apps.mlkit.R;
 import com.google.firebase.samples.apps.mlkit.common.VisionImageProcessor;
-import com.google.firebase.samples.apps.mlkit.common.Testprint;
+import com.google.firebase.samples.apps.mlkit.common.LabelReader;
 import com.google.firebase.samples.apps.mlkit.databinding.ActivityStillImageBinding;
 import com.google.firebase.samples.apps.mlkit.java.cloudimagelabeling.CloudImageLabelingProcessor;
 import com.google.firebase.samples.apps.mlkit.common.preference.SettingsActivity;
@@ -94,6 +95,47 @@ public class StillImageActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     binding = ActivityStillImageBinding.inflate(getLayoutInflater());
     setContentView(binding.getRoot());
+
+    ImageButton scan_btn = (ImageButton) findViewById(R.id.buttonScan);
+    scan_btn.setOnClickListener(new View.OnClickListener(){
+
+      @Override
+      public void onClick(View view) {
+        ScanNow(view);
+      }
+
+      private void ScanNow(View view) {
+        // Clean up last time's image
+        imageUri = null;
+        binding.previewPane.setImageBitmap(null);
+
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+          ContentValues values = new ContentValues();
+          values.put(MediaStore.Images.Media.TITLE, "New Picture");
+          values.put(MediaStore.Images.Media.DESCRIPTION, "From Camera");
+          imageUri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+          takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+          startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+        }
+      }
+    });
+
+    ImageButton import_btn = (ImageButton) findViewById(R.id.buttonImport);
+    import_btn.setOnClickListener(new View.OnClickListener(){
+
+      @Override
+      public void onClick(View view) {
+        Import(view);
+      }
+
+      private void Import(View view) {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent, "Select Picture"), REQUEST_CHOOSE_IMAGE);
+      }
+    });
 
     binding.getImageButton.setOnClickListener(
         new OnClickListener() {
@@ -263,13 +305,13 @@ public class StillImageActivity extends AppCompatActivity {
   }
 
 // Text carried from CloudImageLabelingProcessor. Showing the Label detected by a toast.
-// CloudImageLabelingProcessor > Testprint > StillimageActivity.
+// CloudImageLabelingProcessor > LabelReader > StillimageActivity.
 
   private void testprint(){
-    String first_result = Testprint.First_result();
-    String second_result = Testprint.Second_result();
-    String confidence1 = Testprint.Confidence_result1();
-    String confidence2 = Testprint.Confidence_result2();
+    String first_result = LabelReader.First_result();
+    String second_result = LabelReader.Second_result();
+    String confidence1 = LabelReader.Confidence_result1();
+    String confidence2 = LabelReader.Confidence_result2();
     Context context = getApplicationContext();
     CharSequence out = first_result + " with confidence: "+confidence1 + " \n\n " + second_result + " with confidence: "+confidence2;
     int duration = Toast.LENGTH_LONG;

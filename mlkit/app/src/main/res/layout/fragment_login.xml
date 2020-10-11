@@ -117,6 +117,7 @@
         android:fontFamily="@font/roboto_regular"
         android:text="@string/welcome"
         android:textSize="17sp"
+        android:paddingTop="30dp"
         android:textColor="@color/light_blue" />
 
     <Button

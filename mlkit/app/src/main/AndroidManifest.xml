@@ -34,6 +34,18 @@
             android:name="com.google.firebase.samples.apps.mlkit.MainActivity"/>
 
         <activity
+            android:name="com.google.firebase.samples.apps.mlkit.ProfileActivity"/>
+
+        <activity
+            android:name="com.google.firebase.samples.apps.mlkit.ForumActivity"/>
+
+        <activity
+            android:name="com.google.firebase.samples.apps.mlkit.RecipeActivity"/>
+
+        <activity
+            android:name="com.google.firebase.samples.apps.mlkit.ProfileSettingsActivity"/>
+
+        <activity
             android:name="com.google.firebase.samples.apps.mlkit.EditProfile"/>
 
         <activity
