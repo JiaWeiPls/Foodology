@@ -4,24 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.google.firebase.samples.apps.mlkit.LoginFragment">
+    tools:context="com.google.firebase.samples.apps.mlkit.MainActivity">
 
     <View
         android:id="@+id/ellipseDarkBlue"
         android:layout_width="3169dp"
         android:layout_height="1399dp"
-        android:layout_marginLeft="-865dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="-1230dp"
         android:layout_centerInParent="true"
+        android:layout_marginLeft="-865dp"
+        android:layout_marginTop="-1230dp"
         android:background="@drawable/ic_ellipse_darkblue" />
 
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="10dp"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/ic_arrow_left" />
 
@@ -31,6 +33,8 @@
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="16dp"
         android:layout_marginRight="17dp"
         android:src="@drawable/mdi_settings" />
@@ -40,42 +44,44 @@
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="70dp"
         android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
         android:background="@drawable/ic_ellipse_whitepicframe" />
 
     <ImageView
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="75dp"
         android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
         android:src="@drawable/profile_pic" />
 
     <TextView
         android:id="@+id/profileName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="260dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Mark Tan"
-        android:textSize="30sp"
         android:textColor="@color/dark_blue"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/profileBio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:layout_marginTop="300dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Culinary Prodigy"
-        android:textSize="15sp"
         android:textColor="@color/light_orange"
+        android:textSize="15sp"
         android:textStyle="bold" />
 
 
@@ -85,6 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:layout_marginLeft="87dp"
         android:layout_marginTop="360dp"
         android:gravity="center_horizontal|top"
@@ -98,8 +105,8 @@
         android:layout_width="20dp"
         android:layout_height="8dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="135dp"
         android:layout_alignParentTop="true"
+        android:layout_marginLeft="135dp"
         android:layout_marginTop="353dp"
         android:background="@drawable/ic_recipes_badge" />
 
@@ -121,10 +128,12 @@
         android:id="@+id/reviewsTab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="269dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
         android:layout_marginTop="360dp"
+        android:layout_marginRight="87dp"
+        android:clickable="true"
         android:gravity="center_horizontal|top"
         android:text="Reviews"
         android:textColor="#C4C4C4"
@@ -136,7 +145,8 @@
         android:layout_width="350dp"
         android:layout_height="4dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="390dp"
         android:background="@drawable/profile_divider_line" />
 
@@ -146,6 +156,8 @@
         android:layout_height="3dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="64dp"
         android:layout_marginTop="389dp"
         android:background="@drawable/profile_recipes_line" />
@@ -154,8 +166,9 @@
         android:id="@+id/recipeImageButton"
         android:layout_width="330dp"
         android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="420dp"
         android:src="@drawable/egg_fried_rice_ff4_720x540" />
 
@@ -165,6 +178,8 @@
         android:layout_height="30dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="625dp"
         android:layout_marginRight="40dp"
         android:src="@drawable/spoon_and_fork_crossed_1" />
@@ -173,10 +188,12 @@
         android:id="@+id/numberHat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="632dp"
+        android:layout_marginRight="75dp"
         android:gravity="center_horizontal|top"
         android:text="21"
         android:textColor="@color/light_orange"
@@ -188,6 +205,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="628dp"
         android:gravity="center_horizontal|top"
