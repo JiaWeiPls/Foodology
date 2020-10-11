@@ -1,399 +1,478 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="false"
-    tools:context="com.google.firebase.samples.apps.mlkit.ProfileSettingsActivity">
+    tools:context="com.google.firebase.samples.apps.mlkit.MainActivity">
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
     <!--orange, blue top background-->
     <ImageView
-        android:id="@+id/background"
+        android:id="@+id/home_background"
         android:layout_width="450dp"
         android:layout_height="250dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/ic_top"/>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="450dp"
+        android:src="@drawable/ic_top" />
 
-    <!--icon base shape 1-->
+    <!--egg icon-->
     <View
-        android:id="@+id/square_1"
+        android:id="@+id/home_egg"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="350dp"
         android:layout_marginEnd="290dp"
         android:layout_marginBottom="310dp"
-        android:layout_marginTop="350dp"
-        android:background="@drawable/ic_icon_base" />
+        android:background="@drawable/eggicon" />
 
-    <!--icon base shape 2-->
+    <!--watermelon icon-->
     <View
-        android:id="@+id/square_2"
+        android:id="@+id/home_watermelon"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="150dp"
+        android:layout_marginTop="350dp"
         android:layout_marginEnd="190dp"
         android:layout_marginBottom="310dp"
-        android:layout_marginTop="350dp"
-        android:background="@drawable/ic_icon_base2" />
+        android:background="@drawable/watermelonicon" />
 
-    <!--icon base shape 3-->
+    <!--icon spring onion-->
     <View
-        android:id="@+id/square_3"
+        android:id="@+id/home_springonion"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="250dp"
+        android:layout_marginTop="350dp"
         android:layout_marginEnd="90dp"
         android:layout_marginBottom="310dp"
-        android:layout_marginTop="350dp"
-        android:background="@drawable/ic_icon_base3" />
+        android:background="@drawable/springonionicon" />
 
-    <!--icon base shape 4-->
+    <!--icon mushroom-->
     <View
-        android:id="@+id/square_4"
+        android:id="@+id/home_mushroom"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="350dp"
-        android:layout_marginEnd="-5dp"
-        android:layout_marginBottom="310dp"
         android:layout_marginTop="350dp"
-        android:background="@drawable/ic_icon_base4" />
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="310dp"
+        android:background="@drawable/mushroomicon" />
 
     <!--recipe box 1-->
     <View
-        android:id="@+id/rectangle_1"
+        android:id="@+id/home_recipe_box_1"
         android:layout_width="345dp"
         android:layout_height="464dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="36dp"
-        android:layout_marginEnd="230dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="470dp"
+        android:layout_marginEnd="230dp"
         android:layout_marginBottom="70dp"
         android:background="@drawable/ic_recipe_box" />
 
     <!--recipe box 2-->
     <View
-        android:id="@+id/rectangle_2"
+        android:id="@+id/home_recipe_box_2"
         android:layout_width="345dp"
         android:layout_height="464dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="180dp"
-        android:layout_marginEnd="86dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="180dp"
         android:layout_marginTop="470dp"
+        android:layout_marginEnd="86dp"
         android:layout_marginBottom="70dp"
-        android:background="@drawable/ic_recipe_box2" />
+        android:background="@drawable/ic_recipe_box" />
 
     <!--recipe box 3-->
     <View
-        android:id="@+id/rectangle_3"
+        android:id="@+id/home_recipe_box_3"
         android:layout_width="345dp"
         android:layout_height="464dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="325dp"
-        android:layout_marginEnd="-65dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="325dp"
         android:layout_marginTop="470dp"
+        android:layout_marginEnd="-65dp"
         android:layout_marginBottom="70dp"
-        android:background="@drawable/ic_recipe_box3" />
+        android:background="@drawable/ic_recipe_box" />
 
     <!--bottom dock base-->
     <ImageView
-        android:id="@+id/bottom_base"
+        android:id="@+id/home_dock"
         android:layout_width="800dp"
         android:layout_height="250dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="-15dp"
-        android:layout_marginEnd="-15dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-15dp"
         android:layout_marginTop="650dp"
-        android:src="@drawable/ic_dock_base"/>
+        android:layout_marginEnd="-15dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/ic_dock_base" />
 
     <!--dock scan-->
     <Button
-        android:id="@+id/scan_button"
+        android:id="@+id/home_scan_button"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="190dp"
-        android:background="@drawable/ic_scan_icon"
-        android:layout_marginTop="685dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="685dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ic_scan_icon" />
 
     <!--dock home-->
     <Button
         android:id="@+id/home_button"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_marginLeft="30dp"
-        android:background="@drawable/ic_dock_home"
-        android:layout_marginTop="685dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="685dp"
+        android:layout_marginEnd="340dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ic_dock_home" />
 
     <!--dock profile-->
     <Button
-        android:id="@+id/profile_button"
+        android:id="@+id/home_profile_button"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_marginLeft="110dp"
-        android:background="@drawable/ic_dock_profile"
-        android:layout_marginTop="690dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="690dp"
+        android:layout_marginEnd="270dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/ic_dock_profile" />
 
     <!--dock forum-->
     <Button
-        android:id="@+id/forum_button"
+        android:id="@+id/home_forum_button"
         android:layout_width="28dp"
         android:layout_height="28dp"
-        android:layout_marginLeft="280dp"
-        android:background="@drawable/ic_dock_forum"
-        android:layout_marginTop="690dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="690dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/ic_dock_forum" />
 
     <!--dock recipe-->
     <Button
-        android:id="@+id/recipe_button"
+        android:id="@+id/home_recipe_button"
         android:layout_width="26dp"
         android:layout_height="26dp"
-        android:layout_marginLeft="360dp"
-        android:background="@drawable/ic_dock_add_recipe"
-        android:layout_marginTop="692dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="358dp"
+        android:layout_marginTop="692dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/ic_dock_add_recipe" />
 
     <!--logo top left-->
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/home_logo"
         android:layout_width="400dp"
         android:layout_height="45dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="-145dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-145dp"
         android:layout_marginTop="25dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="660dp"
         android:src="@drawable/foodology_removebg_preview__1_" />
 
     <!-- Hi User-->
     <TextView
+        android:id="@+id/home_text_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="165dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="520dp"
         android:fontFamily="@font/roboto_regular"
-        android:textColor="@android:color/white"
         android:text="@string/hi_mark"
+        android:textColor="@android:color/white"
         android:textSize="20sp" />
 
     <!--BOLD Lets discover recipes-->
     <TextView
+        android:id="@+id/home_text_discover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="190dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="490dp"
         android:fontFamily="@font/roboto_regular"
-        android:textColor="@android:color/white"
         android:text="@string/let_s_discover_recipes"
+        android:textColor="@android:color/white"
         android:textSize="25sp" />
 
     <!--BOLD What'sin your fridge?-->
     <TextView
+        android:id="@+id/home_text_fridge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="310dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="395dp"
         android:fontFamily="@font/roboto_regular"
-        android:textColor="@android:color/black"
         android:text="@string/what_s_in_your_fridge"
+        android:textColor="@android:color/black"
         android:textSize="18sp" />
 
     <!--BOLD What's for lunch?-->
     <TextView
+        android:id="@+id/home_text_lunch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="435dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="435dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="270dp"
         android:fontFamily="@font/roboto_regular"
-        android:textColor="@android:color/black"
         android:text="@string/what_s_for_lunch"
+        android:textColor="@android:color/black"
         android:textSize="18sp" />
 
     <!--See all Button 1-->
     <Button
+        android:id="@+id/home_see_all_1_button"
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginLeft="310dp"
-        android:fontFamily="@font/roboto_regular"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="15sp"
-        android:background="@drawable/btn_see_all"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="310dp"
         android:layout_marginTop="312dp"
-        android:text="@string/See_All"/>
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="395dp"
+        android:background="@drawable/btn_see_all"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/See_All"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="15sp" />
 
     <!--See all Button 2-->
     <Button
+        android:id="@+id/home_see_all_2_button"
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginLeft="310dp"
-        android:fontFamily="@font/roboto_regular"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="15sp"
-        android:background="@drawable/btn_see_all"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="310dp"
         android:layout_marginTop="436dp"
-        android:text="@string/See_All"/>
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="270dp"
+        android:background="@drawable/btn_see_all"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/See_All"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="15sp" />
 
     <!--fried rice + calorie + photo 1-->
     <Button
-        android:id="@+id/eggfriedrice_button"
+        android:id="@+id/home_recipe_1"
         android:layout_width="95dp"
         android:layout_height="130dp"
-        android:layout_marginLeft="65dp"
-        android:background="@drawable/ic_friedrice"
-        android:layout_marginTop="500dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/ic_friedrice" />
 
     <ImageButton
+        android:id="@+id/home_recipe_photo_1"
         android:layout_width="400dp"
         android:layout_height="80dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="-90dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-90dp"
         android:layout_marginTop="480dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="180dp"
         android:background="@drawable/btn_see_all"
         android:src="@drawable/friedrice" />
 
     <!--fried rice + calorie + photo2-->
     <Button
+        android:id="@+id/home_recipe_2"
         android:layout_width="95dp"
         android:layout_height="130dp"
-        android:layout_marginLeft="205dp"
-        android:background="@drawable/ic_friedrice"
-        android:layout_marginTop="500dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/ic_friedrice" />
 
     <ImageButton
+        android:id="@+id/home_recipe_photo_2"
         android:layout_width="400dp"
         android:layout_height="80dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="90dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="90dp"
         android:layout_marginTop="480dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginBottom="180dp"
         android:background="@drawable/btn_see_all"
         android:src="@drawable/friedrice" />
 
     <!--fried rice + calorie + photo3-->
     <Button
+        android:id="@+id/home_recipe_3"
         android:layout_width="95dp"
         android:layout_height="130dp"
-        android:layout_marginLeft="355dp"
-        android:layout_marginRight="-70dp"
-        android:background="@drawable/ic_friedrice"
-        android:layout_marginTop="500dp" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="355dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="-40dp"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/ic_friedrice" />
 
     <ImageButton
+        android:id="@+id/home_recipe_photo_3"
         android:layout_width="400dp"
         android:layout_height="80dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="365dp"
-        android:layout_marginEnd="-30dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="365dp"
         android:layout_marginTop="480dp"
+        android:layout_marginEnd="-30dp"
+        android:layout_marginBottom="180dp"
         android:background="@drawable/btn_see_all"
         android:src="@drawable/friedrice" />
 
     <!-- search text to type-->
     <EditText
+        android:id="@+id/home_search"
         android:layout_width="350dp"
         android:layout_height="68dp"
-        android:hint="@string/search_recipes"
-        android:gravity="center"
-        android:textColorHint="@color/blue_grey_400"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="425dp"
+        android:background="@drawable/ic_search_rectangle"
         android:clipToPadding="false"
         android:elevation="100dp"
-        android:padding="15dp"
         android:fontFamily="@font/roboto_regular"
-        android:background="@drawable/ic_search_rectangle"
-        android:layout_marginTop="225dp"
+        android:gravity="center"
+        android:hint="@string/search_recipes"
+        android:padding="15dp"
         android:textColor="@color/blue_grey_400"
+        android:textColorHint="@color/blue_grey_400"
         android:textSize="18sp" />
-
-    <!--egg-->
-    <ImageView
-        android:layout_width="400dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="-115dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="360dp"
-        android:src="@drawable/egg" />
-
-    <!--chicken-->
-    <ImageView
-        android:layout_width="410dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="-20dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="360dp"
-        android:src="@drawable/chicken" />
-
-    <!--watermelon-->
-    <ImageView
-        android:layout_width="400dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="160dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="360dp"
-        android:src="@drawable/watermelon" />
-
-    <!--springonion-->
-    <ImageView
-        android:layout_width="400dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="360dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="360dp"
-        android:src="@drawable/springonion" />
 
     <!--profile-->
     <ImageButton
+        android:id="@+id/home_profile_picture"
         android:layout_width="500dp"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="300dp"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="320dp"
         android:layout_marginTop="3dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="630dp"
         android:background="@drawable/btn_see_all"
         android:src="@drawable/profile_pic" />
 
