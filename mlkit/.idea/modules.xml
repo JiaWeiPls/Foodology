@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="mlkit/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mlkit.iml" filepath="$PROJECT_DIR$/.idea/mlkit.iml" group="mlkit" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/mlkit-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/mlkit-app.iml" group="mlkit/app" />
     </modules>
   </component>
 </project>
