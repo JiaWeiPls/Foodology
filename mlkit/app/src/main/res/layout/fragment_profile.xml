@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.google.firebase.samples.apps.mlkit.ProfileActivity">
@@ -10,272 +11,329 @@
         android:id="@+id/ellipseDarkBlue"
         android:layout_width="3169dp"
         android:layout_height="1399dp"
-        android:layout_marginLeft="-865dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="-1230dp"
-        android:layout_centerInParent="true"
-        android:background="@drawable/ic_ellipse_darkblue" />
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/ic_ellipse_darkblue"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipseWhitePicFrame"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
+        android:id="@+id/imageView6"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/ic_arrow_left" />
+        android:src="@drawable/ic_arrow_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/settings_button"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerInParent="true"
         android:layout_marginTop="16dp"
         android:layout_marginRight="17dp"
-        android:background="@drawable/mdi_settings" />
+        android:background="@drawable/mdi_settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/ellipseWhitePicFrame"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="70dp"
-        android:layout_centerInParent="true"
-        android:background="@drawable/ic_ellipse_whitepicframe" />
+        android:background="@drawable/ic_ellipse_whitepicframe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
+        android:id="@+id/imageView7"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="75dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/profile_pic" />
+        android:src="@drawable/profile_pic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
 
     <TextView
         android:id="@+id/profileName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="260dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Mark Tan"
         android:textColor="@color/dark_blue"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/profileBio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="300dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Culinary Prodigy"
         android:textColor="@color/light_orange"
         android:textSize="15sp"
-        android:textStyle="bold" />
-
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/recipesTab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="87dp"
         android:layout_marginTop="360dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="9dp"
         android:gravity="center_horizontal|top"
         android:text="Recipes"
         android:textColor="@color/dark_blue"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/profileRecipesLine"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/recipesBadge"
         android:layout_width="20dp"
         android:layout_height="8dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="135dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="353dp"
-        android:background="@drawable/ic_recipes_badge" />
+        android:background="@drawable/ic_recipes_badge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recipesTab"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/recipesBadgesNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="143dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="352dp"
         android:gravity="center_horizontal|top"
         android:text="3"
         android:textColor="#FFFFFF"
         android:textSize="8sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recipesTab"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/reviewsTab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginRight="87dp"
+        android:layout_marginStart="148dp"
         android:layout_marginTop="360dp"
+        android:layout_marginRight="87dp"
         android:gravity="center_horizontal|top"
         android:text="Reviews"
         android:textColor="#C4C4C4"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/profileDividerLine"
         android:layout_width="350dp"
         android:layout_height="4dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="390dp"
-        android:background="@drawable/profile_divider_line" />
+        android:background="@drawable/profile_divider_line"
+        app:layout_constraintBottom_toTopOf="@+id/recipeImageButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/profileRecipesLine"
         android:layout_width="100dp"
         android:layout_height="3dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
         android:layout_marginLeft="64dp"
         android:layout_marginTop="389dp"
-        android:background="@drawable/profile_recipes_line" />
+        android:layout_marginEnd="127dp"
+        android:background="@drawable/profile_recipes_line"
+        app:layout_constraintBottom_toTopOf="@+id/profileDividerLine"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/recipeImageButton"
         android:layout_width="330dp"
         android:layout_height="200dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="420dp"
-        android:src="@drawable/egg_fried_rice_ff4_720x540" />
+        android:src="@drawable/egg_fried_rice_ff4_720x540"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/chefHat"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerInParent="true"
         android:layout_marginTop="625dp"
-        android:layout_marginRight="40dp"
-        android:src="@drawable/spoon_and_fork_crossed_1" />
+        android:src="@drawable/spoon_and_fork_crossed_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recipeImageButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/numberHat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerInParent="true"
         android:layout_marginTop="632dp"
-        android:layout_marginRight="75dp"
+        android:layout_marginEnd="4dp"
         android:gravity="center_horizontal|top"
         android:text="21"
         android:textColor="@color/light_orange"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chefHat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
+    <!--bottom dock base-->
     <TextView
         android:id="@+id/eggFriedRice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="628dp"
+        android:layout_marginTop="8dp"
         android:gravity="center_horizontal|top"
         android:text="Egg Fried Rice"
         android:textColor="@color/dark_blue"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recipeImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/recipeImageButton"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <!--bottom dock base-->
     <ImageView
         android:id="@+id/bottom_base"
         android:layout_width="800dp"
         android:layout_height="85dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="-5dp"
-        android:src="@drawable/ic_dock_base" />
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_dock_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <!--dock scan-->
     <Button
         android:id="@+id/scan_button"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_centerHorizontal="false"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="190dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/ic_scan_icon" />
+        android:background="@drawable/ic_scan_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <!--dock home-->
-
-    <!--dock profile-->
     <Button
         android:id="@+id/home_button"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_alignParentBottom="true"
         android:layout_marginRight="45dp"
         android:layout_marginBottom="10dp"
-        android:layout_toLeftOf="@id/profile_button"
-        android:background="@drawable/ic_dock_home" />
+        android:background="@drawable/ic_dock_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/profile_button" />
 
+    <!--dock profile-->
     <Button
         android:id="@+id/profile_button"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="-145dp"
+        android:layout_marginRight="45dp"
         android:layout_marginBottom="15dp"
-        android:layout_toLeftOf="@id/scan_button"
-        android:background="@drawable/ic_dock_profile" />
+        android:background="@drawable/ic_dock_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/scan_button" />
 
     <!--dock forum-->
     <Button
         android:id="@+id/forum_button"
         android:layout_width="28dp"
         android:layout_height="28dp"
-        android:layout_alignParentBottom="true"
         android:layout_marginLeft="45dp"
         android:layout_marginBottom="13dp"
-        android:layout_toRightOf="@id/scan_button"
-        android:background="@drawable/ic_dock_forum" />
+        android:background="@drawable/ic_dock_forum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/scan_button" />
 
     <!--dock recipe-->
     <Button
         android:id="@+id/recipe_button"
         android:layout_width="26dp"
         android:layout_height="26dp"
-        android:layout_alignParentBottom="true"
         android:layout_marginLeft="45dp"
         android:layout_marginBottom="13dp"
-        android:layout_toRightOf="@id/forum_button"
-        android:background="@drawable/ic_dock_add_recipe" />
+        android:background="@drawable/ic_dock_add_recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/forum_button" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
