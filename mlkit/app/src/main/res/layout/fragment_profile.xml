@@ -20,8 +20,9 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="10dp"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/ic_arrow_left" />
 
@@ -31,6 +32,7 @@
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
         android:layout_marginTop="16dp"
         android:layout_marginRight="17dp"
         android:background="@drawable/mdi_settings" />
@@ -56,26 +58,28 @@
         android:id="@+id/profileName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="260dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Mark Tan"
-        android:textSize="30sp"
         android:textColor="@color/dark_blue"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/profileBio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="300dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Culinary Prodigy"
-        android:textSize="15sp"
         android:textColor="@color/light_orange"
+        android:textSize="15sp"
         android:textStyle="bold" />
 
 
@@ -85,6 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:layout_marginLeft="87dp"
         android:layout_marginTop="360dp"
         android:gravity="center_horizontal|top"
@@ -98,8 +103,9 @@
         android:layout_width="20dp"
         android:layout_height="8dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="135dp"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="135dp"
         android:layout_marginTop="353dp"
         android:background="@drawable/ic_recipes_badge" />
 
@@ -109,6 +115,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:layout_marginLeft="143dp"
         android:layout_marginTop="352dp"
         android:gravity="center_horizontal|top"
@@ -121,9 +128,10 @@
         android:id="@+id/reviewsTab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="269dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="87dp"
         android:layout_marginTop="360dp"
         android:gravity="center_horizontal|top"
         android:text="Reviews"
@@ -136,6 +144,7 @@
         android:layout_width="350dp"
         android:layout_height="4dp"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="390dp"
         android:background="@drawable/profile_divider_line" />
@@ -146,6 +155,7 @@
         android:layout_height="3dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:layout_marginLeft="64dp"
         android:layout_marginTop="389dp"
         android:background="@drawable/profile_recipes_line" />
@@ -154,8 +164,9 @@
         android:id="@+id/recipeImageButton"
         android:layout_width="330dp"
         android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="420dp"
         android:src="@drawable/egg_fried_rice_ff4_720x540" />
 
@@ -165,6 +176,7 @@
         android:layout_height="30dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
         android:layout_marginTop="625dp"
         android:layout_marginRight="40dp"
         android:src="@drawable/spoon_and_fork_crossed_1" />
@@ -173,10 +185,11 @@
         android:id="@+id/numberHat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
         android:layout_marginTop="632dp"
+        android:layout_marginRight="75dp"
         android:gravity="center_horizontal|top"
         android:text="21"
         android:textColor="@color/light_orange"
@@ -188,6 +201,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="628dp"
         android:gravity="center_horizontal|top"
@@ -200,57 +214,68 @@
     <ImageView
         android:id="@+id/bottom_base"
         android:layout_width="800dp"
-        android:layout_height="250dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="-15dp"
-        android:layout_marginEnd="-15dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="650dp"
-        android:src="@drawable/ic_dock_base"/>
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-5dp"
+        android:src="@drawable/ic_dock_base" />
 
     <!--dock scan-->
     <Button
         android:id="@+id/scan_button"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="190dp"
-        android:background="@drawable/ic_scan_icon"
-        android:layout_marginTop="685dp" />
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_scan_icon" />
 
     <!--dock home-->
+
+    <!--dock profile-->
     <Button
         android:id="@+id/home_button"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_marginLeft="30dp"
-        android:background="@drawable/ic_dock_home"
-        android:layout_marginTop="685dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/profile_button"
+        android:background="@drawable/ic_dock_home" />
 
-    <!--dock profile-->
     <Button
         android:id="@+id/profile_button"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_marginLeft="110dp"
-        android:background="@drawable/ic_dock_profile"
-        android:layout_marginTop="690dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-145dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toLeftOf="@id/scan_button"
+        android:background="@drawable/ic_dock_profile" />
 
     <!--dock forum-->
     <Button
         android:id="@+id/forum_button"
         android:layout_width="28dp"
         android:layout_height="28dp"
-        android:layout_marginLeft="280dp"
-        android:background="@drawable/ic_dock_forum"
-        android:layout_marginTop="690dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="13dp"
+        android:layout_toRightOf="@id/scan_button"
+        android:background="@drawable/ic_dock_forum" />
 
     <!--dock recipe-->
     <Button
         android:id="@+id/recipe_button"
         android:layout_width="26dp"
         android:layout_height="26dp"
-        android:layout_marginLeft="360dp"
-        android:background="@drawable/ic_dock_add_recipe"
-        android:layout_marginTop="692dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="13dp"
+        android:layout_toRightOf="@id/forum_button"
+        android:background="@drawable/ic_dock_add_recipe" />
 
 </RelativeLayout>
