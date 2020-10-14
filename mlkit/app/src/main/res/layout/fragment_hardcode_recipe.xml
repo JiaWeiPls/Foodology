@@ -1,95 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.google.firebase.samples.apps.mlkit.Register">
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_google_pixel_2_xl___recipe_page" />
+        android:id="@+id/ellipseOrange"
+        android:layout_width="1500dp"
+        android:layout_height="1399dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/ic_ellipse_lightorange"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/charPng"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_/>
 
+    <ImageView
+        android:id="@+id/ellipseRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_recipe_ellipse"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_/>
 
-    <!--bottom dock base-->
+        <ImageView
+        android:id="@+id/recipeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ic_recipe_description"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_/>
 
-    <!--dock scan-->
+    <View
+        android:id="@+id/charPng"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/kindpng_1214636"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <!--dock home-->
-
-    <!--dock profile-->
-
-    <!--dock forum-->
-
-    <!--dock recipe-->
-
-
-    <!--icon base shape 2-->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="10dp"
         android:rotation="15"
-        android:src="@drawable/foodology_removebg_preview__1_" />
+        android:src="@drawable/foodology_removebg_preview__1_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/elipse"
-        android:layout_width="match_parent"
-        android:layout_height="78dp"
-        android:layout_alignParentTop="true"
-        android:scaleY="-1"
-        android:layout_marginTop="580dp"
-        android:src="@drawable/ic_elipse_white" />
-
-    <ImageView
-        android:id="@+id/charPNG"
-        android:layout_width="213dp"
-        android:layout_height="244dp"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="120dp"
-        app:srcCompat="@drawable/kindpng_1214636" />
-
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="320dp"
+        android:id="@+id/imageView8"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginLeft="20dp"
-        android:src="@drawable/profile_pic" />
+        android:layout_marginTop="340dp"
+        android:src="@drawable/profile_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bottom_base2"
+        android:layout_width="800dp"
+        android:layout_height="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_dock_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btn_recipe"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/btn_custom_recipe"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="220dp"
-        android:layout_marginTop="593dp"
-        android:fontFamily="@font/roboto_regular"
-        android:textColor="@color/light_orange"
-        android:textSize="15sp"
-        android:text="See Full Recipe"/>
+        android:id="@+id/scan_button2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_scan_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btn_cook"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/btn_custom_login"
-        android:layout_marginLeft="220dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="593dp"
-        android:text="Start Cooking"
-        android:textSize="15sp"
-        android:textColor="@android:color/white"
-        android:fontFamily="@font/roboto_regular"
-        />
+        android:id="@+id/home_button2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_dock_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/profile_button2" />
 
-</RelativeLayout>.ConstraintLayout>
+    <Button
+        android:id="@+id/profile_button2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_dock_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/scan_button2" />
+
+    <Button
+        android:id="@+id/forum_button2"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/ic_dock_forum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/scan_button2" />
+
+    <Button
+        android:id="@+id/recipe_button2"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/ic_dock_add_recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/forum_button2" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/btn_recipe"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="593dp"-->
+<!--        android:layout_marginRight="220dp"-->
+<!--        android:background="@drawable/btn_custom_recipe"-->
+<!--        android:fontFamily="@font/roboto_regular"-->
+<!--        android:text="See Full Recipe"-->
+<!--        android:textColor="@color/light_orange"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_cook"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginLeft="220dp"-->
+<!--        android:layout_marginTop="593dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:background="@drawable/btn_custom_login"-->
+<!--        android:fontFamily="@font/roboto_regular"-->
+<!--        android:text="Start Cooking"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>.ConstraintLayout>

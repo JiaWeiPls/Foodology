@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="-160dp"
         android:scaleY="-1"
-        android:src="@drawable/ic_elipse_orange" />
+        android:src="@drawable/ic_ellipse_orange" />
 
     <ImageView
         android:id="@+id/logo"
