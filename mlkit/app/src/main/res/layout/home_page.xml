@@ -18,52 +18,48 @@
     <!--orange, blue top background-->
     <ImageView
         android:id="@+id/home_background"
-        android:layout_width="460dp"
+        android:layout_width="370dp"
         android:layout_height="250dp"
-        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:layout_marginTop="7dp"
         android:src="@drawable/ic_top"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <!--logo top left-->
     <ImageView
         android:id="@+id/home_logo"
-        android:layout_width="0dp"
+        android:layout_width="80dp"
         android:layout_height="45dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="310dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/foodology_removebg_preview__1_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="2.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintRight_toLeftOf="@id/home_background"
-        app:layout_constraintLeft_toRightOf="@id/home_background"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/home_background"
+        app:layout_constraintTop_toTopOf="@id/home_background"
+        app:layout_constraintVertical_bias="0.0" />
 
     <!--profile-->
     <ImageButton
         android:id="@+id/home_profile_picture"
-        android:layout_width="0dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="310dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
         android:background="@drawable/btn_see_all"
         android:src="@drawable/profile_pic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/home_background"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintRight_toLeftOf="@id/home_background"
-        app:layout_constraintLeft_toRightOf="@id/home_background" />
+        app:layout_constraintTop_toTopOf="@id/home_background"
+        app:layout_constraintVertical_bias="0.0" />
 
     <!--Hi User-->
     <TextView
@@ -89,16 +85,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
         android:text="@string/let_s_discover_recipes"
         android:textColor="@android:color/white"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/home_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/home_search"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"/>
+        app:layout_constraintVertical_bias="1.0" />
 
     <!-- search text to type-->
     <EditText
@@ -107,7 +103,6 @@
         android:layout_height="68dp"
         android:layout_marginTop="220dp"
         android:background="@drawable/ic_search_rectangle"
-        android:clipToPadding="false"
         android:elevation="100dp"
         android:fontFamily="@font/roboto_regular"
         android:gravity="center"
@@ -125,203 +120,172 @@
         android:id="@+id/home_text_fridge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="310dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/roboto_regular"
         android:text="@string/what_s_in_your_fridge"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/home_egg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/home_search"
+        app:layout_constraintTop_toBottomOf="@+id/home_search" />
 
     <!-- See all Button 1-->
     <Button
         android:id="@+id/home_see_all_1_button"
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:layout_marginStart="310dp"
-        android:layout_marginTop="312dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="395dp"
+        android:layout_marginStart="90dp"
         android:background="@drawable/btn_see_all"
         android:fontFamily="@font/roboto_regular"
         android:text="@string/See_All"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@id/home_egg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintBottom_toBottomOf="@+id/home_text_fridge"
+        app:layout_constraintStart_toEndOf="@+id/home_text_fridge"
+        app:layout_constraintTop_toTopOf="@+id/home_text_fridge" />
 
     <!--egg icon-->
     <View
         android:id="@+id/home_egg"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/eggicon"
         android:scrollbarAlwaysDrawHorizontalTrack="true"
         app:layout_constraintBottom_toTopOf="@+id/home_text_lunch"
-        app:layout_constraintRight_toLeftOf="@id/home_watermelon"
         app:layout_constraintStart_toStartOf="@id/home_text_fridge"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/home_text_fridge"
+        app:layout_constraintVertical_bias="0.0" />
 
     <!--watermelon icon-->
     <View
         android:id="@+id/home_watermelon"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="20dp"
         android:background="@drawable/watermelonicon"
         android:scrollbarAlwaysDrawHorizontalTrack="true"
-        app:layout_constraintBottom_toTopOf="@+id/home_text_lunch"
-        app:layout_constraintRight_toLeftOf="@id/home_springonion"
-        app:layout_constraintStart_toStartOf="@id/home_text_fridge"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/home_egg"
+        app:layout_constraintStart_toEndOf="@+id/home_egg"
+        app:layout_constraintTop_toTopOf="@+id/home_egg" />
 
     <!--icon spring onion-->
     <View
         android:id="@+id/home_springonion"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="20dp"
         android:background="@drawable/springonionicon"
         android:scrollbarAlwaysDrawHorizontalTrack="true"
-        app:layout_constraintBottom_toTopOf="@+id/home_text_lunch"
-        app:layout_constraintRight_toLeftOf="@id/home_mushroom"
-        app:layout_constraintStart_toStartOf="@id/home_text_fridge"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/home_watermelon"
+        app:layout_constraintStart_toEndOf="@+id/home_watermelon"
+        app:layout_constraintTop_toTopOf="@+id/home_watermelon" />
 
     <!--icon mushroom-->
     <View
         android:id="@+id/home_mushroom"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="20dp"
         android:background="@drawable/mushroomicon"
         android:scrollbarAlwaysDrawHorizontalTrack="true"
-        app:layout_constraintBottom_toTopOf="@+id/home_text_lunch"
-        app:layout_constraintLeft_toRightOf="@id/home_springonion"
-        app:layout_constraintStart_toStartOf="@id/home_text_fridge"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/home_springonion"
+        app:layout_constraintStart_toEndOf="@+id/home_springonion"
+        app:layout_constraintTop_toTopOf="@+id/home_springonion" />
 
     <!--UNDONE What's for lunch?-->
     <TextView
         android:id="@+id/home_text_lunch"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="120dp"
         android:fontFamily="@font/roboto_regular"
         android:text="@string/what_s_for_lunch"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/home_recipe_box_1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_egg"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="@+id/home_text_fridge"
+        app:layout_constraintTop_toBottomOf="@+id/home_text_fridge" />
 
     <!--UNDONE See all Button 2-->
     <Button
         android:id="@+id/home_see_all_2_button"
-        android:layout_width="96dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="175dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
         android:background="@drawable/btn_see_all"
         android:fontFamily="@font/roboto_regular"
         android:text="@string/See_All"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@id/home_recipe_box_1"
-        app:layout_constraintEnd_toEndOf="@id/home_see_all_1_button"
-        app:layout_constraintLeft_toRightOf="@id/home_text_lunch"
-        app:layout_constraintTop_toTopOf="@id/home_see_all_1_button"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintBottom_toBottomOf="@+id/home_text_lunch"
+        app:layout_constraintEnd_toEndOf="@+id/home_see_all_1_button"
+        app:layout_constraintStart_toStartOf="@+id/home_see_all_1_button"
+        app:layout_constraintTop_toTopOf="@+id/home_text_lunch" />
 
     <!--recipe box 1-->
     <View
         android:id="@+id/home_recipe_box_1"
         android:layout_width="140dp"
-        android:layout_height="210dp"
-        android:layout_marginEnd="200dp"
+        android:layout_height="217dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/ic_recipe_box"
-        android:scrollbarAlwaysDrawHorizontalTrack="false"
         app:layout_constraintBottom_toBottomOf="@id/bottom_base"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/home_recipe_box_2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_text_lunch" />
+        app:layout_constraintStart_toStartOf="@+id/home_background"
+        app:layout_constraintTop_toBottomOf="@id/home_text_lunch"
+        app:layout_constraintVertical_bias="0.0" />
 
     <!--recipe box 2-->
     <View
         android:id="@+id/home_recipe_box_2"
         android:layout_width="140dp"
-        android:layout_height="210dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="217dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/ic_recipe_box"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
-        app:layout_constraintBottom_toBottomOf="@id/bottom_base"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/home_recipe_box_3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_text_lunch" />
+        app:layout_constraintBottom_toBottomOf="@+id/home_recipe_box_1"
+        app:layout_constraintStart_toEndOf="@+id/home_recipe_box_1"
+        app:layout_constraintTop_toTopOf="@+id/home_recipe_box_1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <!--recipe box 3-->
     <View
         android:id="@+id/home_recipe_box_3"
         android:layout_width="140dp"
-        android:layout_height="210dp"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="5dp"
+        android:layout_height="217dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/ic_recipe_box"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
-        app:layout_constraintBottom_toBottomOf="@id/bottom_base"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/home_recipe_box_2"
         app:layout_constraintLeft_toRightOf="@id/home_recipe_box_3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/home_text_lunch" />
+        app:layout_constraintStart_toEndOf="@+id/home_recipe_box_2"
+        app:layout_constraintTop_toTopOf="@+id/home_recipe_box_2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <!--fried rice + calorie + photo 1-->
     <Button
         android:id="@+id/home_recipe_1"
-        android:layout_width="95dp"
-        android:layout_height="130dp"
+        android:layout_width="85dp"
+        android:layout_height="129dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/ic_friedrice"
         android:scrollHorizontally="true"
         app:layout_constraintBottom_toTopOf="@id/bottom_base"
         app:layout_constraintEnd_toEndOf="@id/home_recipe_box_1"
         app:layout_constraintStart_toStartOf="@id/home_recipe_box_1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintTop_toTopOf="@+id/home_recipe_box_1"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/home_recipe_photo_1"
-        android:layout_width="400dp"
+        android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
@@ -330,27 +294,26 @@
         android:src="@drawable/friedrice"
         app:layout_constraintEnd_toEndOf="@id/home_recipe_box_1"
         app:layout_constraintStart_toStartOf="@id/home_recipe_box_1"
-        app:layout_constraintTop_toTopOf="@id/home_recipe_box_1"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintTop_toTopOf="@id/home_recipe_box_1" />
 
     <!--fried rice + calorie + photo2-->
     <Button
         android:id="@+id/home_recipe_2"
-        android:layout_width="95dp"
-        android:layout_height="130dp"
+        android:layout_width="85dp"
+        android:layout_height="129dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/ic_friedrice"
         app:layout_constraintBottom_toTopOf="@id/bottom_base"
         app:layout_constraintEnd_toEndOf="@id/home_recipe_box_2"
         app:layout_constraintStart_toStartOf="@id/home_recipe_box_2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintTop_toTopOf="@+id/home_recipe_box_2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/home_recipe_photo_2"
-        android:layout_width="400dp"
+        android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
@@ -364,21 +327,21 @@
     <!--fried rice + calorie + photo3-->
     <Button
         android:id="@+id/home_recipe_3"
-        android:layout_width="95dp"
-        android:layout_height="130dp"
+        android:layout_width="85dp"
+        android:layout_height="129dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/ic_friedrice"
         app:layout_constraintBottom_toTopOf="@id/bottom_base"
         app:layout_constraintEnd_toEndOf="@id/home_recipe_box_3"
         app:layout_constraintStart_toStartOf="@id/home_recipe_box_3"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintTop_toTopOf="@+id/home_recipe_box_3"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/home_recipe_photo_3"
-        android:layout_width="400dp"
+        android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
