@@ -4,6 +4,7 @@
     <bytecodeTargetLevel>
       <module name="internal-lint" target="1.7" />
       <module name="lint" target="1.7" />
+      <module name="mlkit.app" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
