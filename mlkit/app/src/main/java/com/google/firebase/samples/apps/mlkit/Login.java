@@ -35,12 +35,12 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_login);
 
-        mEmail = findViewById(R.id.et_email);
-        mPassword = findViewById(R.id.et_password);
+        mEmail = findViewById(R.id.login_et_email);
+        mPassword = findViewById(R.id.login_et_password);
         progressBar = findViewById(R.id.progressBar);
         fAuth = FirebaseAuth.getInstance();
-        mLoginBtn = findViewById(R.id.btn_login);
-        mCreateBtn = (Button)findViewById(R.id.swipeRight);
+        mLoginBtn = findViewById(R.id.login_btn_login);
+        mCreateBtn = (Button)findViewById(R.id.login_btn_register);
         forgotTextLink = findViewById(R.id.login_resetPW);
 
 

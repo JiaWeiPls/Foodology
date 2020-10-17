@@ -96,7 +96,7 @@ public class StillImageActivity extends AppCompatActivity {
     binding = ActivityStillImageBinding.inflate(getLayoutInflater());
     setContentView(binding.getRoot());
 
-    ImageButton scan_btn = (ImageButton) findViewById(R.id.buttonScan);
+    ImageButton scan_btn = (ImageButton) findViewById(R.id.stillimage_buttonScan);
     scan_btn.setOnClickListener(new View.OnClickListener(){
 
       @Override
@@ -121,7 +121,7 @@ public class StillImageActivity extends AppCompatActivity {
       }
     });
 
-    ImageButton import_btn = (ImageButton) findViewById(R.id.buttonImport);
+    ImageButton import_btn = (ImageButton) findViewById(R.id.stillimage_buttonImport);
     import_btn.setOnClickListener(new View.OnClickListener(){
 
       @Override
@@ -413,7 +413,7 @@ public class StillImageActivity extends AppCompatActivity {
         imageMaxHeight = ((View) binding.previewPane.getParent()).getWidth();
       } else {
         imageMaxHeight =
-            ((View) binding.previewPane.getParent()).getHeight() - findViewById(R.id.controlPanel).getHeight();
+            ((View) binding.previewPane.getParent()).getHeight() - findViewById(R.id.stillimage_controlPanel).getHeight();
       }
     }
 

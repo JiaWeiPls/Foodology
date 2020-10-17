@@ -12,7 +12,7 @@
         android:layout_height="match_parent"/>
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/foodology_logo"
         android:layout_width="400dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"

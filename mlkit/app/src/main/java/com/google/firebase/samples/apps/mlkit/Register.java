@@ -42,12 +42,12 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_register);
 
-        mFullName   = findViewById(R.id.et_name);
-        mEmail      = findViewById(R.id.et_email);
-        mPassword   = findViewById(R.id.et_password);
-        mPhone   = findViewById(R.id.et_phone);
+        mFullName   = findViewById(R.id.register_et_name);
+        mEmail      = findViewById(R.id.login_et_email);
+        mPassword   = findViewById(R.id.login_et_password);
+        mPhone   = findViewById(R.id.register_et_phone);
         mRegisterBtn = findViewById(R.id.btn_register);
-        mLoginBtn   = findViewById(R.id.swipeLeft);
+        mLoginBtn   = findViewById(R.id.register_backToLogin);
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();

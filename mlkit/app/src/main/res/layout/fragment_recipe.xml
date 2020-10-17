@@ -9,7 +9,7 @@
     tools:context="com.google.firebase.samples.apps.mlkit.Register">
 
     <ImageView
-        android:id="@+id/elipse"
+        android:id="@+id/login_register_elipse"
         android:layout_width="match_parent"
         android:layout_height="396dp"
         android:layout_alignParentTop="true"
@@ -18,7 +18,7 @@
         android:src="@drawable/ic_ellipse_orange" />
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/foodology_logo"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_alignParentStart="true"
@@ -50,7 +50,7 @@
         android:src="@drawable/ic_chef" />
 
     <Button
-        android:id="@+id/swipeLeft"
+        android:id="@+id/register_backToLogin"
         android:layout_width="85dp"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -64,7 +64,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/register_back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -380,7 +380,7 @@
         android:id="@+id/btn_cook"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:background="@drawable/btn_custom_login"
+        android:background="@drawable/login_btn_orange"
         android:layout_marginLeft="210dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="630dp"

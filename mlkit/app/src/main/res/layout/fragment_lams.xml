@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/foodology_logo"
         android:layout_width="386dp"
         android:layout_height="70dp"
         android:layout_centerVertical="true"

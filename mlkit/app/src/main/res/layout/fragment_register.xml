@@ -9,7 +9,7 @@
     tools:context="com.google.firebase.samples.apps.mlkit.Register">
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/foodology_logo"
         android:layout_width="490dp"
         android:layout_height="100dp"
         android:layout_centerVertical="true"
@@ -23,19 +23,19 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/elipse"
+        android:id="@+id/login_register_elipse"
         android:layout_width="3169dp"
         android:layout_height="1000dp"
         android:layout_centerVertical="true"
-        android:src="@drawable/ic_elipse"
+        android:src="@drawable/login_register_elipse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv_subtitle"
+        app:layout_constraintTop_toTopOf="@+id/register_welcome"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/tv_subtitle"
+        android:id="@+id/register_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -50,7 +50,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_name"
+        android:id="@+id/register_et_name"
         android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -63,13 +63,13 @@
         android:textColor="@color/dark_blue"
         android:textColorHint="@color/dark_blue"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/et_email"
+        app:layout_constraintBottom_toTopOf="@+id/login_et_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_subtitle" />
+        app:layout_constraintTop_toBottomOf="@id/register_welcome" />
 
     <View
-        android:id="@+id/line_name"
+        android:id="@+id/register_line_name"
         android:layout_width="260dp"
         android:layout_height="1dp"
         android:layout_centerHorizontal="true"
@@ -78,11 +78,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_name"
+        app:layout_constraintTop_toBottomOf="@id/register_et_name"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/login_et_email"
         android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -96,13 +96,13 @@
         android:textColor="@color/dark_blue"
         android:textColorHint="@color/dark_blue"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/et_password"
+        app:layout_constraintBottom_toTopOf="@+id/login_et_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_name" />
+        app:layout_constraintTop_toBottomOf="@id/register_et_name" />
 
     <View
-        android:id="@+id/line_email"
+        android:id="@+id/login_line_email"
         android:layout_width="260dp"
         android:layout_height="1dp"
         android:layout_centerVertical="true"
@@ -110,11 +110,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_email"
+        app:layout_constraintTop_toBottomOf="@id/login_et_email"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/et_password"
+        android:id="@+id/login_et_password"
         android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -127,13 +127,13 @@
         android:textColor="@color/dark_blue"
         android:textColorHint="@color/dark_blue"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/et_phone"
+        app:layout_constraintBottom_toTopOf="@+id/register_et_phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_email" />
+        app:layout_constraintTop_toBottomOf="@id/login_et_email" />
 
     <View
-        android:id="@+id/line_password"
+        android:id="@+id/login_line_password"
         android:layout_width="260dp"
         android:layout_height="1dp"
         android:layout_centerVertical="true"
@@ -141,11 +141,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_password"
+        app:layout_constraintTop_toBottomOf="@id/login_et_password"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/et_phone"
+        android:id="@+id/register_et_phone"
         android:layout_width="290dp"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
@@ -161,10 +161,10 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_password" />
+        app:layout_constraintTop_toBottomOf="@id/login_et_password" />
 
     <View
-        android:id="@+id/line_phone"
+        android:id="@+id/register_line_phone"
         android:layout_width="260dp"
         android:layout_height="1dp"
         android:layout_centerVertical="true"
@@ -172,7 +172,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_phone"
+        app:layout_constraintTop_toBottomOf="@id/register_et_phone"
         app:layout_constraintVertical_bias="0.0" />
 
 
@@ -183,7 +183,7 @@
         android:layout_centerVertical="true"
         android:layout_marginTop="3dp"
         android:layout_marginBottom="46dp"
-        android:background="@drawable/btn_custom"
+        android:background="@drawable/login_btn_darkblue"
         android:fontFamily="@font/roboto_regular"
         android:text="Register"
         android:textColor="@android:color/white"
@@ -191,11 +191,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_phone"
+        app:layout_constraintTop_toBottomOf="@id/register_et_phone"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/swipeLeft"
+        android:id="@+id/register_backToLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="27dp"
@@ -210,7 +210,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/register_back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="13dp"
