@@ -19,7 +19,7 @@
         android:layout_marginStart="0dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="15dp"
-        android:src="@drawable/foodology_removebg_preview__1_" />
+        android:src="@drawable/logo_foodology" />
 
     <ImageView
         android:layout_width="50dp"
@@ -37,7 +37,7 @@
         android:layout_marginEnd="-15dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="650dp"
-        android:src="@drawable/ic_dock_base"/>
+        android:src="@drawable/dock_base"/>
 
     <!--dock scan-->
     <Button
@@ -45,7 +45,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="190dp"
-        android:background="@drawable/ic_scan_icon"
+        android:background="@drawable/dock_scan"
         android:layout_marginTop="685dp" />
 
     <!--dock home-->
@@ -54,7 +54,7 @@
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginLeft="30dp"
-        android:background="@drawable/ic_dock_home"
+        android:background="@drawable/dock_home"
         android:layout_marginTop="685dp" />
 
     <!--dock profile-->
@@ -63,7 +63,7 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginLeft="110dp"
-        android:background="@drawable/ic_dock_profile"
+        android:background="@drawable/dock_profile"
         android:layout_marginTop="690dp" />
 
     <!--dock forum-->
@@ -72,7 +72,7 @@
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_marginLeft="280dp"
-        android:background="@drawable/ic_dock_forum"
+        android:background="@drawable/dock_forum"
         android:layout_marginTop="690dp" />
 
     <!--dock recipe-->
@@ -81,6 +81,6 @@
         android:layout_width="26dp"
         android:layout_height="26dp"
         android:layout_marginLeft="360dp"
-        android:background="@drawable/ic_dock_add_recipe"
+        android:background="@drawable/dock_add_recipe"
         android:layout_marginTop="692dp" />
 </RelativeLayout>
