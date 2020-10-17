@@ -14,7 +14,7 @@
         android:layout_height="100dp"
         android:layout_centerVertical="true"
         android:layout_marginTop="60dp"
-        android:src="@drawable/foodology_removebg_preview__1_"
+        android:src="@drawable/logo_foodology"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"

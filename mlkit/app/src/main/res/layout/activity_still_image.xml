@@ -26,7 +26,7 @@
       android:layout_marginStart="0dp"
       android:layout_alignParentTop="true"
       android:layout_marginTop="15dp"
-      android:src="@drawable/foodology_removebg_preview__1_" />
+      android:src="@drawable/logo_foodology" />
 
   <ImageView
       android:id="@+id/previewPane"
