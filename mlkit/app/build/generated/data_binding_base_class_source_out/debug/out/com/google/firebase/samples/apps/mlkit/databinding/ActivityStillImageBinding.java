@@ -24,28 +24,16 @@ public final class ActivityStillImageBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final ImageButton buttonImport;
-
-  @NonNull
-  public final ImageButton buttonScan;
-
-  @NonNull
   public final FrameLayout controlPanel;
-
-  @NonNull
-  public final ImageView elipse;
 
   @NonNull
   public final RelativeLayout fireTopLayout;
 
   @NonNull
+  public final ImageView foodologyLogo;
+
+  @NonNull
   public final Button getImageButton;
-
-  @NonNull
-  public final TextView importText;
-
-  @NonNull
-  public final ImageView logo;
 
   @NonNull
   public final GraphicOverlay previewOverlay;
@@ -54,29 +42,42 @@ public final class ActivityStillImageBinding implements ViewBinding {
   public final ImageView previewPane;
 
   @NonNull
-  public final TextView scan;
+  public final ImageButton stillimgBtnImport;
+
+  @NonNull
+  public final ImageButton stillimgButtonScan;
+
+  @NonNull
+  public final ImageView stillimgElipse;
+
+  @NonNull
+  public final TextView stillimgImportTxt;
+
+  @NonNull
+  public final TextView stillimgScanTxt;
 
   @NonNull
   public final TextView txtDisplayID;
 
   private ActivityStillImageBinding(@NonNull RelativeLayout rootView,
-      @NonNull ImageButton buttonImport, @NonNull ImageButton buttonScan,
-      @NonNull FrameLayout controlPanel, @NonNull ImageView elipse,
-      @NonNull RelativeLayout fireTopLayout, @NonNull Button getImageButton,
-      @NonNull TextView importText, @NonNull ImageView logo, @NonNull GraphicOverlay previewOverlay,
-      @NonNull ImageView previewPane, @NonNull TextView scan, @NonNull TextView txtDisplayID) {
+      @NonNull FrameLayout controlPanel, @NonNull RelativeLayout fireTopLayout,
+      @NonNull ImageView foodologyLogo, @NonNull Button getImageButton,
+      @NonNull GraphicOverlay previewOverlay, @NonNull ImageView previewPane,
+      @NonNull ImageButton stillimgBtnImport, @NonNull ImageButton stillimgButtonScan,
+      @NonNull ImageView stillimgElipse, @NonNull TextView stillimgImportTxt,
+      @NonNull TextView stillimgScanTxt, @NonNull TextView txtDisplayID) {
     this.rootView = rootView;
-    this.buttonImport = buttonImport;
-    this.buttonScan = buttonScan;
     this.controlPanel = controlPanel;
-    this.elipse = elipse;
     this.fireTopLayout = fireTopLayout;
+    this.foodologyLogo = foodologyLogo;
     this.getImageButton = getImageButton;
-    this.importText = importText;
-    this.logo = logo;
     this.previewOverlay = previewOverlay;
     this.previewPane = previewPane;
-    this.scan = scan;
+    this.stillimgBtnImport = stillimgBtnImport;
+    this.stillimgButtonScan = stillimgButtonScan;
+    this.stillimgElipse = stillimgElipse;
+    this.stillimgImportTxt = stillimgImportTxt;
+    this.stillimgScanTxt = stillimgScanTxt;
     this.txtDisplayID = txtDisplayID;
   }
 
@@ -107,47 +108,23 @@ public final class ActivityStillImageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.buttonImport;
-      ImageButton buttonImport = rootView.findViewById(id);
-      if (buttonImport == null) {
-        break missingId;
-      }
-
-      id = R.id.buttonScan;
-      ImageButton buttonScan = rootView.findViewById(id);
-      if (buttonScan == null) {
-        break missingId;
-      }
-
       id = R.id.controlPanel;
       FrameLayout controlPanel = rootView.findViewById(id);
       if (controlPanel == null) {
         break missingId;
       }
 
-      id = R.id.elipse;
-      ImageView elipse = rootView.findViewById(id);
-      if (elipse == null) {
+      RelativeLayout fireTopLayout = (RelativeLayout) rootView;
+
+      id = R.id.foodology_logo;
+      ImageView foodologyLogo = rootView.findViewById(id);
+      if (foodologyLogo == null) {
         break missingId;
       }
-
-      RelativeLayout fireTopLayout = (RelativeLayout) rootView;
 
       id = R.id.getImageButton;
       Button getImageButton = rootView.findViewById(id);
       if (getImageButton == null) {
-        break missingId;
-      }
-
-      id = R.id.importText;
-      TextView importText = rootView.findViewById(id);
-      if (importText == null) {
-        break missingId;
-      }
-
-      id = R.id.logo;
-      ImageView logo = rootView.findViewById(id);
-      if (logo == null) {
         break missingId;
       }
 
@@ -163,9 +140,33 @@ public final class ActivityStillImageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.scan;
-      TextView scan = rootView.findViewById(id);
-      if (scan == null) {
+      id = R.id.stillimg_btnImport;
+      ImageButton stillimgBtnImport = rootView.findViewById(id);
+      if (stillimgBtnImport == null) {
+        break missingId;
+      }
+
+      id = R.id.stillimg_buttonScan;
+      ImageButton stillimgButtonScan = rootView.findViewById(id);
+      if (stillimgButtonScan == null) {
+        break missingId;
+      }
+
+      id = R.id.stillimg_elipse;
+      ImageView stillimgElipse = rootView.findViewById(id);
+      if (stillimgElipse == null) {
+        break missingId;
+      }
+
+      id = R.id.stillimg_importTxt;
+      TextView stillimgImportTxt = rootView.findViewById(id);
+      if (stillimgImportTxt == null) {
+        break missingId;
+      }
+
+      id = R.id.stillimg_scanTxt;
+      TextView stillimgScanTxt = rootView.findViewById(id);
+      if (stillimgScanTxt == null) {
         break missingId;
       }
 
@@ -175,9 +176,9 @@ public final class ActivityStillImageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityStillImageBinding((RelativeLayout) rootView, buttonImport, buttonScan,
-          controlPanel, elipse, fireTopLayout, getImageButton, importText, logo, previewOverlay,
-          previewPane, scan, txtDisplayID);
+      return new ActivityStillImageBinding((RelativeLayout) rootView, controlPanel, fireTopLayout,
+          foodologyLogo, getImageButton, previewOverlay, previewPane, stillimgBtnImport,
+          stillimgButtonScan, stillimgElipse, stillimgImportTxt, stillimgScanTxt, txtDisplayID);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -50,6 +50,18 @@
 
         <activity
             android:name="com.google.firebase.samples.apps.mlkit.Register"/>
+
+        <activity
+            android:name="com.google.firebase.samples.apps.mlkit.Step1"/>
+
+        <activity
+            android:name="com.google.firebase.samples.apps.mlkit.Step2"/>
+
+        <activity
+            android:name="com.google.firebase.samples.apps.mlkit.Step3"/>
+
+        <activity
+            android:name="com.google.firebase.samples.apps.mlkit.Step4"/>
 		
 		<activity
             android:name="com.google.firebase.samples.apps.mlkit.java.StillImageActivity"/>

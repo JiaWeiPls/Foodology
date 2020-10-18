@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         scanButton = findViewById(R.id.scan_button);
         forumButton = findViewById(R.id.forum_button);
         recipeButton = findViewById(R.id.recipe_button);
-        eggfriedriceButton = findViewById(R.id.eggfriedrice_button);
+        //eggfriedriceButton = findViewById(R.id.eggfriedrice_button);
         // AddData();
 
         homeButton.setOnClickListener(new View.OnClickListener() {
@@ -80,13 +80,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        eggfriedriceButton.setOnClickListener(new View.OnClickListener() {
+/*        eggfriedriceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), RecipeActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         forumButton.setOnClickListener(new View.OnClickListener() {
             @Override

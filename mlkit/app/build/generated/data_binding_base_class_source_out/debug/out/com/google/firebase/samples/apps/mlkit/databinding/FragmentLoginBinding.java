@@ -8,10 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.google.firebase.samples.apps.mlkit.R;
 import java.lang.NullPointerException;
@@ -20,63 +20,69 @@ import java.lang.String;
 
 public final class FragmentLoginBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnLogin;
+  public final ImageView foodologyLogo;
 
   @NonNull
-  public final ImageView elipse;
+  public final Button loginBtnLogin;
 
   @NonNull
-  public final EditText etEmail;
+  public final Button loginBtnRegister;
 
   @NonNull
-  public final EditText etPassword;
+  public final EditText loginEtEmail;
 
   @NonNull
-  public final View lineEmail;
+  public final EditText loginEtPassword;
 
   @NonNull
-  public final View linePassword;
+  public final View loginLineEmail;
+
+  @NonNull
+  public final View loginLinePassword;
+
+  @NonNull
+  public final ImageView loginRegisterElipse;
 
   @NonNull
   public final Button loginResetPW;
 
   @NonNull
-  public final ImageView logo;
+  public final TextView loginWelcome;
 
   @NonNull
   public final ProgressBar progressBar;
 
   @NonNull
-  public final Button swipeRight;
+  public final ConstraintLayout relativeLayout2;
 
-  @NonNull
-  public final TextView tvSubtitle;
-
-  private FragmentLoginBinding(@NonNull RelativeLayout rootView, @NonNull Button btnLogin,
-      @NonNull ImageView elipse, @NonNull EditText etEmail, @NonNull EditText etPassword,
-      @NonNull View lineEmail, @NonNull View linePassword, @NonNull Button loginResetPW,
-      @NonNull ImageView logo, @NonNull ProgressBar progressBar, @NonNull Button swipeRight,
-      @NonNull TextView tvSubtitle) {
+  private FragmentLoginBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView foodologyLogo,
+      @NonNull Button loginBtnLogin, @NonNull Button loginBtnRegister,
+      @NonNull EditText loginEtEmail, @NonNull EditText loginEtPassword,
+      @NonNull View loginLineEmail, @NonNull View loginLinePassword,
+      @NonNull ImageView loginRegisterElipse, @NonNull Button loginResetPW,
+      @NonNull TextView loginWelcome, @NonNull ProgressBar progressBar,
+      @NonNull ConstraintLayout relativeLayout2) {
     this.rootView = rootView;
-    this.btnLogin = btnLogin;
-    this.elipse = elipse;
-    this.etEmail = etEmail;
-    this.etPassword = etPassword;
-    this.lineEmail = lineEmail;
-    this.linePassword = linePassword;
+    this.foodologyLogo = foodologyLogo;
+    this.loginBtnLogin = loginBtnLogin;
+    this.loginBtnRegister = loginBtnRegister;
+    this.loginEtEmail = loginEtEmail;
+    this.loginEtPassword = loginEtPassword;
+    this.loginLineEmail = loginLineEmail;
+    this.loginLinePassword = loginLinePassword;
+    this.loginRegisterElipse = loginRegisterElipse;
     this.loginResetPW = loginResetPW;
-    this.logo = logo;
+    this.loginWelcome = loginWelcome;
     this.progressBar = progressBar;
-    this.swipeRight = swipeRight;
-    this.tvSubtitle = tvSubtitle;
+    this.relativeLayout2 = relativeLayout2;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -101,39 +107,51 @@ public final class FragmentLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_login;
-      Button btnLogin = rootView.findViewById(id);
-      if (btnLogin == null) {
+      id = R.id.foodology_logo;
+      ImageView foodologyLogo = rootView.findViewById(id);
+      if (foodologyLogo == null) {
         break missingId;
       }
 
-      id = R.id.elipse;
-      ImageView elipse = rootView.findViewById(id);
-      if (elipse == null) {
+      id = R.id.login_btn_login;
+      Button loginBtnLogin = rootView.findViewById(id);
+      if (loginBtnLogin == null) {
         break missingId;
       }
 
-      id = R.id.et_email;
-      EditText etEmail = rootView.findViewById(id);
-      if (etEmail == null) {
+      id = R.id.login_btn_register;
+      Button loginBtnRegister = rootView.findViewById(id);
+      if (loginBtnRegister == null) {
         break missingId;
       }
 
-      id = R.id.et_password;
-      EditText etPassword = rootView.findViewById(id);
-      if (etPassword == null) {
+      id = R.id.login_et_email;
+      EditText loginEtEmail = rootView.findViewById(id);
+      if (loginEtEmail == null) {
         break missingId;
       }
 
-      id = R.id.line_email;
-      View lineEmail = rootView.findViewById(id);
-      if (lineEmail == null) {
+      id = R.id.login_et_password;
+      EditText loginEtPassword = rootView.findViewById(id);
+      if (loginEtPassword == null) {
         break missingId;
       }
 
-      id = R.id.line_password;
-      View linePassword = rootView.findViewById(id);
-      if (linePassword == null) {
+      id = R.id.login_line_email;
+      View loginLineEmail = rootView.findViewById(id);
+      if (loginLineEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.login_line_password;
+      View loginLinePassword = rootView.findViewById(id);
+      if (loginLinePassword == null) {
+        break missingId;
+      }
+
+      id = R.id.login_register_elipse;
+      ImageView loginRegisterElipse = rootView.findViewById(id);
+      if (loginRegisterElipse == null) {
         break missingId;
       }
 
@@ -143,9 +161,9 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.logo;
-      ImageView logo = rootView.findViewById(id);
-      if (logo == null) {
+      id = R.id.login_welcome;
+      TextView loginWelcome = rootView.findViewById(id);
+      if (loginWelcome == null) {
         break missingId;
       }
 
@@ -155,21 +173,11 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.swipeRight;
-      Button swipeRight = rootView.findViewById(id);
-      if (swipeRight == null) {
-        break missingId;
-      }
+      ConstraintLayout relativeLayout2 = (ConstraintLayout) rootView;
 
-      id = R.id.tv_subtitle;
-      TextView tvSubtitle = rootView.findViewById(id);
-      if (tvSubtitle == null) {
-        break missingId;
-      }
-
-      return new FragmentLoginBinding((RelativeLayout) rootView, btnLogin, elipse, etEmail,
-          etPassword, lineEmail, linePassword, loginResetPW, logo, progressBar, swipeRight,
-          tvSubtitle);
+      return new FragmentLoginBinding((ConstraintLayout) rootView, foodologyLogo, loginBtnLogin,
+          loginBtnRegister, loginEtEmail, loginEtPassword, loginLineEmail, loginLinePassword,
+          loginRegisterElipse, loginResetPW, loginWelcome, progressBar, relativeLayout2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

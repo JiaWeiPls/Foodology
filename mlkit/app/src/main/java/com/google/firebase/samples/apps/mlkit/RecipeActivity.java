@@ -11,16 +11,17 @@ import com.google.firebase.samples.apps.mlkit.java.StillImageActivity;
 
 public class RecipeActivity extends AppCompatActivity {
 
-    Button homeButton, profileButton, scanButton, forumButton, recipeButton;
+    Button homeButton, profileButton, scanButton, forumButton, recipeButton, cookButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_recipe);
-        homeButton = findViewById(R.id.home_button);
-        profileButton = findViewById(R.id.profile_button);
-        scanButton = findViewById(R.id.scan_button);
-        forumButton = findViewById(R.id.forum_button);
-        recipeButton = findViewById(R.id.recipe_button);
+        homeButton = findViewById(R.id.home_button2);
+        profileButton = findViewById(R.id.profile_button2);
+        scanButton = findViewById(R.id.scan_button2);
+        forumButton = findViewById(R.id.forum_button2);
+        recipeButton = findViewById(R.id.recipe_button2);
+        cookButton = findViewById(R.id.btn_cook);
 
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +59,14 @@ public class RecipeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), ForumActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cookButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Step1.class);
                 startActivity(intent);
             }
         });

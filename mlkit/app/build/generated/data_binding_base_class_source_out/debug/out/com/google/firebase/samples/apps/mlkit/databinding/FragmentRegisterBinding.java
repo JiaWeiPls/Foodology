@@ -8,10 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.google.firebase.samples.apps.mlkit.R;
 import java.lang.NullPointerException;
@@ -20,80 +20,87 @@ import java.lang.String;
 
 public final class FragmentRegisterBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final Button btnRegister;
 
   @NonNull
-  public final ImageView elipse;
+  public final ImageView foodologyLogo;
 
   @NonNull
-  public final EditText etEmail;
+  public final EditText loginEtEmail;
 
   @NonNull
-  public final EditText etName;
+  public final EditText loginEtPassword;
 
   @NonNull
-  public final EditText etPassword;
+  public final View loginLineEmail;
 
   @NonNull
-  public final EditText etPhone;
+  public final View loginLinePassword;
 
   @NonNull
-  public final ImageView imageView;
-
-  @NonNull
-  public final View lineEmail;
-
-  @NonNull
-  public final View lineName;
-
-  @NonNull
-  public final View linePassword;
-
-  @NonNull
-  public final View linePhone;
-
-  @NonNull
-  public final ImageView logo;
+  public final ImageView loginRegisterElipse;
 
   @NonNull
   public final ProgressBar progressBar;
 
   @NonNull
-  public final Button swipeLeft;
+  public final ImageView registerBackBtn;
 
   @NonNull
-  public final TextView tvSubtitle;
+  public final Button registerBackToLogin;
 
-  private FragmentRegisterBinding(@NonNull RelativeLayout rootView, @NonNull Button btnRegister,
-      @NonNull ImageView elipse, @NonNull EditText etEmail, @NonNull EditText etName,
-      @NonNull EditText etPassword, @NonNull EditText etPhone, @NonNull ImageView imageView,
-      @NonNull View lineEmail, @NonNull View lineName, @NonNull View linePassword,
-      @NonNull View linePhone, @NonNull ImageView logo, @NonNull ProgressBar progressBar,
-      @NonNull Button swipeLeft, @NonNull TextView tvSubtitle) {
+  @NonNull
+  public final EditText registerEtName;
+
+  @NonNull
+  public final EditText registerEtPhone;
+
+  @NonNull
+  public final View registerLineName;
+
+  @NonNull
+  public final View registerLinePhone;
+
+  @NonNull
+  public final TextView registerWelcome;
+
+  @NonNull
+  public final ConstraintLayout relativeLayout3;
+
+  private FragmentRegisterBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnRegister,
+      @NonNull ImageView foodologyLogo, @NonNull EditText loginEtEmail,
+      @NonNull EditText loginEtPassword, @NonNull View loginLineEmail,
+      @NonNull View loginLinePassword, @NonNull ImageView loginRegisterElipse,
+      @NonNull ProgressBar progressBar, @NonNull ImageView registerBackBtn,
+      @NonNull Button registerBackToLogin, @NonNull EditText registerEtName,
+      @NonNull EditText registerEtPhone, @NonNull View registerLineName,
+      @NonNull View registerLinePhone, @NonNull TextView registerWelcome,
+      @NonNull ConstraintLayout relativeLayout3) {
     this.rootView = rootView;
     this.btnRegister = btnRegister;
-    this.elipse = elipse;
-    this.etEmail = etEmail;
-    this.etName = etName;
-    this.etPassword = etPassword;
-    this.etPhone = etPhone;
-    this.imageView = imageView;
-    this.lineEmail = lineEmail;
-    this.lineName = lineName;
-    this.linePassword = linePassword;
-    this.linePhone = linePhone;
-    this.logo = logo;
+    this.foodologyLogo = foodologyLogo;
+    this.loginEtEmail = loginEtEmail;
+    this.loginEtPassword = loginEtPassword;
+    this.loginLineEmail = loginLineEmail;
+    this.loginLinePassword = loginLinePassword;
+    this.loginRegisterElipse = loginRegisterElipse;
     this.progressBar = progressBar;
-    this.swipeLeft = swipeLeft;
-    this.tvSubtitle = tvSubtitle;
+    this.registerBackBtn = registerBackBtn;
+    this.registerBackToLogin = registerBackToLogin;
+    this.registerEtName = registerEtName;
+    this.registerEtPhone = registerEtPhone;
+    this.registerLineName = registerLineName;
+    this.registerLinePhone = registerLinePhone;
+    this.registerWelcome = registerWelcome;
+    this.relativeLayout3 = relativeLayout3;
   }
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -124,69 +131,39 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.elipse;
-      ImageView elipse = rootView.findViewById(id);
-      if (elipse == null) {
+      id = R.id.foodology_logo;
+      ImageView foodologyLogo = rootView.findViewById(id);
+      if (foodologyLogo == null) {
         break missingId;
       }
 
-      id = R.id.et_email;
-      EditText etEmail = rootView.findViewById(id);
-      if (etEmail == null) {
+      id = R.id.login_et_email;
+      EditText loginEtEmail = rootView.findViewById(id);
+      if (loginEtEmail == null) {
         break missingId;
       }
 
-      id = R.id.et_name;
-      EditText etName = rootView.findViewById(id);
-      if (etName == null) {
+      id = R.id.login_et_password;
+      EditText loginEtPassword = rootView.findViewById(id);
+      if (loginEtPassword == null) {
         break missingId;
       }
 
-      id = R.id.et_password;
-      EditText etPassword = rootView.findViewById(id);
-      if (etPassword == null) {
+      id = R.id.login_line_email;
+      View loginLineEmail = rootView.findViewById(id);
+      if (loginLineEmail == null) {
         break missingId;
       }
 
-      id = R.id.et_phone;
-      EditText etPhone = rootView.findViewById(id);
-      if (etPhone == null) {
+      id = R.id.login_line_password;
+      View loginLinePassword = rootView.findViewById(id);
+      if (loginLinePassword == null) {
         break missingId;
       }
 
-      id = R.id.imageView;
-      ImageView imageView = rootView.findViewById(id);
-      if (imageView == null) {
-        break missingId;
-      }
-
-      id = R.id.line_email;
-      View lineEmail = rootView.findViewById(id);
-      if (lineEmail == null) {
-        break missingId;
-      }
-
-      id = R.id.line_name;
-      View lineName = rootView.findViewById(id);
-      if (lineName == null) {
-        break missingId;
-      }
-
-      id = R.id.line_password;
-      View linePassword = rootView.findViewById(id);
-      if (linePassword == null) {
-        break missingId;
-      }
-
-      id = R.id.line_phone;
-      View linePhone = rootView.findViewById(id);
-      if (linePhone == null) {
-        break missingId;
-      }
-
-      id = R.id.logo;
-      ImageView logo = rootView.findViewById(id);
-      if (logo == null) {
+      id = R.id.login_register_elipse;
+      ImageView loginRegisterElipse = rootView.findViewById(id);
+      if (loginRegisterElipse == null) {
         break missingId;
       }
 
@@ -196,21 +173,54 @@ public final class FragmentRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.swipeLeft;
-      Button swipeLeft = rootView.findViewById(id);
-      if (swipeLeft == null) {
+      id = R.id.register_back_btn;
+      ImageView registerBackBtn = rootView.findViewById(id);
+      if (registerBackBtn == null) {
         break missingId;
       }
 
-      id = R.id.tv_subtitle;
-      TextView tvSubtitle = rootView.findViewById(id);
-      if (tvSubtitle == null) {
+      id = R.id.register_backToLogin;
+      Button registerBackToLogin = rootView.findViewById(id);
+      if (registerBackToLogin == null) {
         break missingId;
       }
 
-      return new FragmentRegisterBinding((RelativeLayout) rootView, btnRegister, elipse, etEmail,
-          etName, etPassword, etPhone, imageView, lineEmail, lineName, linePassword, linePhone,
-          logo, progressBar, swipeLeft, tvSubtitle);
+      id = R.id.register_et_name;
+      EditText registerEtName = rootView.findViewById(id);
+      if (registerEtName == null) {
+        break missingId;
+      }
+
+      id = R.id.register_et_phone;
+      EditText registerEtPhone = rootView.findViewById(id);
+      if (registerEtPhone == null) {
+        break missingId;
+      }
+
+      id = R.id.register_line_name;
+      View registerLineName = rootView.findViewById(id);
+      if (registerLineName == null) {
+        break missingId;
+      }
+
+      id = R.id.register_line_phone;
+      View registerLinePhone = rootView.findViewById(id);
+      if (registerLinePhone == null) {
+        break missingId;
+      }
+
+      id = R.id.register_welcome;
+      TextView registerWelcome = rootView.findViewById(id);
+      if (registerWelcome == null) {
+        break missingId;
+      }
+
+      ConstraintLayout relativeLayout3 = (ConstraintLayout) rootView;
+
+      return new FragmentRegisterBinding((ConstraintLayout) rootView, btnRegister, foodologyLogo,
+          loginEtEmail, loginEtPassword, loginLineEmail, loginLinePassword, loginRegisterElipse,
+          progressBar, registerBackBtn, registerBackToLogin, registerEtName, registerEtPhone,
+          registerLineName, registerLinePhone, registerWelcome, relativeLayout3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
