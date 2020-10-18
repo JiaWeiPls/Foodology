@@ -7,7 +7,7 @@
     tools:context="com.google.firebase.samples.apps.mlkit.ProfileActivity">
 
     <View
-        android:id="@+id/recipe_ellipseOrange"
+        android:id="@+id/recipe_ellipseO"
         android:layout_width="3169dp"
         android:layout_height="1399dp"
         android:layout_centerVertical="true"
@@ -30,7 +30,7 @@
         android:layout_marginBottom="20dp"
         android:rotation="13"
         android:src="@drawable/logo_foodology"
-        app:layout_constraintBottom_toBottomOf="@id/recipe_ellipseOrange"
+        app:layout_constraintBottom_toBottomOf="@id/recipe_ellipseO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent" />

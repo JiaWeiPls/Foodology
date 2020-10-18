@@ -96,7 +96,7 @@ public class StillImageActivity extends AppCompatActivity {
     binding = ActivityStillImageBinding.inflate(getLayoutInflater());
     setContentView(binding.getRoot());
 
-    ImageButton scan_btn = (ImageButton) findViewById(R.id.stillimage_buttonScan);
+    ImageButton scan_btn = (ImageButton) findViewById(R.id.stillimg_buttonScan);
     scan_btn.setOnClickListener(new View.OnClickListener(){
 
       @Override
@@ -121,7 +121,7 @@ public class StillImageActivity extends AppCompatActivity {
       }
     });
 
-    ImageButton import_btn = (ImageButton) findViewById(R.id.stillimage_buttonImport);
+    ImageButton import_btn = (ImageButton) findViewById(R.id.stillimg_btnImport);
     import_btn.setOnClickListener(new View.OnClickListener(){
 
       @Override

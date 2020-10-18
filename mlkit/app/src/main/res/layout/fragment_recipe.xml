@@ -9,7 +9,7 @@
     tools:context="com.google.firebase.samples.apps.mlkit.Register">
 
     <ImageView
-        android:id="@+id/recipe_ellipseOrange"
+        android:id="@+id/recipe_ellipseO"
         android:layout_width="1500dp"
         android:layout_height="1399dp"
         android:layout_centerVertical="true"
@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/recipe_recipeTop"
+        android:id="@+id/recipe_top"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_centerVertical="true"
@@ -40,7 +40,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
         <ImageView
-        android:id="@+id/recipe_description"
+        android:id="@+id/recipe_bottom"
         android:layout_width="match_parent"
         android:layout_height="380dp"
         android:layout_centerVertical="true"

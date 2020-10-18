@@ -10,7 +10,7 @@
     android:keepScreenOn="true">
 
   <ImageView
-      android:id="@+id/stillimage_elipse"
+      android:id="@+id/stillimg_elipse"
       android:layout_width="match_parent"
       android:layout_height="78dp"
       android:layout_alignParentTop="true"
@@ -69,7 +69,7 @@
         android:text="Take photo" />
 
     <ImageButton
-        android:id="@+id/stillimage_buttonScan"
+        android:id="@+id/stillimg_buttonScan"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -80,7 +80,7 @@
         android:src="@drawable/scan_1" />
 
     <ImageButton
-        android:id="@+id/stillimage_buttonImport"
+        android:id="@+id/stillimg_btnImport"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="27dp"
@@ -92,10 +92,10 @@
         android:src="@drawable/stillimage_gallery_icon" />
 
     <TextView
-        android:id="@+id/stillimage_scanText"
+        android:id="@+id/stillimg_scanTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/stillimage_buttonScan"
+        android:layout_below="@id/stillimg_buttonScan"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/roboto_regular"
@@ -104,10 +104,10 @@
         android:textSize="10sp" />
 
     <TextView
-        android:id="@+id/stillimage_importText"
+        android:id="@+id/stillimg_importTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/stillimage_buttonImport"
+        android:layout_below="@id/stillimg_btnImport"
         android:layout_gravity="right"
         android:layout_marginTop="65dp"
         android:layout_marginRight="60dp"
