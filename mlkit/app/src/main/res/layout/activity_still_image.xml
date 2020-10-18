@@ -29,7 +29,7 @@
       android:src="@drawable/logo_foodology" />
 
   <ImageView
-      android:id="@+id/stillimage_previewPane"
+      android:id="@+id/previewPane"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_alignParentStart="true"
@@ -39,7 +39,7 @@
 
 
   <com.google.firebase.samples.apps.mlkit.common.GraphicOverlay
-      android:id="@+id/stillimage_previewOverlay"
+      android:id="@+id/previewOverlay"
       android:layout_width="fill_parent"
       android:layout_height="fill_parent"
       android:layout_alignParentStart="true"
@@ -47,7 +47,7 @@
       android:layout_alignParentBottom="true"/>
 
   <FrameLayout
-      android:id="@+id/stillimage_controlPanel"
+      android:id="@+id/controlPanel"
       android:layout_width="match_parent"
       android:layout_height="118dp"
       android:layout_alignParentStart="true"
@@ -56,12 +56,12 @@
       android:background="#000">
 
     <TextView
-        android:id="@+id/stillimage_txtDisplayID"
+        android:id="@+id/txtDisplayID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/stillimage_getImageButton"
+        android:id="@+id/getImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"

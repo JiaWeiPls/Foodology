@@ -413,7 +413,7 @@ public class StillImageActivity extends AppCompatActivity {
         imageMaxHeight = ((View) binding.previewPane.getParent()).getWidth();
       } else {
         imageMaxHeight =
-            ((View) binding.previewPane.getParent()).getHeight() - findViewById(R.id.stillimage_controlPanel).getHeight();
+            ((View) binding.previewPane.getParent()).getHeight() - findViewById(R.id.controlPanel).getHeight();
       }
     }
 
