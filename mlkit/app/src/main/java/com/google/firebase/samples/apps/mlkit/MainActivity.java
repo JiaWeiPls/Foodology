@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,7 +35,7 @@ import javax.annotation.Nullable;
 
 public class MainActivity extends AppCompatActivity {
     DatabaseHelper myDb;
-    Button homeButton, profileButton, scanButton, forumButton, recipeButton, eggfriedriceButton;
+    Button homeButton, profileButton, scanButton, forumButton, recipeButton, seeButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,8 +46,10 @@ public class MainActivity extends AppCompatActivity {
         scanButton = findViewById(R.id.scan_button);
         forumButton = findViewById(R.id.forum_button);
         recipeButton = findViewById(R.id.recipe_button);
-        //eggfriedriceButton = findViewById(R.id.eggfriedrice_button);
-        // AddData();
+        seeButton = findViewById(R.id.home_see_all_2_button);
+        ImageButton eggfriedriceButton1 = (ImageButton)findViewById(R.id.home_recipe_photo_1);
+        ImageButton eggfriedriceButton2 = (ImageButton)findViewById(R.id.home_recipe_photo_2);
+        ImageButton eggfriedriceButton3 = (ImageButton)findViewById(R.id.home_recipe_photo_3);
 
         homeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,13 +83,37 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-/*        eggfriedriceButton.setOnClickListener(new View.OnClickListener() {
+        seeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), RecipeActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
+
+        eggfriedriceButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), RecipeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        eggfriedriceButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), RecipeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        eggfriedriceButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), RecipeActivity.class);
+                startActivity(intent);
+            }
+        });
 
         forumButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,20 +124,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    /* public void AddData() {
-        register.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        boolean isInserted = myDb.insertData(loginid.getText().toString(),
-                                password.getText().toString());
-                        if (isInserted = true)
-                            Toast.makeText(MainActivity.this, "Data Inserted", Toast.LENGTH_LONG).show();
-                        else
-                            Toast.makeText(MainActivity.this, "Data not Inserted", Toast.LENGTH_LONG).show();
-
-                    }
-                }
-        );
-    } */
 }

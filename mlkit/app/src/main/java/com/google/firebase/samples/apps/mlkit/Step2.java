@@ -11,7 +11,7 @@ import com.google.firebase.samples.apps.mlkit.java.StillImageActivity;
 
 public class Step2 extends AppCompatActivity {
 
-    Button homeButton, profileButton, scanButton, forumButton, recipeButton, playButton, youtubeVideo, previousButton, nextButton;
+    Button homeButton, profileButton, scanButton, forumButton, recipeButton, previousButton, nextButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +21,6 @@ public class Step2 extends AppCompatActivity {
         scanButton = findViewById(R.id.scan_button);
         forumButton = findViewById(R.id.forum_button);
         recipeButton = findViewById(R.id.recipe_button);
-        playButton = findViewById(R.id.play_button);
-        youtubeVideo = findViewById(R.id.youtube_video);
         previousButton = findViewById(R.id.previous);
         nextButton = findViewById(R.id.next);
 
@@ -66,12 +64,6 @@ public class Step2 extends AppCompatActivity {
             }
         });
 
-        playButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                youtubeVideo.setVisibility(View.VISIBLE);
-            }
-        });
 
         previousButton.setOnClickListener(new View.OnClickListener() {
             @Override

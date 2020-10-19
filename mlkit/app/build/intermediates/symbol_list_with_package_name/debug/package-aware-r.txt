@@ -2448,7 +2448,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout expand_button
-layout forum
+layout fragment_forum
 layout fragment_lams1
 layout fragment_lams2
 layout fragment_lams3

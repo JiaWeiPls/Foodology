@@ -2447,7 +2447,7 @@ int layout design_navigation_menu_item 0x7f0d0031
 int layout design_text_input_end_icon 0x7f0d0032
 int layout design_text_input_start_icon 0x7f0d0033
 int layout expand_button 0x7f0d0034
-int layout forum 0x7f0d0035
+int layout fragment_forum 0x7f0d0035
 int layout fragment_lams1 0x7f0d0036
 int layout fragment_lams2 0x7f0d0037
 int layout fragment_lams3 0x7f0d0038

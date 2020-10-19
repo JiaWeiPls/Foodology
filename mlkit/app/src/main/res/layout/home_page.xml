@@ -398,7 +398,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toLeftOf="@id/scan_button" />
 
-    <!--dock forum-->
+    <!--dock fragment_forum-->
     <Button
         android:id="@+id/forum_button"
         android:layout_width="28dp"

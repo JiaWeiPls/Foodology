@@ -91,6 +91,7 @@
         android:layout_centerVertical="true"
         android:layout_marginTop="30dp"
         android:src="@drawable/egg_fried_rice_ff4_720x540"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,6 +103,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@drawable/ic_play_button"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@id/recipeVideo"
         app:layout_constraintLeft_toLeftOf="@id/recipeVideo"
         app:layout_constraintRight_toRightOf="@id/recipeVideo"
@@ -118,7 +120,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/prepIng"
         app:layout_constraintVertical_bias="0.0"
-        android:visibility="invisible"
         app:autoPlay="false"
         app:showYouTubeButton="false"
         app:videoId="8apGAl5EGik" />
@@ -342,7 +343,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toLeftOf="@id/scan_button" />
 
-    <!--dock forum-->
+    <!--dock fragment_forum-->
     <Button
         android:id="@+id/forum_button"
         android:layout_width="28dp"

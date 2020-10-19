@@ -15,7 +15,7 @@ public class ForumActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.forum);
+        setContentView(R.layout.fragment_forum);
         homeButton = findViewById(R.id.home_button);
         profileButton = findViewById(R.id.profile_button);
         scanButton = findViewById(R.id.scan_button);
