@@ -4,3 +4,17 @@ mlkit/app/build.gradle
 mlkit/.gradle/
 mlkit/local.properties
 
+mlkit/.gradle/buildOutputCleanup/buildOutputCleanup.lock
+mlkit/.gradle/buildOutputCleanup/outputFiles.bin
+mlkit/.gradle/checksums/checksums.lock
+mlkit/.gradle/checksums/md5-checksums.bin
+mlkit/.gradle/checksums/sha1-checksums.bin
+mlkit/.idea/caches/build_file_checksums.ser
+mlkit/.idea/gradle.xml
+mlkit/.idea/jarRepositories.xml
+mlkit/.idea/misc.xml
+mlkit/.idea/mlkit.iml
+mlkit/.idea/modules.xml
+mlkit/app/src/main/res/layout/fragment_recipe.xml
+mlkit/build.gradle
+mlkit/local.properties
