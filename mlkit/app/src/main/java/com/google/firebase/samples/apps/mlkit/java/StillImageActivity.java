@@ -325,7 +325,7 @@ public class StillImageActivity extends AppCompatActivity {
     String testtext = "The recipes are: ";
     //Cursor cursor = sqliteDatabase.query(TABLE_Recipe, new String[]{"rowid", COL_RecipeName, COL_RecipeSteps, COL_RecipeIngredient}, TABLE_Recipe + " MATCH ?", new String[]{s + "*"}, null, null, null, null);
     try{
-      Cursor cursor = sqliteDatabase.query("Recipe", new String[] {"RecipeID","RecipeName","RecipeIngredient"}, "RecipeName"+" LIKE?", new String[] {"Rice"}, null, null, null);
+      Cursor cursor = sqliteDatabase.query("Recipe", new String[] {"RecipeID","RecipeName","RecipeIngredient"}, "RecipeIngredient"+" LIKE?", new String[] { "%"+first_result + "%"}, null, null, null);
 
       String RecipeID;
       String RecipeName;
