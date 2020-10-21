@@ -19,6 +19,8 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.ImageDecoder;
 import android.net.Uri;
@@ -43,6 +45,7 @@ import android.widget.PopupMenu.OnMenuItemClickListener;
 import android.widget.Toast;
 
 import com.google.android.gms.common.annotation.KeepName;
+import com.google.firebase.samples.apps.mlkit.DatabaseHelper;
 import com.google.firebase.samples.apps.mlkit.R;
 import com.google.firebase.samples.apps.mlkit.common.VisionImageProcessor;
 import com.google.firebase.samples.apps.mlkit.common.LabelReader;
@@ -313,7 +316,35 @@ public class StillImageActivity extends AppCompatActivity {
     String confidence1 = LabelReader.Confidence_result1();
     String confidence2 = LabelReader.Confidence_result2();
     Context context = getApplicationContext();
-    CharSequence out = first_result + " with confidence: "+confidence1 + " \n\n " + second_result + " with confidence: "+confidence2;
+
+
+
+    DatabaseHelper myDb = new DatabaseHelper(this);
+    SQLiteDatabase sqliteDatabase = myDb.getReadableDatabase();
+    String RecipeID = null;
+    String RecipeName= null;
+    String testtext = null;
+    try{
+      Cursor cursor = sqliteDatabase.query("TABLE_Recipe", new String[] { "COL_RecipeID", "COL_RecipeName" }, "COL_RecipeID=?", new String[] { "1" }, null, null, null);
+
+
+      while (cursor.moveToNext()) {
+        RecipeID = cursor.getString(cursor.getColumnIndex("COL_RecipeID"));
+        RecipeName = cursor.getString(cursor.getColumnIndex("COL_RecipeName"));
+
+        testtext = RecipeID + ",," +RecipeName;
+      }
+    }
+    catch(Exception e){
+      testtext = "ERROR.ERROR.ERROR";
+
+    }
+
+
+
+
+
+    CharSequence out = first_result + " with confidence: "+confidence1 + " \n\n " + second_result + " with confidence: "+confidence2 + "\n\n"+testtext;
     int duration = Toast.LENGTH_LONG;
 
     Toast toast = Toast.makeText(context, out, duration);

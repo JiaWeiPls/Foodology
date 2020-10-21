@@ -20,6 +20,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.samples.apps.mlkit.DatabaseHelper;
 
 
 import java.util.ArrayList;
@@ -57,6 +58,13 @@ public class LabelReader {
         Confidence_result2 = String.valueOf(C2);
     }
 
+
+
+    public void LabelDetector() {
+
+
+
+    }
     // Frame for label and recipe matching process (TBD)
     /*
     public void LabelDetector() {
