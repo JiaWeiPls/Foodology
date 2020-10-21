@@ -321,18 +321,25 @@ public class StillImageActivity extends AppCompatActivity {
 
     DatabaseHelper myDb = new DatabaseHelper(this);
     SQLiteDatabase sqliteDatabase = myDb.getReadableDatabase();
-    String RecipeID = null;
-    String RecipeName= null;
-    String testtext = null;
+
+    String testtext = "The recipes are: ";
+    //Cursor cursor = sqliteDatabase.query(TABLE_Recipe, new String[]{"rowid", COL_RecipeName, COL_RecipeSteps, COL_RecipeIngredient}, TABLE_Recipe + " MATCH ?", new String[]{s + "*"}, null, null, null, null);
     try{
-      Cursor cursor = sqliteDatabase.query("TABLE_Recipe", new String[] { "COL_RecipeID", "COL_RecipeName" }, "COL_RecipeID=?", new String[] { "1" }, null, null, null);
+      Cursor cursor = sqliteDatabase.query("Recipe", new String[] {"RecipeID","RecipeName","RecipeIngredient"}, "RecipeName"+" LIKE?", new String[] {"Rice"}, null, null, null);
 
-
+      String RecipeID;
+      String RecipeName;
+      String RecipeIngredient;
       while (cursor.moveToNext()) {
-        RecipeID = cursor.getString(cursor.getColumnIndex("COL_RecipeID"));
-        RecipeName = cursor.getString(cursor.getColumnIndex("COL_RecipeName"));
+        RecipeID = cursor.getString(cursor.getColumnIndex("RecipeID"));
+        RecipeName = cursor.getString(cursor.getColumnIndex("RecipeName"));
+        RecipeIngredient = cursor.getString(cursor.getColumnIndex("RecipeIngredient"));
+        testtext += "\n"+RecipeID + ",\n" +RecipeName+ RecipeIngredient + "\n";
 
-        testtext = RecipeID + ",," +RecipeName;
+      }
+      sqliteDatabase.close();
+      if (cursor != null) {
+        cursor.close();
       }
     }
     catch(Exception e){
