@@ -47,6 +47,8 @@ import android.widget.Toast;
 import com.google.android.gms.common.annotation.KeepName;
 import com.google.firebase.samples.apps.mlkit.DatabaseHelper;
 import com.google.firebase.samples.apps.mlkit.R;
+import com.google.firebase.samples.apps.mlkit.Step1;
+import com.google.firebase.samples.apps.mlkit.RecipeActivity;
 import com.google.firebase.samples.apps.mlkit.common.VisionImageProcessor;
 import com.google.firebase.samples.apps.mlkit.common.LabelReader;
 import com.google.firebase.samples.apps.mlkit.databinding.ActivityStillImageBinding;
@@ -152,6 +154,9 @@ public class StillImageActivity extends AppCompatActivity {
                   public boolean onMenuItemClick(MenuItem menuItem) {
                     switch (menuItem.getItemId()) {
                       case R.id.display_string_test:
+
+                        Intent intent = new Intent(view.getContext(), RecipeActivity.class);
+                        startActivity(intent);
 
                         testprint();
                         return true;
@@ -322,14 +327,15 @@ public class StillImageActivity extends AppCompatActivity {
     DatabaseHelper myDb = new DatabaseHelper(this);
     SQLiteDatabase sqliteDatabase = myDb.getReadableDatabase();
 
+    String RecipeID;
+    String RecipeName;
+    String RecipeIngredient;
     String testtext = "The recipes are: ";
     //Cursor cursor = sqliteDatabase.query(TABLE_Recipe, new String[]{"rowid", COL_RecipeName, COL_RecipeSteps, COL_RecipeIngredient}, TABLE_Recipe + " MATCH ?", new String[]{s + "*"}, null, null, null, null);
     try{
       Cursor cursor = sqliteDatabase.query("Recipe", new String[] {"RecipeID","RecipeName","RecipeIngredient"}, "RecipeIngredient"+" LIKE?", new String[] { "%"+first_result + "%"}, null, null, null);
 
-      String RecipeID;
-      String RecipeName;
-      String RecipeIngredient;
+
       while (cursor.moveToNext()) {
         RecipeID = cursor.getString(cursor.getColumnIndex("RecipeID"));
         RecipeName = cursor.getString(cursor.getColumnIndex("RecipeName"));
