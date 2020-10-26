@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.google.firebase.samples.apps.mlkit.RecipeActivity">
+    tools:context="com.google.firebase.samples.apps.foodology.RecipeActivity">
 
     <ImageView
         android:id="@+id/recipe_ellipseO"

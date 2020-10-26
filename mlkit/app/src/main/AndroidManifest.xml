@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.firebase.samples.apps.mlkit">
+    package="com.google.firebase.samples.apps.foodology">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -21,7 +21,7 @@
             android:value="barcode,face,ocr,ica" />
 
         <activity
-            android:name="com.google.firebase.samples.apps.mlkit.Login"
+            android:name="com.google.firebase.samples.apps.foodology.Login"
             android:exported="true"
             android:label="Foodology">
             <intent-filter>
@@ -31,43 +31,43 @@
         </activity>
 
         <activity
-            android:name="com.google.firebase.samples.apps.mlkit.MainActivity"/>
+            android:name="com.google.firebase.samples.apps.foodology.MainActivity"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.mlkit.ProfileActivity"/>
+            android:name="com.google.firebase.samples.apps.foodology.ProfileActivity"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.mlkit.ForumActivity"/>
+            android:name="com.google.firebase.samples.apps.foodology.ForumActivity"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.mlkit.RecipeActivity"/>
+            android:name="com.google.firebase.samples.apps.foodology.RecipeActivity"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.mlkit.ProfileSettingsActivity"/>
+            android:name="com.google.firebase.samples.apps.foodology.ProfileSettingsActivity"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.mlkit.EditProfile"/>
+            android:name="com.google.firebase.samples.apps.foodology.EditProfile"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.mlkit.Register"/>
+            android:name="com.google.firebase.samples.apps.foodology.Register"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.mlkit.Step1"/>
+            android:name="com.google.firebase.samples.apps.foodology.Step1"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.mlkit.Step2"/>
+            android:name="com.google.firebase.samples.apps.foodology.Step2"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.mlkit.Step3"/>
+            android:name="com.google.firebase.samples.apps.foodology.Step3"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.mlkit.Step4"/>
+            android:name="com.google.firebase.samples.apps.foodology.Step4"/>
 		
 		<activity
-            android:name="com.google.firebase.samples.apps.mlkit.java.StillImageActivity"/>
+            android:name="com.google.firebase.samples.apps.foodology.java.StillImageActivity"/>
 
         <activity
-            android:name=".common.preference.SettingsActivity"
+            android:name="com.google.firebase.samples.apps.foodology.common.preference.SettingsActivity"
             android:exported="false"/>
     </application>
 
