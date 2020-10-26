@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.google.firebase.samples.apps.mlkit.Register">
+    tools:context="com.google.firebase.samples.apps.foodology.Register">
 
     <ImageView
         android:id="@+id/foodology_logo"
