@@ -21,7 +21,7 @@
             android:value="barcode,face,ocr,ica" />
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.Login"
+            android:name="com.DIPGroup3.foodology.Login"
             android:exported="true"
             android:label="Foodology">
             <intent-filter>
@@ -31,43 +31,43 @@
         </activity>
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.MainActivity"/>
+            android:name="com.DIPGroup3.foodology.MainActivity"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.ProfileActivity"/>
+            android:name="com.DIPGroup3.foodology.ProfileActivity"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.ForumActivity"/>
+            android:name="com.DIPGroup3.foodology.ForumActivity"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.RecipeActivity"/>
+            android:name="com.DIPGroup3.foodology.RecipeActivity"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.ProfileSettingsActivity"/>
+            android:name="com.DIPGroup3.foodology.ProfileSettingsActivity"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.EditProfile"/>
+            android:name="com.DIPGroup3.foodology.EditProfile"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.Register"/>
+            android:name="com.DIPGroup3.foodology.Register"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.Step1"/>
+            android:name="com.DIPGroup3.foodology.Step1"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.Step2"/>
+            android:name="com.DIPGroup3.foodology.Step2"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.Step3"/>
+            android:name="com.DIPGroup3.foodology.Step3"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.Step4"/>
+            android:name="com.DIPGroup3.foodology.Step4"/>
 		
 		<activity
-            android:name="com.google.firebase.samples.apps.foodology.java.StillImageActivity"/>
+            android:name="com.DIPGroup3.foodology.java.StillImageActivity"/>
 
         <activity
-            android:name="com.google.firebase.samples.apps.foodology.common.preference.SettingsActivity"
+            android:name="com.DIPGroup3.foodology.common.preference.SettingsActivity"
             android:exported="false"/>
     </application>
 
