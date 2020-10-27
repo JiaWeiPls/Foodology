@@ -10,23 +10,23 @@
     android:keepScreenOn="true">
 
   <ImageView
-      android:id="@+id/elipse"
+      android:id="@+id/stillimg_elipse"
       android:layout_width="match_parent"
       android:layout_height="78dp"
       android:layout_alignParentTop="true"
       android:scaleY="-1"
       android:layout_marginTop="-2dp"
-      android:src="@drawable/ic_elipse_white" />
+      android:src="@drawable/ic_ellipse_white_cropped" />
 
   <ImageView
-      android:id="@+id/logo"
+      android:id="@+id/foodology_logo"
       android:layout_width="490dp"
       android:layout_height="50dp"
       android:layout_alignParentStart="true"
       android:layout_marginStart="0dp"
       android:layout_alignParentTop="true"
       android:layout_marginTop="15dp"
-      android:src="@drawable/foodology_removebg_preview__1_" />
+      android:src="@drawable/logo_foodology" />
 
   <ImageView
       android:id="@+id/previewPane"
@@ -38,7 +38,7 @@
   </ImageView>
 
 
-  <com.google.firebase.samples.apps.mlkit.common.GraphicOverlay
+  <com.DIPGroup3.foodology.common.GraphicOverlay
       android:id="@+id/previewOverlay"
       android:layout_width="fill_parent"
       android:layout_height="fill_parent"
@@ -69,7 +69,7 @@
         android:text="Take photo" />
 
     <ImageButton
-        android:id="@+id/buttonScan"
+        android:id="@+id/stillimg_buttonScan"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -80,7 +80,7 @@
         android:src="@drawable/scan_1" />
 
     <ImageButton
-        android:id="@+id/buttonImport"
+        android:id="@+id/stillimg_btnImport"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="27dp"
@@ -89,13 +89,13 @@
         android:background="@android:color/transparent"
         android:scaleType="center"
         android:onClick="Import"
-        android:src="@drawable/ic_mdi_image" />
+        android:src="@drawable/stillimage_gallery_icon" />
 
     <TextView
-        android:id="@+id/scan"
+        android:id="@+id/stillimg_scanTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buttonScan"
+        android:layout_below="@id/stillimg_buttonScan"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/roboto_regular"
@@ -104,10 +104,10 @@
         android:textSize="10sp" />
 
     <TextView
-        android:id="@+id/importText"
+        android:id="@+id/stillimg_importTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buttonImport"
+        android:layout_below="@id/stillimg_btnImport"
         android:layout_gravity="right"
         android:layout_marginTop="65dp"
         android:layout_marginRight="60dp"

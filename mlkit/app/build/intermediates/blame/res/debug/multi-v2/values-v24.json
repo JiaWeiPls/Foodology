@@ -4,7 +4,17 @@
             "outputFile": "C:\\Users\\1920S2\\Documents\\GitHub\\IM3080_DIP_GROUP3\\mlkit\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\9e4f0e299e391b2484352b59e7867895\\media-1.1.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\51f058f3a665944d9ea1255d1c23f93a\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\75197028867eed685742baf4d1339fd5\\media-1.1.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -18,16 +28,6 @@
                         "startOffsets": "347,413,474,540",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "408,469,535,602"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\1920S2\\.gradle\\caches\\transforms-2\\files-2.1\\04c75cbb6f47de267432616384384547\\appcompat-1.2.0\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
                     }
                 }
             ]

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.firebase.samples.apps.foodology.ProfileActivity">
+
+    <View
+        android:id="@+id/recipe_ellipseO"
+        android:layout_width="3169dp"
+        android:layout_height="1399dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ic_ellipse_orange"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@id/step_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/foodology_logo"
+        android:layout_width="386dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:rotation="13"
+        android:src="@drawable/logo_foodology"
+        app:layout_constraintBottom_toBottomOf="@id/recipe_ellipseO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_arrow_left_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/step_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal|top"
+        android:text="Step 1:"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/prepIng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal|top"
+        android:text="Prepare Ingredients"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/recipeVideo"
+        android:layout_width="330dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/egg_fried_rice_ff4_720x540"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prepIng"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_play_button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/recipeVideo"
+        app:layout_constraintLeft_toLeftOf="@id/recipeVideo"
+        app:layout_constraintRight_toRightOf="@id/recipeVideo"
+        app:layout_constraintTop_toTopOf="@id/recipeVideo" />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_video"
+        android:layout_width="330dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prepIng"
+        app:layout_constraintVertical_bias="0.0"
+        app:autoPlay="false"
+        app:showYouTubeButton="false"
+        app:videoId="zGN0tdUoC6U" />
+
+    <TextView
+        android:id="@+id/prepInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal|top"
+        android:text="Follow the steps carefully."
+        android:textColor="@color/dark_blue"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recipeVideo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/prepInstructionNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal|top"
+        android:text="Say 'Next' to go to the next step."
+        android:textColor="#3EB023"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/prepInstructionPause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/prepInstructionPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal|top"
+        android:text="Say 'Pause' to pause the video."
+        android:textColor="#F0613C"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/progressBar3"
+        android:layout_width="413dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/ic_lams_progress_bar_1"
+        app:layout_constraintBottom_toTopOf="@id/bottom_base"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/prepSoyaProgressBar_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal|top"
+        android:text="Step 2:"
+        android:textColor="@color/dark_blue"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar3" />
+
+    <TextView
+        android:id="@+id/prepSoyaProgressBar_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal|top"
+        android:text="Preheat The Pan"
+        android:textColor="@color/dark_blue"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prepSoyaProgressBar_1" />
+
+    <TextView
+        android:id="@+id/prepRiceProgressBar_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal|top"
+        android:text="Step 1:"
+        android:textColor="@color/dark_blue"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/prepSoyaProgressBar_1"
+        app:layout_constraintEnd_toStartOf="@+id/prepSoyaProgressBar_1"
+        app:layout_constraintTop_toTopOf="@+id/prepSoyaProgressBar_1" />
+
+    <TextView
+        android:id="@+id/prepRiceProgressBar_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal|top"
+        android:text="Prepare Ingredients"
+        android:textColor="@color/dark_blue"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/prepRiceProgressBar_1"
+        app:layout_constraintStart_toStartOf="@+id/prepRiceProgressBar_1"
+        app:layout_constraintTop_toBottomOf="@id/prepRiceProgressBar_1" />
+
+    <TextView
+        android:id="@+id/prepOilProgressBar_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="100dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal|top"
+        android:text="Step 3:"
+        android:textColor="@color/dark_blue"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/prepSoyaProgressBar_1"
+        app:layout_constraintTop_toTopOf="@+id/prepSoyaProgressBar_1" />
+
+    <TextView
+        android:id="@+id/prepOilProgressBar_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center_horizontal|top"
+        android:text="Put In Ingredients"
+        android:textColor="@color/dark_blue"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_base"
+        app:layout_constraintEnd_toEndOf="@+id/prepOilProgressBar_1"
+        app:layout_constraintStart_toStartOf="@+id/prepOilProgressBar_1"
+        app:layout_constraintTop_toBottomOf="@id/prepRiceProgressBar_1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--bottom dock base-->
+    <ImageView
+        android:id="@+id/bottom_base"
+        android:layout_width="800dp"
+        android:layout_height="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/dock_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!--dock scan-->
+    <Button
+        android:id="@+id/scan_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dock_scan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!--dock home-->
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/dock_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/profile_button" />
+
+    <!--dock profile-->
+    <Button
+        android:id="@+id/profile_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/dock_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/scan_button" />
+
+    <!--dock fragment_forum-->
+    <Button
+        android:id="@+id/forum_button"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/dock_forum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/scan_button" />
+
+    <!--dock recipe-->
+    <Button
+        android:id="@+id/recipe_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/dock_add_recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/forum_button" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="78dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/ic_arrow_left"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="@+id/recipeVideo"
+        app:layout_constraintStart_toEndOf="@+id/play_button"
+        app:layout_constraintTop_toTopOf="@+id/recipeVideo" />
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="78dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/ic_arrow_left"
+        app:layout_constraintBottom_toBottomOf="@+id/recipeVideo"
+        app:layout_constraintEnd_toStartOf="@+id/play_button"
+        app:layout_constraintTop_toTopOf="@+id/recipeVideo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
