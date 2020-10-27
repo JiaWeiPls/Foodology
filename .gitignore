@@ -18,3 +18,6 @@ mlkit/.idea/modules.xml
 mlkit/app/src/main/res/layout/fragment_recipe.xml
 mlkit/build.gradle
 mlkit/local.properties
+mlkit/local.properties
+mlkit/.idea/modules.xml
+mlkit/.idea/gradle.xml
